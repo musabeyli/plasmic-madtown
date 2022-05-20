@@ -27,6 +27,7 @@ function NewPage() {
       <GlobalContextsProvider>
         <PlasmicNewPage />
       </GlobalContextsProvider>
+      <h1> Should be at the end</h1>
     </div>
   );
 }
