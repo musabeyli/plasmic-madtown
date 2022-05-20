@@ -175,7 +175,7 @@
           "projectId": "wA73ZswqroE6r1m1xaxGJ1",
           "renderModuleFilePath": "plasmic/blank_project/PlasmicHomepage.tsx",
           "importSpec": {
-            "modulePath": "../pages/index.tsx"
+            "modulePath": "../pages/basic.tsx"
           },
           "cssFilePath": "plasmic/blank_project/PlasmicHomepage.module.css",
           "scheme": "blackbox",
@@ -188,7 +188,7 @@
           "projectId": "wA73ZswqroE6r1m1xaxGJ1",
           "renderModuleFilePath": "plasmic/blank_project/PlasmicNewPage.tsx",
           "importSpec": {
-            "modulePath": "../pages/new-page.tsx"
+            "modulePath": "../pages/index.tsx"
           },
           "cssFilePath": "plasmic/blank_project/PlasmicNewPage.module.css",
           "scheme": "blackbox",

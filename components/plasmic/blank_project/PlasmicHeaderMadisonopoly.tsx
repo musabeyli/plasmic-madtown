@@ -111,6 +111,7 @@ function PlasmicHeaderMadisonopoly__RenderFunc(props: {
               sty.link__qm4Bo
             )}
             component={Link}
+            href={"/" as const}
             platform={"nextjs"}
           >
             <p.PlasmicImg
@@ -128,12 +129,14 @@ function PlasmicHeaderMadisonopoly__RenderFunc(props: {
               displayMinHeight={"0" as const}
               displayMinWidth={"0" as const}
               displayWidth={"100%" as const}
+              loading={"lazy" as const}
               src={{
                 src: "/plasmic/blank_project/images/sideMadisonopolyRemovebgPreview1Png.png",
                 fullWidth: 500,
                 fullHeight: 500,
                 aspectRatio: undefined
               }}
+              title={"Madisonopoly" as const}
             />
           </p.PlasmicLink>
         ) : null}

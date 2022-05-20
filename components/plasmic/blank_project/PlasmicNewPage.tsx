@@ -659,6 +659,7 @@ function PlasmicNewPage__RenderFunc(props: {
                         "__wab_instance",
                         sty.button__y5X90
                       )}
+                      color={"blue" as const}
                     >
                       <div
                         className={classNames(
@@ -667,7 +668,7 @@ function PlasmicNewPage__RenderFunc(props: {
                           sty.text___27Alq
                         )}
                       >
-                        {"Buy now ->"}
+                        {"Add to Cart"}
                       </div>
                     </Button>
 
@@ -780,7 +781,13 @@ function PlasmicNewPage__RenderFunc(props: {
                                 sty.text__fhK0
                               )}
                             >
-                              {"GameBoard"}
+                              {hasVariant(
+                                globalVariants,
+                                "screen",
+                                "mobileOnly"
+                              )
+                                ? "GameBoard"
+                                : "GameBoard"}
                             </div>
                           </ParallaxWrapper>
 
@@ -1047,6 +1054,14 @@ function PlasmicNewPage__RenderFunc(props: {
                     </div>
                   ) : null}
                 </div>
+
+                <Button
+                  className={classNames("__wab_instance", sty.button__wiEwj)}
+                  color={"blue" as const}
+                  showEndIcon={true}
+                >
+                  {"Buy now"}
+                </Button>
 
                 {true ? (
                   <p.PlasmicImg

@@ -12,7 +12,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .root {
-    padding: 0px;
+    padding: 0px 0px 10000px;
   }
 }
 .headerMadisonopoly:global(.__wab_instance) {
@@ -1454,6 +1454,22 @@
   user-select: text;
   text-decoration-line: none;
   text-overflow: clip;
+}
+.button__wiEwj:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.svg__oBq0U {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__evKA {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
 }
 .img__bo3Vy {
   position: relative;
