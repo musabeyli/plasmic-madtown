@@ -995,13 +995,7 @@
       ],
       "indirect": false,
       "globalContextsFilePath": "plasmic/blank_project/PlasmicGlobalContextsProvider.tsx",
-      "codeComponents": [
-        {
-          "id": "KCNYXIYQeU",
-          "name": "CompKcnyxiyQeU",
-          "componentImportPath": ""
-        }
-      ]
+      "codeComponents": []
     }
   ],
   "globalVariants": {
