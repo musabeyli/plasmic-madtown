@@ -1,4 +1,6 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
+import { HelloWorld } from './components/HelloWorld';
+import Navbar from "./components/Navbar";
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
@@ -14,6 +16,15 @@ export const PLASMIC = initPlasmicLoader({
   // only use this for development, as this is significantly slower.
   preview: false,
 });
+
+PLASMIC.registerComponent(HelloWorld, {
+  name: 'HelloWorld',
+  props: {
+    verbose: 'boolean',
+    children: 'slot'
+  }
+});
+
 
 // You can register any code components that you want to use here; see
 // https://docs.plasmic.app/learn/code-components-ref/
