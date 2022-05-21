@@ -57,8 +57,6 @@ import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: q8bdo62ba
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: 980jwjq2w1h/icon
 import Icon28Icon from "./icons/PlasmicIcon__Icon28"; // plasmic-import: _UA6I6vZTD-/icon
 
-import { useRouter } from "next/router";
-
 export type PlasmicNewPage__VariantMembers = {};
 
 export type PlasmicNewPage__VariantsArgs = {};
@@ -101,10 +99,10 @@ function PlasmicNewPage__RenderFunc(props: {
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsabUxTrbG0Cf5V(),
   });
-  const handleSectionNavigation = (sectionID: string) => {
-    document.getElementById(sectionID).scrollIntoView({ behavior: "smooth" });
+  const handleImageClick = () => {
+    console.log("hello");
+    document.getElementById("myid").scrollIntoView({ behavior: "smooth" });
   };
-  const router = useRouter();
 
   return (
     <React.Fragment>
@@ -712,7 +710,7 @@ function PlasmicNewPage__RenderFunc(props: {
                         "__wab_instance",
                         sty.button__rBpLx
                       )}
-                      onClick={() => handleSectionNavigation("section1")}
+                      link={"" as const}
                     >
                       <div
                         className={classNames(
@@ -739,7 +737,6 @@ function PlasmicNewPage__RenderFunc(props: {
                   ) ? (
                     <Button
                       className={classNames("__wab_instance", sty.button__pXl4)}
-                      onClick={() => handleSectionNavigation("section1")}
                     >
                       <div
                         className={classNames(
@@ -1271,11 +1268,6 @@ function PlasmicNewPage__RenderFunc(props: {
                             sty.button__wDtgy
                           )}
                           color={"blue" as const}
-                          onClick={() => {
-                            router.push({
-                              pathname: "/product",
-                            });
-                          }}
                         >
                           <div
                             className={classNames(
@@ -1294,7 +1286,6 @@ function PlasmicNewPage__RenderFunc(props: {
                             sty.button__c53TY
                           )}
                           color={"clear" as const}
-                          onClick={() => handleSectionNavigation("section2")}
                         >
                           <div
                             className={classNames(
@@ -1536,11 +1527,6 @@ function PlasmicNewPage__RenderFunc(props: {
                           sty.button__y5X90
                         )}
                         color={"blue" as const}
-                        onClick={() => {
-                          router.push({
-                            pathname: "/product",
-                          });
-                        }}
                       >
                         <div
                           className={classNames(
@@ -1559,7 +1545,6 @@ function PlasmicNewPage__RenderFunc(props: {
                           sty.button__rs85P
                         )}
                         color={"clear" as const}
-                        onClick={() => handleSectionNavigation("section2")}
                       >
                         <div
                           className={classNames(

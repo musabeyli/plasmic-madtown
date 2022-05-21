@@ -117,17 +117,17 @@ function PlasmicFooterComponent__RenderFunc(props: {
                 displayHeight={
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? ("171px" as const)
-                    : ("200px" as const)
+                    : ("264px" as const)
                 }
                 displayMaxHeight={"none" as const}
                 displayMaxWidth={"none" as const}
                 displayMinHeight={"0" as const}
                 displayMinWidth={"0" as const}
-                displayWidth={"406px" as const}
+                displayWidth={"287px" as const}
                 src={{
-                  src: "/plasmic/blank_project/images/madisonopolyLogopng.png",
-                  fullWidth: 914,
-                  fullHeight: 335,
+                  src: "/plasmic/blank_project/images/sideMadisonopolyRemovebgPreview1Png.png",
+                  fullWidth: 500,
+                  fullHeight: 500,
                   aspectRatio: undefined
                 }}
               />

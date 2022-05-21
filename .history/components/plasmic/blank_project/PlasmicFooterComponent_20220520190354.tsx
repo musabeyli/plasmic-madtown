@@ -32,7 +32,7 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
 } from "@plasmicapp/react-web";
 import Button from "../../Button"; // plasmic-import: aOTvFzJBlc_/component
 
@@ -78,7 +78,7 @@ function PlasmicFooterComponent__RenderFunc(props: {
   const $props = props.args;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsabUxTrbG0Cf5V()
+    screen: useScreenVariantsabUxTrbG0Cf5V(),
   });
 
   return (
@@ -117,18 +117,18 @@ function PlasmicFooterComponent__RenderFunc(props: {
                 displayHeight={
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? ("171px" as const)
-                    : ("200px" as const)
+                    : ("264px" as const)
                 }
                 displayMaxHeight={"none" as const}
                 displayMaxWidth={"none" as const}
                 displayMinHeight={"0" as const}
                 displayMinWidth={"0" as const}
-                displayWidth={"406px" as const}
+                displayWidth={"287px" as const}
                 src={{
                   src: "/plasmic/blank_project/images/madisonopolyLogopng.png",
-                  fullWidth: 914,
-                  fullHeight: 335,
-                  aspectRatio: undefined
+                  fullWidth: 500,
+                  fullHeight: 500,
+                  aspectRatio: "1",
                 }}
               />
             </p.Stack>
@@ -301,7 +301,7 @@ function PlasmicFooterComponent__RenderFunc(props: {
 const PlasmicDescendants = {
   root: ["root", "columns", "img"],
   columns: ["columns", "img"],
-  img: ["img"]
+  img: ["img"],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -346,14 +346,14 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       name: nodeName,
       descendantNames: [...PlasmicDescendants[nodeName]],
       internalArgPropNames: PlasmicFooterComponent__ArgProps,
-      internalVariantPropNames: PlasmicFooterComponent__VariantProps
+      internalVariantPropNames: PlasmicFooterComponent__VariantProps,
     });
 
     return PlasmicFooterComponent__RenderFunc({
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
   if (nodeName === "root") {
@@ -374,7 +374,7 @@ export const PlasmicFooterComponent = Object.assign(
 
     // Metadata about props expected for PlasmicFooterComponent
     internalVariantProps: PlasmicFooterComponent__VariantProps,
-    internalArgProps: PlasmicFooterComponent__ArgProps
+    internalArgProps: PlasmicFooterComponent__ArgProps,
   }
 );
 

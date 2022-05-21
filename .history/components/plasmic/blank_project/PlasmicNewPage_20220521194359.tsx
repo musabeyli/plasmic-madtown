@@ -1271,11 +1271,6 @@ function PlasmicNewPage__RenderFunc(props: {
                             sty.button__wDtgy
                           )}
                           color={"blue" as const}
-                          onClick={() => {
-                            router.push({
-                              pathname: "/product",
-                            });
-                          }}
                         >
                           <div
                             className={classNames(
@@ -1283,6 +1278,11 @@ function PlasmicNewPage__RenderFunc(props: {
                               projectcss.__wab_text,
                               sty.text__oPJnp
                             )}
+                            onClick={() => {
+                              router.push({
+                                pathname: "/product",
+                              });
+                            }}
                           >
                             {"Show me"}
                           </div>
@@ -1536,11 +1536,11 @@ function PlasmicNewPage__RenderFunc(props: {
                           sty.button__y5X90
                         )}
                         color={"blue" as const}
-                        onClick={() => {
-                          router.push({
-                            pathname: "/product",
-                          });
-                        }}
+                                                    onClick={() => {
+                              router.push({
+                                pathname: "/product",
+                              });
+                            }}
                       >
                         <div
                           className={classNames(
