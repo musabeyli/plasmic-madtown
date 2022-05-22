@@ -348,7 +348,7 @@
           "projectId": "wA73ZswqroE6r1m1xaxGJ1",
           "renderModuleFilePath": "plasmic/blank_project/PlasmicProduct.tsx",
           "importSpec": {
-            "modulePath": "../pages/product.tsx"
+            "modulePath": "../pages/product-base.tsx"
           },
           "cssFilePath": "plasmic/blank_project/PlasmicProduct.module.css",
           "scheme": "blackbox",
@@ -361,7 +361,7 @@
           "projectId": "wA73ZswqroE6r1m1xaxGJ1",
           "renderModuleFilePath": "plasmic/blank_project/PlasmicPrdct.tsx",
           "importSpec": {
-            "modulePath": "../pages/prdct.tsx"
+            "modulePath": "../pages/product.tsx"
           },
           "cssFilePath": "plasmic/blank_project/PlasmicPrdct.module.css",
           "scheme": "blackbox",
@@ -422,6 +422,19 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "triggered-overlay"
+        },
+        {
+          "id": "zLYGck-fye5",
+          "name": "MadisonopolyHeaderFinal",
+          "type": "managed",
+          "projectId": "wA73ZswqroE6r1m1xaxGJ1",
+          "renderModuleFilePath": "plasmic/blank_project/PlasmicMadisonopolyHeaderFinal.tsx",
+          "importSpec": {
+            "modulePath": "MadisonopolyHeaderFinal.tsx"
+          },
+          "cssFilePath": "plasmic/blank_project/PlasmicMadisonopolyHeaderFinal.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

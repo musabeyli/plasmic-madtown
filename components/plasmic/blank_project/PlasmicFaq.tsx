@@ -34,7 +34,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import HeaderMadisonopoly from "../../HeaderMadisonopoly"; // plasmic-import: SbmFAmFl460/component
+import MadisonopolyHeaderFinal from "../../MadisonopolyHeaderFinal"; // plasmic-import: zLYGck-fye5/component
 import FooterComponent from "../../FooterComponent"; // plasmic-import: Mfi3gMBJIGb/component
 
 import { useScreenVariants as useScreenVariantsabUxTrbG0Cf5V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AbUXTrbG0Cf5V/globalVariant
@@ -56,7 +56,7 @@ export const PlasmicFaq__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicFaq__OverridesType = {
   root?: p.Flex<"div">;
-  headerMadisonopoly?: p.Flex<typeof HeaderMadisonopoly>;
+  madisonopolyHeaderFinal?: p.Flex<typeof MadisonopolyHeaderFinal>;
   h1?: p.Flex<"h1">;
   footerComponent?: p.Flex<typeof FooterComponent>;
 };
@@ -101,10 +101,13 @@ function PlasmicFaq__RenderFunc(props: {
             sty.root
           )}
         >
-          <HeaderMadisonopoly
-            data-plasmic-name={"headerMadisonopoly"}
-            data-plasmic-override={overrides.headerMadisonopoly}
-            className={classNames("__wab_instance", sty.headerMadisonopoly)}
+          <MadisonopolyHeaderFinal
+            data-plasmic-name={"madisonopolyHeaderFinal"}
+            data-plasmic-override={overrides.madisonopolyHeaderFinal}
+            className={classNames(
+              "__wab_instance",
+              sty.madisonopolyHeaderFinal
+            )}
           />
 
           {true ? (
@@ -275,8 +278,8 @@ function PlasmicFaq__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "headerMadisonopoly", "h1", "footerComponent"],
-  headerMadisonopoly: ["headerMadisonopoly"],
+  root: ["root", "madisonopolyHeaderFinal", "h1", "footerComponent"],
+  madisonopolyHeaderFinal: ["madisonopolyHeaderFinal"],
   h1: ["h1"],
   footerComponent: ["footerComponent"]
 } as const;
@@ -285,7 +288,7 @@ type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  headerMadisonopoly: typeof HeaderMadisonopoly;
+  madisonopolyHeaderFinal: typeof MadisonopolyHeaderFinal;
   h1: "h1";
   footerComponent: typeof FooterComponent;
 };
@@ -347,7 +350,7 @@ export const PlasmicFaq = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    headerMadisonopoly: makeNodeComponent("headerMadisonopoly"),
+    madisonopolyHeaderFinal: makeNodeComponent("madisonopolyHeaderFinal"),
     h1: makeNodeComponent("h1"),
     footerComponent: makeNodeComponent("footerComponent"),
 

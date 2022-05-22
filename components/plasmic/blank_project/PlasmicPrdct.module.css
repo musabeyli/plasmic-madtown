@@ -9,6 +9,10 @@
   min-width: 0;
   min-height: 0;
 }
+.madisonopolyHeaderFinal:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
 .svg {
   position: relative;
   object-fit: cover;
@@ -21,9 +25,10 @@
   flex-shrink: 0;
   display: none;
 }
-.headerMadisonopoly:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
+@media (min-width: 0px) and (max-width: 768px) {
+  .svg {
+    display: block;
+  }
 }
 .freeBox__mDtZy {
   display: flex;
@@ -56,13 +61,14 @@
     position: absolute;
     left: 26px;
     top: 91px;
-    padding-right: 29px;
+    padding-right: 43px;
     margin-right: 0px;
     align-self: flex-start;
     z-index: 1;
     width: auto;
     height: auto;
     padding-left: 30px;
+    text-align: left;
   }
 }
 .columns {
@@ -359,6 +365,7 @@
   height: auto;
   max-width: 679px;
   margin-right: 0px;
+  background: #ffffff;
   min-width: 0;
   padding: 44px 16px 0px;
 }
@@ -410,26 +417,6 @@
 }
 .option__ivQkk:global(.__wab_instance) {
   position: relative;
-}
-.button:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-  align-self: auto;
-  margin-top: 70px;
-  height: 59px;
-  flex-shrink: 0;
-}
-.svg__m5EV {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.svg__dXZm {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
 }
 .footerComponent:global(.__wab_instance) {
   max-width: 100%;

@@ -34,6 +34,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import MadisonopolyHeaderFinal from "../../MadisonopolyHeaderFinal"; // plasmic-import: zLYGck-fye5/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -52,6 +53,7 @@ export const PlasmicGameRules__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicGameRules__OverridesType = {
   root?: p.Flex<"div">;
+  madisonopolyHeaderFinal?: p.Flex<typeof MadisonopolyHeaderFinal>;
 };
 
 export interface DefaultGameRulesProps {}
@@ -89,20 +91,31 @@ function PlasmicGameRules__RenderFunc(props: {
             projectcss.plasmic_mixins,
             sty.root
           )}
-        />
+        >
+          <MadisonopolyHeaderFinal
+            data-plasmic-name={"madisonopolyHeaderFinal"}
+            data-plasmic-override={overrides.madisonopolyHeaderFinal}
+            className={classNames(
+              "__wab_instance",
+              sty.madisonopolyHeaderFinal
+            )}
+          />
+        </div>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "madisonopolyHeaderFinal"],
+  madisonopolyHeaderFinal: ["madisonopolyHeaderFinal"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  madisonopolyHeaderFinal: typeof MadisonopolyHeaderFinal;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -162,6 +175,7 @@ export const PlasmicGameRules = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    madisonopolyHeaderFinal: makeNodeComponent("madisonopolyHeaderFinal"),
 
     // Metadata about props expected for PlasmicGameRules
     internalVariantProps: PlasmicGameRules__VariantProps,
