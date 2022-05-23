@@ -81,7 +81,6 @@ function PlasmicFooterComponent__RenderFunc(props: {
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsabUxTrbG0Cf5V(),
   });
-  const router = useRouter();
 
   return (
     <div
@@ -110,30 +109,31 @@ function PlasmicFooterComponent__RenderFunc(props: {
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__oNxF)}
-              onClick={() => router.push("/")}
             >
-              <p.PlasmicImg
-                data-plasmic-name={"img"}
-                data-plasmic-override={overrides.img}
-                alt={""}
-                className={classNames(sty.img)}
-                displayHeight={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? ("171px" as const)
-                    : ("200px" as const)
-                }
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"none" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"406px" as const}
-                src={{
-                  src: "/plasmic/blank_project/images/madisonopolyLogopng.png",
-                  fullWidth: 914,
-                  fullHeight: 335,
-                  aspectRatio: undefined,
-                }}
-              />
+              <button onClick={() => router.push("/")}>
+                <p.PlasmicImg
+                  data-plasmic-name={"img"}
+                  data-plasmic-override={overrides.img}
+                  alt={""}
+                  className={classNames(sty.img)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? ("171px" as const)
+                      : ("200px" as const)
+                  }
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"none" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"406px" as const}
+                  src={{
+                    src: "/plasmic/blank_project/images/madisonopolyLogopng.png",
+                    fullWidth: 914,
+                    fullHeight: 335,
+                    aspectRatio: undefined,
+                  }}
+                />
+              </button>
             </p.Stack>
           </div>
 

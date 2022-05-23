@@ -81,7 +81,6 @@ function PlasmicFooterComponent__RenderFunc(props: {
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsabUxTrbG0Cf5V(),
   });
-  const router = useRouter();
 
   return (
     <div

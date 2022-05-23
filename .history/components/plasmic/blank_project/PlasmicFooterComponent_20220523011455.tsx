@@ -81,7 +81,6 @@ function PlasmicFooterComponent__RenderFunc(props: {
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsabUxTrbG0Cf5V(),
   });
-  const router = useRouter();
 
   return (
     <div
@@ -110,7 +109,7 @@ function PlasmicFooterComponent__RenderFunc(props: {
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__oNxF)}
-              onClick={() => router.push("/")}
+              onClick={}
             >
               <p.PlasmicImg
                 data-plasmic-name={"img"}
