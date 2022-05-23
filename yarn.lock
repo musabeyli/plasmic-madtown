@@ -121,10 +121,8 @@
     "@chakra-ui/spinner" "2.0.0"
     "@chakra-ui/utils" "2.0.0"
 
-"@chakra-ui/checkbox@2.0.0":
-  "integrity" "sha512-UGXy2srps4Q3VA6LLPDmpMV7ouixqPDgIR54RZE8ln880JePIGnUNVhJ+M46lCA2/5K0hXtgLhOShS2BtvtjRQ=="
-  "resolved" "https://registry.npmjs.org/@chakra-ui/checkbox/-/checkbox-2.0.0.tgz"
-  "version" "2.0.0"
+"@chakra-ui/checkbox@2.0.1":
+  "version" "2.0.1"
   dependencies:
     "@chakra-ui/form-control" "2.0.0"
     "@chakra-ui/hooks" "2.0.0"
@@ -148,13 +146,10 @@
     "@chakra-ui/icon" "3.0.0"
     "@chakra-ui/utils" "2.0.0"
 
-"@chakra-ui/color-mode@2.0.0":
-  "integrity" "sha512-kz7mj84REdcV1BtEkI687pO2XO8A9EKPXrsuG15zj2NwotPB0yEfePo99eqrI9vaYGJcELm0JJ8Jlm1rjqTYvg=="
-  "resolved" "https://registry.npmjs.org/@chakra-ui/color-mode/-/color-mode-2.0.0.tgz"
-  "version" "2.0.0"
+"@chakra-ui/color-mode@2.0.2":
+  "version" "2.0.2"
   dependencies:
     "@chakra-ui/hooks" "2.0.0"
-    "@chakra-ui/react-env" "2.0.0"
     "@chakra-ui/utils" "2.0.0"
 
 "@chakra-ui/control-box@2.0.0":
@@ -363,15 +358,13 @@
     "@chakra-ui/theme-tools" "2.0.0"
     "@chakra-ui/utils" "2.0.0"
 
-"@chakra-ui/provider@2.0.0":
-  "integrity" "sha512-oS2c9Yi9QcYHt78mrLjKpEpSDlu1E4PDtAyocXZDxQwap97vOyqtwy09GiLAxCrusmZVq4Vo5FtzgYcWpwiLqw=="
-  "resolved" "https://registry.npmjs.org/@chakra-ui/provider/-/provider-2.0.0.tgz"
-  "version" "2.0.0"
+"@chakra-ui/provider@2.0.2":
+  "version" "2.0.2"
   dependencies:
     "@chakra-ui/css-reset" "2.0.0"
     "@chakra-ui/portal" "2.0.0"
     "@chakra-ui/react-env" "2.0.0"
-    "@chakra-ui/system" "2.0.0"
+    "@chakra-ui/system" "2.0.2"
     "@chakra-ui/utils" "2.0.0"
 
 "@chakra-ui/radio@2.0.0":
@@ -400,16 +393,14 @@
     "@chakra-ui/utils" "^2.0.0"
 
 "@chakra-ui/react@^2.0.0":
-  "integrity" "sha512-6IrCF3XamXL5wxJscc7Sx6nmRFxIeWllx8na4q/S9miQ06TKp4qO3yWKnBdi8AvJMf9sX4LND/Y070TRSq3o8g=="
-  "resolved" "https://registry.npmjs.org/@chakra-ui/react/-/react-2.0.0.tgz"
-  "version" "2.0.0"
+  "version" "2.0.2"
   dependencies:
     "@chakra-ui/accordion" "2.0.0"
     "@chakra-ui/alert" "2.0.0"
     "@chakra-ui/avatar" "2.0.0"
     "@chakra-ui/breadcrumb" "2.0.0"
     "@chakra-ui/button" "2.0.0"
-    "@chakra-ui/checkbox" "2.0.0"
+    "@chakra-ui/checkbox" "2.0.1"
     "@chakra-ui/close-button" "2.0.0"
     "@chakra-ui/control-box" "2.0.0"
     "@chakra-ui/counter" "2.0.0"
@@ -431,22 +422,22 @@
     "@chakra-ui/popper" "3.0.0"
     "@chakra-ui/portal" "2.0.0"
     "@chakra-ui/progress" "2.0.0"
-    "@chakra-ui/provider" "2.0.0"
+    "@chakra-ui/provider" "2.0.2"
     "@chakra-ui/radio" "2.0.0"
     "@chakra-ui/react-env" "2.0.0"
     "@chakra-ui/select" "2.0.0"
-    "@chakra-ui/skeleton" "2.0.0"
+    "@chakra-ui/skeleton" "2.0.2"
     "@chakra-ui/slider" "2.0.0"
     "@chakra-ui/spinner" "2.0.0"
     "@chakra-ui/stat" "2.0.0"
-    "@chakra-ui/switch" "2.0.0"
-    "@chakra-ui/system" "2.0.0"
+    "@chakra-ui/switch" "2.0.1"
+    "@chakra-ui/system" "2.0.2"
     "@chakra-ui/table" "2.0.0"
     "@chakra-ui/tabs" "2.0.0"
     "@chakra-ui/tag" "2.0.0"
     "@chakra-ui/textarea" "2.0.0"
-    "@chakra-ui/theme" "2.0.0"
-    "@chakra-ui/toast" "2.0.0"
+    "@chakra-ui/theme" "2.0.1"
+    "@chakra-ui/toast" "2.0.2"
     "@chakra-ui/tooltip" "2.0.0"
     "@chakra-ui/transition" "2.0.0"
     "@chakra-ui/utils" "2.0.0"
@@ -460,14 +451,12 @@
     "@chakra-ui/form-control" "2.0.0"
     "@chakra-ui/utils" "2.0.0"
 
-"@chakra-ui/skeleton@2.0.0":
-  "integrity" "sha512-Aqas5ER6Ll5a8cxThEzykHnXRYg5tN5Z6TkPn0EFirHFzQJHzELE0YqNXk+Fc8UsufByYk6gFzRu2leQD0a8FA=="
-  "resolved" "https://registry.npmjs.org/@chakra-ui/skeleton/-/skeleton-2.0.0.tgz"
-  "version" "2.0.0"
+"@chakra-ui/skeleton@2.0.2":
+  "version" "2.0.2"
   dependencies:
     "@chakra-ui/hooks" "2.0.0"
     "@chakra-ui/media-query" "3.0.0"
-    "@chakra-ui/system" "2.0.0"
+    "@chakra-ui/system" "2.0.2"
     "@chakra-ui/utils" "2.0.0"
 
 "@chakra-ui/slider@2.0.0":
@@ -504,20 +493,16 @@
     "@chakra-ui/utils" "2.0.0"
     "csstype" "^3.0.11"
 
-"@chakra-ui/switch@2.0.0":
-  "integrity" "sha512-rxbaLA4mWdDJIh7jwjySAH7r1yImQW6dgmmt0wp8r3gTsteQ1qZFl/qRhqUoQIWX74yDyphpABynhRV9DtL91Q=="
-  "resolved" "https://registry.npmjs.org/@chakra-ui/switch/-/switch-2.0.0.tgz"
-  "version" "2.0.0"
+"@chakra-ui/switch@2.0.1":
+  "version" "2.0.1"
   dependencies:
-    "@chakra-ui/checkbox" "2.0.0"
+    "@chakra-ui/checkbox" "2.0.1"
     "@chakra-ui/utils" "2.0.0"
 
-"@chakra-ui/system@>=2.0.0-next.0", "@chakra-ui/system@2.0.0":
-  "integrity" "sha512-1Ns0czQSoh1WAPTyDyA8wu8/+HZ/HgmNY9lwJeinDvRV+KDX9SclI5H1CrWaB8dbdCopo8Jc5umnaldndlCVKg=="
-  "resolved" "https://registry.npmjs.org/@chakra-ui/system/-/system-2.0.0.tgz"
-  "version" "2.0.0"
+"@chakra-ui/system@>=2.0.0-next.0", "@chakra-ui/system@2.0.2":
+  "version" "2.0.2"
   dependencies:
-    "@chakra-ui/color-mode" "2.0.0"
+    "@chakra-ui/color-mode" "2.0.2"
     "@chakra-ui/react-utils" "2.0.0"
     "@chakra-ui/styled-system" "2.0.0"
     "@chakra-ui/utils" "2.0.0"
@@ -565,27 +550,23 @@
     "@chakra-ui/utils" "2.0.0"
     "@ctrl/tinycolor" "^3.4.0"
 
-"@chakra-ui/theme@>=2.0.0-next.0", "@chakra-ui/theme@2.0.0":
-  "integrity" "sha512-dfRr6PZx22dsRiQmRTPIgYN1SorT+scHbGHzf7oTSPu32qApAzX7DbwP0S+gsT/3PKj55tMXcYaE9FQrGRGEyA=="
-  "resolved" "https://registry.npmjs.org/@chakra-ui/theme/-/theme-2.0.0.tgz"
-  "version" "2.0.0"
+"@chakra-ui/theme@>=2.0.0-next.0", "@chakra-ui/theme@2.0.1":
+  "version" "2.0.1"
   dependencies:
     "@chakra-ui/anatomy" "2.0.0"
     "@chakra-ui/theme-tools" "2.0.0"
     "@chakra-ui/utils" "2.0.0"
 
-"@chakra-ui/toast@2.0.0":
-  "integrity" "sha512-assmgzZwUD2N2jbYzlkJF+BjjINpRCu4v7c3N/XjWzdAdKG/ERYCIbYmKjoHUTfV8ZodmI9lj5ApfcpOdBk8sA=="
-  "resolved" "https://registry.npmjs.org/@chakra-ui/toast/-/toast-2.0.0.tgz"
-  "version" "2.0.0"
+"@chakra-ui/toast@2.0.2":
+  "version" "2.0.2"
   dependencies:
     "@chakra-ui/alert" "2.0.0"
     "@chakra-ui/close-button" "2.0.0"
     "@chakra-ui/hooks" "2.0.0"
     "@chakra-ui/portal" "2.0.0"
     "@chakra-ui/react-utils" "2.0.0"
-    "@chakra-ui/system" "2.0.0"
-    "@chakra-ui/theme" "2.0.0"
+    "@chakra-ui/system" "2.0.2"
+    "@chakra-ui/theme" "2.0.1"
     "@chakra-ui/transition" "2.0.0"
     "@chakra-ui/utils" "2.0.0"
 
@@ -2636,11 +2617,6 @@
     "node-fetch" "^2.6.1"
     "unfetch" "^4.2.0"
 
-"jquery@>=1.8.0":
-  "integrity" "sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw=="
-  "resolved" "https://registry.npmjs.org/jquery/-/jquery-3.6.0.tgz"
-  "version" "3.6.0"
-
 "js-tokens@^3.0.0 || ^4.0.0", "js-tokens@^4.0.0":
   "integrity" "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ=="
   "resolved" "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
@@ -3120,6 +3096,11 @@
   "resolved" "https://registry.npmjs.org/react-icons/-/react-icons-4.3.1.tgz"
   "version" "4.3.1"
 
+"react-image-gallery@^1.2.8":
+  "integrity" "sha512-7KbWcWChUMHRGyJHA/eH3injWF9/2WTlQXjV6fym1DqwrINSVIh1hLiqmujh/XANstW+osqSu5WFKKPy2F2gbA=="
+  "resolved" "https://registry.npmjs.org/react-image-gallery/-/react-image-gallery-1.2.8.tgz"
+  "version" "1.2.8"
+
 "react-intersection-observer@^8.32.0":
   "integrity" "sha512-TYKh52Zc0Uptp5/b4N91XydfSGKubEhgZRtcg1rhTKABXijc4Sdr1uTp5lJ8TN27jwUsdXxjHXtHa0kPj704sw=="
   "resolved" "https://registry.npmjs.org/react-intersection-observer/-/react-intersection-observer-8.34.0.tgz"
@@ -3219,7 +3200,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@*", "react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0", "react@^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.11.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0-rc.1", "react@^16.8.0-0 || >=17.0.1", "react@^17.0.2 || ^18.0.0-0", "react@^18.1.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16", "react@>=16.14.0", "react@>=16.6.0", "react@>=16.8 || ^17.0.0 || ^18.0.0", "react@>=16.8.0", "react@>=18", "react@18.1.0":
+"react@*", "react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0", "react@^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.11.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0-rc.1", "react@^16.8.0-0 || >=17.0.1", "react@^17.0.2 || ^18.0.0-0", "react@^18.1.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16", "react@>=16.14.0", "react@>=16.6.0", "react@>=16.8 || ^17.0.0 || ^18.0.0", "react@>=16.8.0", "react@>=18", "react@18.1.0":
   "integrity" "sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.1.0.tgz"
   "version" "18.1.0"

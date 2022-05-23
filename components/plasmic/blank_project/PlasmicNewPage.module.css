@@ -8,11 +8,11 @@
   align-items: center;
   min-width: 0;
   min-height: 0;
-  padding: 0px 0px 0px;
+  padding: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .root {
-    padding: 0px 0px 0px;
+    padding: 0px;
   }
 }
 .madisonopolyHeaderFinal:global(.__wab_instance) {
