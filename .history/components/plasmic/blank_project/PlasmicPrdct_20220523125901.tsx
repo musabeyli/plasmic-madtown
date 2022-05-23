@@ -103,34 +103,16 @@ function PlasmicPrdct__RenderFunc(props: {
 
   const images = [
     {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_back_cover.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_back_cover.JPG",
+      original: "/plasmic/blank_project/images/madisonopolyLogopng.png",
+      thumbnail: "https://picsum.photos/id/1018/250/150/",
     },
     {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_cover.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_cover.JPG",
+      original: "https://www.youtube.com/watch?v=0pDsfa7XyUY",
+      thumbnail: "https://picsum.photos/id/1015/250/150/",
     },
     {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay.JPG",
-    },
-    {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_cards.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_cards.JPG",
-    },
-    {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_side.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_side.JPG",
+      original: "https://picsum.photos/id/1019/1000/600/",
+      thumbnail: "https://picsum.photos/id/1019/250/150/",
     },
   ];
   const videos = [
@@ -146,7 +128,7 @@ function PlasmicPrdct__RenderFunc(props: {
       "clicked on image",
       event.target,
       "at index",
-      _imageGallery.getCurrentIndex()
+      this._imageGallery.getCurrentIndex()
     );
   }
 
@@ -155,7 +137,7 @@ function PlasmicPrdct__RenderFunc(props: {
   }
 
   function _onSlide(index) {
-    _resetVideo();
+    this._resetVideo();
     console.debug("slid to index", index);
   }
 
@@ -173,12 +155,12 @@ function PlasmicPrdct__RenderFunc(props: {
 
   function _handleInputChange(state, event) {
     if (event.target.value > 0) {
-      setState({ [state]: event.target.value });
+      this.setState({ [state]: event.target.value });
     }
   }
 
   function _handleCheckboxChange(state, event) {
-    setState({ [state]: event.target.checked });
+    this.setState({ [state]: event.target.checked });
   }
 
   function _handleThumbnailPositionChange(event) {
@@ -186,13 +168,15 @@ function PlasmicPrdct__RenderFunc(props: {
   }
 
   function _resetVideo() {
-    // setState({ showVideo: {} });
-    // if (this.state.showPlayButton) {
-    //   setState({ showGalleryPlayButton: true });
-    // }
-    // if (this.state.showFullscreenButton) {
-    //   this.setState({ showGalleryFullscreenButton: true });
-    // }
+    this.setState({ showVideo: {} });
+
+    if (this.state.showPlayButton) {
+      this.setState({ showGalleryPlayButton: true });
+    }
+
+    if (this.state.showFullscreenButton) {
+      this.setState({ showGalleryFullscreenButton: true });
+    }
   }
 
   function _toggleShowVideo(url) {
@@ -211,28 +195,10 @@ function PlasmicPrdct__RenderFunc(props: {
       }
     }
   }
-  const state = {
-    showIndex: false,
-    showBullets: true,
-    infinite: true,
-    showThumbnails: true,
-    showFullscreenButton: true,
-    showGalleryFullscreenButton: true,
-    showPlayButton: true,
-    showGalleryPlayButton: true,
-    showNav: true,
-    isRTL: false,
-    slideDuration: 450,
-    slideInterval: 2000,
-    slideOnThumbnailOver: false,
-    thumbnailPosition: "bottom",
-    showVideo: {},
-    useWindowKeyDown: true,
-  };
   function _renderVideo(item) {
     return (
       <div>
-        {state.showVideo[item.embedUrl] ? (
+        {this.state.showVideo[item.embedUrl] ? (
           <div className="video-wrapper">
             <a
               className="close-video"
@@ -247,7 +213,7 @@ function PlasmicPrdct__RenderFunc(props: {
             ></iframe>
           </div>
         ) : (
-          <a onClick={_toggleShowVideo.bind(this, item.embedUrl)}>
+          <a onClick={this._toggleShowVideo.bind(this, item.embedUrl)}>
             <div className="play-button"></div>
             <img className="image-gallery-image" src={item.original} />
             {item.description && (
@@ -787,11 +753,31 @@ function PlasmicPrdct__RenderFunc(props: {
           <ImageGallery
             originalHeight={"500"}
             items={images}
-            onImageLoad={_onImageLoad}
-            onPause={_onPause.bind(this)}
-            onScreenChange={_onScreenChange.bind(this)}
-            onPlay={_onPlay.bind(this)}
-            showBullets="true"
+            onClick={this._onImageClick.bind(this)}
+            onImageLoad={this._onImageLoad}
+            onSlide={this._onSlide.bind(this)}
+            onPause={this._onPause.bind(this)}
+            onScreenChange={this._onScreenChange.bind(this)}
+            onPlay={this._onPlay.bind(this)}
+            infinite={this.state.infinite}
+            showBullets={this.state.showBullets}
+            showFullscreenButton={
+              this.state.showFullscreenButton &&
+              this.state.showGalleryFullscreenButton
+            }
+            showPlayButton={
+              this.state.showPlayButton && this.state.showGalleryPlayButton
+            }
+            showThumbnails={this.state.showThumbnails}
+            showIndex={this.state.showIndex}
+            showNav={this.state.showNav}
+            isRTL={this.state.isRTL}
+            thumbnailPosition={this.state.thumbnailPosition}
+            slideDuration={parseInt(this.state.slideDuration)}
+            slideInterval={parseInt(this.state.slideInterval)}
+            slideOnThumbnailOver={this.state.slideOnThumbnailOver}
+            additionalClass="app-image-gallery"
+            useWindowKeyDown={this.state.useWindowKeyDown}
           />
           <FooterComponent
             data-plasmic-name={"footerComponent"}

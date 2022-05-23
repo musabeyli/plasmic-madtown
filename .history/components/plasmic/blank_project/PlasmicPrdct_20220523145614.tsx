@@ -104,33 +104,16 @@ function PlasmicPrdct__RenderFunc(props: {
   const images = [
     {
       original:
-        "/plasmic/blank_project/images/website_images/gamebox_back_cover.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_back_cover.JPG",
+        "/plasmic/blank_project/images/website_images/madisonopolyLogopng.png",
+      thumbnail: "https://picsum.photos/id/1018/250/150/",
     },
     {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_cover.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_cover.JPG",
+      original: "https://www.youtube.com/watch?v=0pDsfa7XyUY",
+      thumbnail: "https://picsum.photos/id/1015/250/150/",
     },
     {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay.JPG",
-    },
-    {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_cards.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_cards.JPG",
-    },
-    {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_side.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_side.JPG",
+      original: "https://picsum.photos/id/1019/1000/600/",
+      thumbnail: "https://picsum.photos/id/1019/250/150/",
     },
   ];
   const videos = [

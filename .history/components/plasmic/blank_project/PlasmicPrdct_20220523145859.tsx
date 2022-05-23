@@ -120,18 +120,6 @@ function PlasmicPrdct__RenderFunc(props: {
       thumbnail:
         "/plasmic/blank_project/images/website_images/gamebox_gameplay.JPG",
     },
-    {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_cards.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_cards.JPG",
-    },
-    {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_side.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_side.JPG",
-    },
   ];
   const videos = [
     {

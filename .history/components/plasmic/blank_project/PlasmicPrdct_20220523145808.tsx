@@ -115,22 +115,8 @@ function PlasmicPrdct__RenderFunc(props: {
         "/plasmic/blank_project/images/website_images/gamebox_cover.JPG",
     },
     {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay.JPG",
-    },
-    {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_cards.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_cards.JPG",
-    },
-    {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_side.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_side.JPG",
+      original: "https://picsum.photos/id/1019/1000/600/",
+      thumbnail: "https://picsum.photos/id/1019/250/150/",
     },
   ];
   const videos = [

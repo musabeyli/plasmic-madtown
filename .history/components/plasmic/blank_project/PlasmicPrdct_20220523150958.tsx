@@ -128,9 +128,9 @@ function PlasmicPrdct__RenderFunc(props: {
     },
     {
       original:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_side.JPG",
+        "/plasmic/blank_project/images/website_images/gamebox_gameplay_cards.JPG",
       thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_side.JPG",
+        "/plasmic/blank_project/images/website_images/gamebox_gameplay_cards.JPG",
     },
   ];
   const videos = [

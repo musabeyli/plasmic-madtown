@@ -100,37 +100,56 @@ function PlasmicPrdct__RenderFunc(props: {
     }
     setSelectedValue(e);
   };
-
+   _renderVideo(item) {
+    return (
+      <div>
+        {
+          this.state.showVideo[item.embedUrl] ?
+            <div className='video-wrapper'>
+                <a
+                  className='close-video'
+                  onClick={this._toggleShowVideo.bind(this, item.embedUrl)}
+                >
+                </a>
+                <iframe
+                  width='560'
+                  height='315'
+                  src={item.embedUrl}
+                  frameBorder='0'
+                  allowFullScreen
+                >
+                </iframe>
+            </div>
+          :
+            <a onClick={this._toggleShowVideo.bind(this, item.embedUrl)}>
+              <div className='play-button'></div>
+              <img className='image-gallery-image' src={item.original} />
+              {
+                item.description &&
+                  <span
+                    className='image-gallery-description'
+                    style={{right: '0', left: 'initial'}}
+                  >
+                    {item.description}
+                  </span>
+              }
+            </a>
+        }
+      </div>
+    );
+  }
   const images = [
     {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_back_cover.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_back_cover.JPG",
+      original: "/plasmic/blank_project/images/madisonopolyLogopng.png",
+      thumbnail: "https://picsum.photos/id/1018/250/150/",
     },
     {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_cover.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_cover.JPG",
+      original: "https://www.youtube.com/watch?v=0pDsfa7XyUY",
+      thumbnail: "https://picsum.photos/id/1015/250/150/",
     },
     {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay.JPG",
-    },
-    {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_cards.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_cards.JPG",
-    },
-    {
-      original:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_side.JPG",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/gamebox_gameplay_side.JPG",
+      original: "https://picsum.photos/id/1019/1000/600/",
+      thumbnail: "https://picsum.photos/id/1019/250/150/",
     },
   ];
   const videos = [
@@ -138,131 +157,8 @@ function PlasmicPrdct__RenderFunc(props: {
       url: "https://www.youtube.com/embed/ScMzIvxBSi4",
       type: "video",
       title: "some other video",
-      renderItem: _renderVideo.bind(this),
     },
   ];
-  function _onImageClick(event) {
-    console.debug(
-      "clicked on image",
-      event.target,
-      "at index",
-      _imageGallery.getCurrentIndex()
-    );
-  }
-
-  function _onImageLoad(event) {
-    console.debug("loaded image", event.target.src);
-  }
-
-  function _onSlide(index) {
-    _resetVideo();
-    console.debug("slid to index", index);
-  }
-
-  function _onPause(index) {
-    console.debug("paused on index", index);
-  }
-
-  function _onScreenChange(fullScreenElement) {
-    console.debug("isFullScreen?", !!fullScreenElement);
-  }
-
-  function _onPlay(index) {
-    console.debug("playing from index", index);
-  }
-
-  function _handleInputChange(state, event) {
-    if (event.target.value > 0) {
-      setState({ [state]: event.target.value });
-    }
-  }
-
-  function _handleCheckboxChange(state, event) {
-    setState({ [state]: event.target.checked });
-  }
-
-  function _handleThumbnailPositionChange(event) {
-    this.setState({ thumbnailPosition: event.target.value });
-  }
-
-  function _resetVideo() {
-    // setState({ showVideo: {} });
-    // if (this.state.showPlayButton) {
-    //   setState({ showGalleryPlayButton: true });
-    // }
-    // if (this.state.showFullscreenButton) {
-    //   this.setState({ showGalleryFullscreenButton: true });
-    // }
-  }
-
-  function _toggleShowVideo(url) {
-    this.state.showVideo[url] = !Boolean(this.state.showVideo[url]);
-    this.setState({
-      showVideo: this.state.showVideo,
-    });
-
-    if (this.state.showVideo[url]) {
-      if (this.state.showPlayButton) {
-        this.setState({ showGalleryPlayButton: false });
-      }
-
-      if (this.state.showFullscreenButton) {
-        this.setState({ showGalleryFullscreenButton: false });
-      }
-    }
-  }
-  const state = {
-    showIndex: false,
-    showBullets: true,
-    infinite: true,
-    showThumbnails: true,
-    showFullscreenButton: true,
-    showGalleryFullscreenButton: true,
-    showPlayButton: true,
-    showGalleryPlayButton: true,
-    showNav: true,
-    isRTL: false,
-    slideDuration: 450,
-    slideInterval: 2000,
-    slideOnThumbnailOver: false,
-    thumbnailPosition: "bottom",
-    showVideo: {},
-    useWindowKeyDown: true,
-  };
-  function _renderVideo(item) {
-    return (
-      <div>
-        {state.showVideo[item.embedUrl] ? (
-          <div className="video-wrapper">
-            <a
-              className="close-video"
-              onClick={this._toggleShowVideo.bind(this, item.embedUrl)}
-            ></a>
-            <iframe
-              width="560"
-              height="315"
-              src={item.embedUrl}
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
-          </div>
-        ) : (
-          <a onClick={_toggleShowVideo.bind(this, item.embedUrl)}>
-            <div className="play-button"></div>
-            <img className="image-gallery-image" src={item.original} />
-            {item.description && (
-              <span
-                className="image-gallery-description"
-                style={{ right: "0", left: "initial" }}
-              >
-                {item.description}
-              </span>
-            )}
-          </a>
-        )}
-      </div>
-    );
-  }
   return (
     <React.Fragment>
       {}
@@ -784,15 +680,7 @@ function PlasmicPrdct__RenderFunc(props: {
               </div>
             </div>
           </div>
-          <ImageGallery
-            originalHeight={"500"}
-            items={images}
-            onImageLoad={_onImageLoad}
-            onPause={_onPause.bind(this)}
-            onScreenChange={_onScreenChange.bind(this)}
-            onPlay={_onPlay.bind(this)}
-            showBullets="true"
-          />
+          <ImageGallery originalHeight={"500"} items={videos} />
           <FooterComponent
             data-plasmic-name={"footerComponent"}
             data-plasmic-override={overrides.footerComponent}
