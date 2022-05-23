@@ -116,6 +116,12 @@ function PlasmicPrdct__RenderFunc(props: {
     },
     {
       original:
+        "/plasmic/blank_project/images/website_images/gamebox_gameplay.jpg",
+      thumbnail:
+        "/plasmic/blank_project/images/website_images/gamebox_gameplay.jpg",
+    },
+    {
+      original:
         "/plasmic/blank_project/images/website_images/gamebox_gameplay_cards.jpg",
       thumbnail:
         "/plasmic/blank_project/images/website_images/gamebox_gameplay_cards.jpg",
