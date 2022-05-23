@@ -1627,7 +1627,6 @@ function PlasmicNewPage__RenderFunc(props: {
                   className={classNames("__wab_instance", sty.button__wiEwj)}
                   color={"blue" as const}
                   showEndIcon={true}
-                  onClick={() => router.push("/product")}
                 >
                   {"Buy now"}
                 </Button>

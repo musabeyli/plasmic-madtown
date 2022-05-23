@@ -55,7 +55,6 @@ import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: M7J874mTSvr
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: q8bdo62baej/icon
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: 980jwjq2w1h/icon
 import Icon28Icon from "./icons/PlasmicIcon__Icon28"; // plasmic-import: _UA6I6vZTD-/icon
-import { Router } from "next/router";
 
 export type PlasmicNewPage__VariantMembers = {};
 
@@ -97,7 +96,6 @@ function PlasmicNewPage__RenderFunc(props: {
   const handleImageClick = (sectionID) => {
     document.getElementById(sectionID).scrollIntoView({ behavior: "smooth" });
   };
-  const router = useRouter();
 
   return (
     <React.Fragment>
@@ -876,7 +874,6 @@ function PlasmicNewPage__RenderFunc(props: {
                             sty.button__wDtgy
                           )}
                           color={"blue" as const}
-                          onClick={() => router.push("/product")}
                         >
                           <div
                             className={classNames(
@@ -1137,7 +1134,6 @@ function PlasmicNewPage__RenderFunc(props: {
                           sty.button__y5X90
                         )}
                         color={"blue" as const}
-                        onClick={() => router.push("/product")}
                       >
                         <div
                           className={classNames(
@@ -1627,7 +1623,6 @@ function PlasmicNewPage__RenderFunc(props: {
                   className={classNames("__wab_instance", sty.button__wiEwj)}
                   color={"blue" as const}
                   showEndIcon={true}
-                  onClick={() => router.push("/product")}
                 >
                   {"Buy now"}
                 </Button>
