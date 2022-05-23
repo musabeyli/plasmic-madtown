@@ -892,7 +892,6 @@ function PlasmicNewPage__RenderFunc(props: {
                             sty.button__c53TY
                           )}
                           color={"clear" as const}
-                          onClick={() => handleImageClick("section1")}
                         >
                           <div
                             className={classNames(
@@ -1152,7 +1151,6 @@ function PlasmicNewPage__RenderFunc(props: {
                           sty.button__rs85P
                         )}
                         color={"clear" as const}
-                        onClick={() => handleImageClick("section1")}
                       >
                         <div
                           className={classNames(

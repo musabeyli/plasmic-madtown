@@ -3,23 +3,23 @@ import { NextApiRequest, NextApiResponse } from 'next'
 // import getStripe from '../../../utils/get-stripejs'
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
-
 export default async function handler(  
     req: NextApiRequest,
     res: NextApiResponse) {
-      console.log("sinan baba")
-      console.log(req.headers)
   if (req.method === 'POST') {
     try {
       // Create Checkout Sessions from body params.
       stripe.checkout
-      console.log(req.body)
+      console.log("HELLO")
+      console.log(req.query)
+      var y : number =+ req.query
+      console.log(yy)
       const session = await stripe.checkout.sessions.create({
         line_items: [
           {
             // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
             price: 'price_1L0wyILZ8TMriulmfiSITP5f',
-            quantity: "1",
+            quantity: req.query,
           },
         ],
         mode: 'payment',

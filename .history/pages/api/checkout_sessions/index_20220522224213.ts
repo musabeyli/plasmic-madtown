@@ -13,6 +13,7 @@ export default async function handler(
     try {
       // Create Checkout Sessions from body params.
       stripe.checkout
+      console.log("HELLO")
       console.log(req.body)
       const session = await stripe.checkout.sessions.create({
         line_items: [

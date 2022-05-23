@@ -3,16 +3,18 @@ import { NextApiRequest, NextApiResponse } from 'next'
 // import getStripe from '../../../utils/get-stripejs'
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
-
 export default async function handler(  
     req: NextApiRequest,
     res: NextApiResponse) {
-      console.log("sinan baba")
-      console.log(req.headers)
+useEffect(() => {
+  // Perform localStorage action
+  const item = localStorage.getItem('key')
+}, [])
   if (req.method === 'POST') {
     try {
       // Create Checkout Sessions from body params.
       stripe.checkout
+      console.log("HELLO")
       console.log(req.body)
       const session = await stripe.checkout.sessions.create({
         line_items: [

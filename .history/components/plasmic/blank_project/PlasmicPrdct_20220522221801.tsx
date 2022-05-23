@@ -93,9 +93,6 @@ function PlasmicPrdct__RenderFunc(props: {
   const [selectedValue, setSelectedValue] = useState("1");
   const handleChange = (e) => {
     console.log("Fruit Selected!!", e);
-    if (typeof window !== "undefined") {
-      localStorage.setItem("quantity", e);
-    }
     setSelectedValue(e);
   };
   return (

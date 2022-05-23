@@ -30,7 +30,7 @@ export default function CheckoutButton(props: Props) {
   });
 
   return (
-    <form action="/api/checkout_sessions" method="POST">
+    <form action="/api/checkout_sessions" method="POST" body={}>
       <section>
         <button type="submit" role="link">
           Checkout

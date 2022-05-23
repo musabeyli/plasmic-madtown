@@ -25,7 +25,6 @@ export default function CheckoutButton(props: Props) {
   }, []);
   useEffect(() => {
     // Update the document title using the browser API
-    console.log("mete mete atarlar");
     console.log(props.selectedValue);
   });
 

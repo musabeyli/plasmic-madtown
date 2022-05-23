@@ -9,7 +9,7 @@ interface Props {
   selectedValue: string;
 }
 
-export default function CheckoutButton(props: Props) {
+export default function CheckoutButton(props) {
   useEffect(() => {
     // Check to see if this is a redirect back from Checkout
     const query = new URLSearchParams(window.location.search);
@@ -25,12 +25,11 @@ export default function CheckoutButton(props: Props) {
   }, []);
   useEffect(() => {
     // Update the document title using the browser API
-    console.log("mete mete atarlar");
     console.log(props.selectedValue);
   });
 
   return (
-    <form action="/api/checkout_sessions" method="POST">
+    <form action="/api/checkout_sessions?quantity=3" method="POST">
       <section>
         <button type="submit" role="link">
           Checkout

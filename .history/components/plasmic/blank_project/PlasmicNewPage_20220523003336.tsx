@@ -315,7 +315,7 @@ function PlasmicNewPage__RenderFunc(props: {
                         "__wab_instance",
                         sty.button__rBpLx
                       )}
-                      onClick={() => handleImageClick("section1")}
+                      onClick={handleImageClick}
                     >
                       <div
                         className={classNames(
@@ -342,7 +342,6 @@ function PlasmicNewPage__RenderFunc(props: {
                   ) ? (
                     <Button
                       className={classNames("__wab_instance", sty.button__pXl4)}
-                      onClick={() => handleImageClick("section1")}
                     >
                       <div
                         className={classNames(
@@ -892,7 +891,6 @@ function PlasmicNewPage__RenderFunc(props: {
                             sty.button__c53TY
                           )}
                           color={"clear" as const}
-                          onClick={() => handleImageClick("section1")}
                         >
                           <div
                             className={classNames(
@@ -1152,7 +1150,6 @@ function PlasmicNewPage__RenderFunc(props: {
                           sty.button__rs85P
                         )}
                         color={"clear" as const}
-                        onClick={() => handleImageClick("section1")}
                       >
                         <div
                           className={classNames(

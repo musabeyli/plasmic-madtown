@@ -4,12 +4,7 @@ import { loadStripe } from "@stripe/stripe-js";
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
 loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || "");
-
-interface Props {
-  selectedValue: string;
-}
-
-export default function CheckoutButton(props: Props) {
+export default function CheckoutButton() {
   useEffect(() => {
     // Check to see if this is a redirect back from Checkout
     const query = new URLSearchParams(window.location.search);
@@ -25,12 +20,28 @@ export default function CheckoutButton(props: Props) {
   }, []);
   useEffect(() => {
     // Update the document title using the browser API
-    console.log("mete mete atarlar");
     console.log(props.selectedValue);
   });
 
+  // This function gets called at build time on server-side.
+  // It won't be called on client-side, so you can even do
+  // direct database queries.
+  export async function getStaticProps() {
+    // Call an external API endpoint to get posts.
+    // You can use any data fetching library
+    const res = await fetch("https://.../posts");
+    const posts = await res.json();
+
+    // By returning { props: { posts } }, the Blog component
+    // will receive `posts` as a prop at build time
+    return {
+      props: {
+        posts,
+      },
+    };
+  }
   return (
-    <form action="/api/checkout_sessions" method="POST">
+    <form action="/api/checkout_sessions?quantity=3" method="POST">
       <section>
         <button type="submit" role="link">
           Checkout
