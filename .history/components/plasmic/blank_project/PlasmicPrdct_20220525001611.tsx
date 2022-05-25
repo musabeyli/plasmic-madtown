@@ -57,7 +57,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import { fetchPostJSON } from "../../../utils/api-helpers";
 import getStripe from "../../../utils/get-stripejs";
 
-loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || "");
+loadStripe(process.env.STRIPE_SECRET_KEY || "");
 
 export type PlasmicPrdct__VariantMembers = {};
 
@@ -183,6 +183,40 @@ function PlasmicPrdct__RenderFunc(props: {
     }
   }
 
+  function _renderVideo(item) {
+    return (
+      <div>
+        {state.showVideo[item.embedUrl] ? (
+          <div className="video-wrapper">
+            <a
+              className="close-video"
+              onClick={this._toggleShowVideo.bind(this, item.embedUrl)}
+            ></a>
+            <iframe
+              width="560"
+              height="315"
+              src={item.embedUrl}
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+          </div>
+        ) : (
+          <a onClick={_toggleShowVideo.bind(this, item.embedUrl)}>
+            <div className="play-button"></div>
+            <img className="image-gallery-image" src={item.original} />
+            {item.description && (
+              <span
+                className="image-gallery-description"
+                style={{ right: "0", left: "initial" }}
+              >
+                {item.description}
+              </span>
+            )}
+          </a>
+        )}
+      </div>
+    );
+  }
   return (
     <React.Fragment>
       {}
