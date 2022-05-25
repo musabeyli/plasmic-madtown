@@ -203,7 +203,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
             ) : null}
           </p.Stack>
 
-          {/* <p.Stack
+          <p.Stack
             as={p.PlasmicLink}
             data-plasmic-name={"gameRules"}
             data-plasmic-override={overrides.gameRules}
@@ -236,7 +236,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
                 role={"img"}
               />
             ) : null}
-          </p.Stack> */}
+          </p.Stack>
 
           <p.Stack
             as={p.PlasmicLink}
@@ -361,7 +361,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
             ) : null}
           </p.Stack>
 
-          {/* <p.Stack
+          <p.Stack
             as={p.PlasmicLink}
             data-plasmic-name={"gameRules2"}
             data-plasmic-override={overrides.gameRules2}
@@ -378,7 +378,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
               />
             ) : null}
 
-            <div
+            {/* <div
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
@@ -386,7 +386,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
               )}
             >
               {"Game rules"}
-            </div>
+            </div> */}
 
             {false ? (
               <Icon4Icon
@@ -394,7 +394,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
                 role={"img"}
               />
             ) : null}
-          </p.Stack> */}
+          </p.Stack>
 
           <p.Stack
             as={p.PlasmicLink}

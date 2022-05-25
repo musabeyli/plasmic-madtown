@@ -361,7 +361,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
             ) : null}
           </p.Stack>
 
-          {/* <p.Stack
+          <p.Stack
             as={p.PlasmicLink}
             data-plasmic-name={"gameRules2"}
             data-plasmic-override={overrides.gameRules2}
@@ -394,7 +394,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
                 role={"img"}
               />
             ) : null}
-          </p.Stack> */}
+          </p.Stack>
 
           <p.Stack
             as={p.PlasmicLink}

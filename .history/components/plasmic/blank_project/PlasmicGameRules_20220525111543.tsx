@@ -109,7 +109,13 @@ function PlasmicGameRules__RenderFunc(props: {
               sty.madisonopolyHeaderFinal
             )}
           />
-          <PDFViewer></PDFViewer>
+          <Document
+            file={file}
+            options={options}
+            // onLoadSuccess={onDocumentLoadSuccess}
+          >
+            <Page />
+          </Document>
         </div>
       </div>
     </React.Fragment>

@@ -74,7 +74,7 @@ function PlasmicGameRules__RenderFunc(props: {
   const { variants, args, overrides, forNode } = props;
   const $props = props.args;
   const [file, setFile] = useState("../../../public/gaming_instructions.pdf");
-  const PDFViewer = dynamic(() => import("../../pdf-viewer"), {
+  const PDFViewer = dynamic(() => import(file), {
     ssr: false,
   });
   return (
@@ -109,7 +109,13 @@ function PlasmicGameRules__RenderFunc(props: {
               sty.madisonopolyHeaderFinal
             )}
           />
-          <PDFViewer></PDFViewer>
+          <Document
+            file={file}
+            options={options}
+            // onLoadSuccess={onDocumentLoadSuccess}
+          >
+            <Page />
+          </Document>
         </div>
       </div>
     </React.Fragment>

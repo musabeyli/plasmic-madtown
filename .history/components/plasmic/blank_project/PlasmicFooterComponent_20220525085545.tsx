@@ -153,7 +153,7 @@ function PlasmicFooterComponent__RenderFunc(props: {
                 {"About game"}
               </div>
 
-              {/* <Button
+              <Button
                 className={classNames("__wab_instance", sty.button__iynee)}
                 color={"clear" as const}
                 link={"/game-rules" as const}
@@ -169,7 +169,7 @@ function PlasmicFooterComponent__RenderFunc(props: {
                 >
                   {"Game Rules"}
                 </div>
-              </Button> */}
+              </Button>
 
               <Button
                 className={classNames("__wab_instance", sty.button___2XGXs)}

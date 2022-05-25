@@ -41,7 +41,6 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_blank_project.module.css"; // plasmic-import: wA73ZswqroE6r1m1xaxGJ1/projectcss
 import sty from "./PlasmicGameRules.module.css"; // plasmic-import: f6N1udh8AA/css
-import dynamic from "next/dynamic";
 
 export type PlasmicGameRules__VariantMembers = {};
 
@@ -59,11 +58,7 @@ export type PlasmicGameRules__OverridesType = {
 };
 
 export interface DefaultGameRulesProps {}
-const options = {
-  cMapUrl: "cmaps/",
-  cMapPacked: true,
-  standardFontDataUrl: "standard_fonts/",
-};
+
 function PlasmicGameRules__RenderFunc(props: {
   variants: PlasmicGameRules__VariantsArgs;
   args: PlasmicGameRules__ArgsType;
@@ -74,9 +69,6 @@ function PlasmicGameRules__RenderFunc(props: {
   const { variants, args, overrides, forNode } = props;
   const $props = props.args;
   const [file, setFile] = useState("../../../public/gaming_instructions.pdf");
-  const PDFViewer = dynamic(() => import("../../pdf-viewer"), {
-    ssr: false,
-  });
   return (
     <React.Fragment>
       {}
@@ -109,7 +101,12 @@ function PlasmicGameRules__RenderFunc(props: {
               sty.madisonopolyHeaderFinal
             )}
           />
-          <PDFViewer></PDFViewer>
+          <Document
+            file={file}
+            // onLoadSuccess={onDocumentLoadSuccess}
+          >
+            <Page />
+          </Document>
         </div>
       </div>
     </React.Fragment>
