@@ -4,7 +4,6 @@ import * as React from "react";
 import GlobalContextsProvider from "../components/plasmic/blank_project/PlasmicGlobalContextsProvider";
 import { ScreenVariantProvider } from "../components/plasmic/blank_project/PlasmicGlobalVariant__Screen";
 import { PlasmicAboutUs } from "../components/plasmic/blank_project/PlasmicAboutUs";
-import { NextSeo } from "next-seo";
 
 function AboutUs() {
   // Use PlasmicAboutUs to render this component as it was
@@ -26,8 +25,8 @@ function AboutUs() {
   return (
     <div>
       <NextSeo
-        title="About Us - Madisonopoly | Ultimate UW Madison Board Game"
-        description="About Us for Madisonopoly only board game of UW Madison"
+        title="Frequently Asked Questions - Madisonopoly | Ultimate UW Madison Board Game"
+        description="Frequently Asked Questions for Madisonopoly only board game of UW Madison"
       />
       <GlobalContextsProvider>
         <PlasmicAboutUs />

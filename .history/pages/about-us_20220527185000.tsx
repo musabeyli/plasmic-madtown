@@ -26,8 +26,8 @@ function AboutUs() {
   return (
     <div>
       <NextSeo
-        title="About Us - Madisonopoly | Ultimate UW Madison Board Game"
-        description="About Us for Madisonopoly only board game of UW Madison"
+        title="Frequently Asked Questions - Madisonopoly | Ultimate UW Madison Board Game"
+        description="Frequently Asked Questions for Madisonopoly only board game of UW Madison"
       />
       <GlobalContextsProvider>
         <PlasmicAboutUs />

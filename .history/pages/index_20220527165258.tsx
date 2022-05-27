@@ -28,7 +28,7 @@ function NewPage() {
       <NextSeo
         title="Madisonopoly | Ultimate UW Madison Board Game"
         description="only board game of UW Madison"
-        canonical="https://www.madisonopoly.com/"
+        canonical="https://www.canonical.ie/"
         openGraph={{
           url: "https://www.madisonopoly.com/",
           title: "Madisonopoly | Ultimate UW Madison Board Game",

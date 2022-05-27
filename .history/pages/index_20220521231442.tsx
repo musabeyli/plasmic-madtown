@@ -4,7 +4,6 @@ import * as React from "react";
 import GlobalContextsProvider from "../components/plasmic/blank_project/PlasmicGlobalContextsProvider";
 import { ScreenVariantProvider } from "../components/plasmic/blank_project/PlasmicGlobalVariant__Screen";
 import { PlasmicNewPage } from "../components/plasmic/blank_project/PlasmicNewPage";
-import { NextSeo } from "next-seo";
 
 function NewPage() {
   // Use PlasmicNewPage to render this component as it was
@@ -25,29 +24,6 @@ function NewPage() {
   // (https://nextjs.org/docs/advanced-features/custom-app).
   return (
     <div>
-      <NextSeo
-        title="Madisonopoly | Ultimate UW Madison Board Game"
-        description="only board game of UW Madison"
-        canonical="https://www.madisonopoly.com/"
-        openGraph={{
-          url: "https://www.madisonopoly.com/",
-          title: "Madisonopoly | Ultimate UW Madison Board Game",
-          description: "only board game of UW Madison",
-          site_name: "Madisonopoly | Ultimate UW Madison Board Game",
-        }}
-        twitter={{
-          handle: "@handle",
-          site: "@site",
-          cardType: "summary_large_image",
-        }}
-        additionalMetaTags={[
-          {
-            property: "keywords",
-            content:
-              "UW Madison Board Game, uw madison monopoly, UW-Madison Monopoly, University of Wisconsin Madison Board Game, University of Wisconsin Board Game, University of Wisconsin Madison Monopoly, uw madison board game, madisonopoly, Madison Board Game, madison board game",
-          },
-        ]}
-      />
       <GlobalContextsProvider>
         <PlasmicNewPage />
       </GlobalContextsProvider>

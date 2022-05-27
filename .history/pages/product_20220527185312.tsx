@@ -4,7 +4,6 @@ import * as React from "react";
 import GlobalContextsProvider from "../components/plasmic/blank_project/PlasmicGlobalContextsProvider";
 import { ScreenVariantProvider } from "../components/plasmic/blank_project/PlasmicGlobalVariant__Screen";
 import { PlasmicPrdct } from "../components/plasmic/blank_project/PlasmicPrdct";
-import { NextSeo } from "next-seo";
 
 function Prdct() {
   // Use PlasmicPrdct to render this component as it was
@@ -26,27 +25,8 @@ function Prdct() {
   return (
     <div>
       <NextSeo
-        title="Madisonopoly | Ultimate UW Madison Board Game"
-        description="only board game of UW Madison"
-        canonical="https://www.madisonopoly.com/"
-        openGraph={{
-          url: "https://www.madisonopoly.com/",
-          title: "Madisonopoly | Ultimate UW Madison Board Game",
-          description: "only board game of UW Madison",
-          site_name: "Madisonopoly | Ultimate UW Madison Board Game",
-        }}
-        twitter={{
-          handle: "@handle",
-          site: "@site",
-          cardType: "summary_large_image",
-        }}
-        additionalMetaTags={[
-          {
-            property: "keywords",
-            content:
-              "UW Madison Board Game, uw madison monopoly, UW-Madison Monopoly, University of Wisconsin Madison Board Game, University of Wisconsin Board Game, University of Wisconsin Madison Monopoly, uw madison board game, madisonopoly, Madison Board Game, madison board game",
-          },
-        ]}
+        title="About Us - Madisonopoly | Ultimate UW Madison Board Game"
+        description="About Us for Madisonopoly only board game of UW Madison"
       />
       <GlobalContextsProvider>
         <PlasmicPrdct />
