@@ -160,9 +160,7 @@ function PlasmicNewPage__RenderFunc(props: {
                     platform={"nextjs"}
                   >
                     <p.PlasmicImg
-                      alt={
-                        "Madisonopoly Board Game - Ultimate UW Madison Gift - UW Madison Board Game"
-                      }
+                      alt={"Madisonopoly Board Game"}
                       className={classNames(sty.img__joDPb)}
                       displayHeight={
                         hasVariant(globalVariants, "screen", "mobileOnly")
@@ -216,6 +214,19 @@ function PlasmicNewPage__RenderFunc(props: {
                     {"About Us"}
                   </p.PlasmicLink>
                 </React.Fragment>
+              }
+              openButton={
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__z6Lcw)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"none" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  src={"https://static1.plasmic.app/menu.svg" as const}
+                />
               }
               responsiveBreakpoint={768 as const}
             />
@@ -326,9 +337,7 @@ function PlasmicNewPage__RenderFunc(props: {
                       triggerOnce={true}
                     >
                       <p.PlasmicImg
-                        alt={
-                          "Madison 1980s - Madisonopoly UW Madison Ultimate Board Game - UW Madison Gifts"
-                        }
+                        alt={""}
                         className={classNames(sty.img___16GhS)}
                         displayHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
@@ -361,9 +370,7 @@ function PlasmicNewPage__RenderFunc(props: {
                       triggerOnce={true}
                     >
                       <p.PlasmicImg
-                        alt={
-                          "Madison 2022 - Madisonopoly UW Madison Ultimate Board Game - UW Madison Gifts"
-                        }
+                        alt={""}
                         className={classNames(sty.img___5BPBt)}
                         displayHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
@@ -396,9 +403,7 @@ function PlasmicNewPage__RenderFunc(props: {
                       triggerOnce={true}
                     >
                       <p.PlasmicImg
-                        alt={
-                          "Madison Future - Madisonopoly UW Madison Ultimate Board Game - UW Madison Gifts"
-                        }
+                        alt={""}
                         className={classNames(sty.img__p1XyF)}
                         displayHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
@@ -430,9 +435,7 @@ function PlasmicNewPage__RenderFunc(props: {
 
                 <Tilt className={classNames("__wab_instance", sty.tilt__sQbKh)}>
                   <p.PlasmicImg
-                    alt={
-                      "Madisonopoly UW Madison Board Game - Ultimate UW Madison Gift"
-                    }
+                    alt={""}
                     className={classNames(sty.img__hNv8P)}
                     displayHeight={"auto" as const}
                     displayMaxHeight={"none" as const}
@@ -482,9 +485,7 @@ function PlasmicNewPage__RenderFunc(props: {
                             triggerOnce={true}
                           >
                             <p.PlasmicImg
-                              alt={
-                                "Madisonopoly Dare Cards - Madisonopoly UW Madison Ultimate Board Game - Ultimate UW Madison Gifts"
-                              }
+                              alt={""}
                               className={classNames(sty.img__r5KG4)}
                               displayHeight={"auto" as const}
                               displayMaxHeight={"300px" as const}
@@ -524,9 +525,7 @@ function PlasmicNewPage__RenderFunc(props: {
                               triggerOnce={true}
                             >
                               <p.PlasmicImg
-                                alt={
-                                  "Madison 1980s - Madisonopoly UW Madison Ultimate Board Game - UW Madison Gifts"
-                                }
+                                alt={""}
                                 className={classNames(sty.img__fZvq)}
                                 displayHeight={
                                   hasVariant(
@@ -563,9 +562,7 @@ function PlasmicNewPage__RenderFunc(props: {
                               triggerOnce={true}
                             >
                               <p.PlasmicImg
-                                alt={
-                                  "Madison 2022 - Madisonopoly UW Madison Ultimate Board Game - UW Madison Gifts"
-                                }
+                                alt={""}
                                 className={classNames(sty.img__rPvCc)}
                                 displayHeight={
                                   hasVariant(
@@ -602,9 +599,7 @@ function PlasmicNewPage__RenderFunc(props: {
                               triggerOnce={true}
                             >
                               <p.PlasmicImg
-                                alt={
-                                  "Madison Future - Madisonopoly UW Madison Ultimate Board Game - UW Madison Gifts"
-                                }
+                                alt={""}
                                 className={classNames(sty.img___4PhXr)}
                                 displayHeight={
                                   hasVariant(
@@ -717,9 +712,7 @@ function PlasmicNewPage__RenderFunc(props: {
                                 )}
                               >
                                 <p.PlasmicImg
-                                  alt={
-                                    "Madison in 1980s - Madisonopoly Board Game - Ultimate UW Madison Gift - UW Madison Board Game"
-                                  }
+                                  alt={""}
                                   className={classNames(sty.img__dgEKh)}
                                   displayHeight={
                                     hasVariant(
@@ -757,9 +750,7 @@ function PlasmicNewPage__RenderFunc(props: {
                                 />
 
                                 <p.PlasmicImg
-                                  alt={
-                                    "Madison in 2022 - Madisonopoly Board Game - Ultimate UW Madison Gift - UW Madison Board Game"
-                                  }
+                                  alt={""}
                                   className={classNames(sty.img__bbLuV)}
                                   displayHeight={
                                     hasVariant(
@@ -797,9 +788,7 @@ function PlasmicNewPage__RenderFunc(props: {
                                 />
 
                                 <p.PlasmicImg
-                                  alt={
-                                    "Madison in future - Madisonopoly Board Game - Ultimate UW Madison Gift - UW Madison Board Game"
-                                  }
+                                  alt={""}
                                   className={classNames(sty.img__jqIhQ)}
                                   displayHeight={
                                     hasVariant(
@@ -909,9 +898,7 @@ function PlasmicNewPage__RenderFunc(props: {
                         triggerOnce={true}
                       >
                         <p.PlasmicImg
-                          alt={
-                            "Madisonopoly Dare Cards - Madisonopoly UW Madison Ultimate Board Game - Ultimate UW Madison Gifts"
-                          }
+                          alt={""}
                           className={classNames(sty.img__o2PHu)}
                           displayHeight={"auto" as const}
                           displayMaxHeight={"300px" as const}
@@ -953,9 +940,7 @@ function PlasmicNewPage__RenderFunc(props: {
                           triggerOnce={true}
                         >
                           <p.PlasmicImg
-                            alt={
-                              "Madison in 1980s - Madisonopoly Board Game - Ultimate UW Madison Gift - UW Madison Board Game"
-                            }
+                            alt={""}
                             className={classNames(sty.img__vb9Iz)}
                             displayHeight={
                               hasVariant(globalVariants, "screen", "mobileOnly")
@@ -988,9 +973,7 @@ function PlasmicNewPage__RenderFunc(props: {
                           triggerOnce={true}
                         >
                           <p.PlasmicImg
-                            alt={
-                              "Madison in 2022 - Madisonopoly Board Game - Ultimate UW Madison Gift - UW Madison Board Game"
-                            }
+                            alt={""}
                             className={classNames(sty.img__fSeS1)}
                             displayHeight={
                               hasVariant(globalVariants, "screen", "mobileOnly")
@@ -1024,9 +1007,7 @@ function PlasmicNewPage__RenderFunc(props: {
                           triggerOnce={true}
                         >
                           <p.PlasmicImg
-                            alt={
-                              "Madison in future - Madisonopoly Board Game - Ultimate UW Madison Gift - UW Madison Board Game"
-                            }
+                            alt={""}
                             className={classNames(sty.img__f871I)}
                             displayHeight={
                               hasVariant(globalVariants, "screen", "mobileOnly")
@@ -1170,9 +1151,7 @@ function PlasmicNewPage__RenderFunc(props: {
                   speed={20 as const}
                 >
                   <p.PlasmicImg
-                    alt={
-                      "Madisonopoly UW Madison Board Game - Ultimate UW Madison Gift"
-                    }
+                    alt={""}
                     className={classNames(sty.img__aNdw)}
                     displayHeight={
                       hasVariant(globalVariants, "screen", "mobileOnly")
@@ -1212,9 +1191,7 @@ function PlasmicNewPage__RenderFunc(props: {
                       className={classNames(projectcss.all, sty.freeBox___0CYc)}
                     >
                       <p.PlasmicImg
-                        alt={
-                          "Board Game Icon - Madisonopoly UW Madison Board Game - Ultimate UW Madison Gift"
-                        }
+                        alt={""}
                         className={classNames(sty.img__tejTe)}
                         displayHeight={"auto" as const}
                         displayMaxHeight={"none" as const}
@@ -1322,9 +1299,7 @@ function PlasmicNewPage__RenderFunc(props: {
                   speed={20 as const}
                 >
                   <p.PlasmicImg
-                    alt={
-                      "Madisonopoly College Library Title Deed Card - Madisonopoly UW Madison Board Game - Ultimate UW Madison Gift"
-                    }
+                    alt={""}
                     className={classNames(sty.img__zkRiR)}
                     displayHeight={"auto" as const}
                     displayMaxHeight={"none" as const}
@@ -1436,16 +1411,14 @@ function PlasmicNewPage__RenderFunc(props: {
                         )}
                       >
                         <p.PlasmicImg
-                          alt={
-                            "Wisconsin Capital Icon - Madisonopoly UW Madison Board Game - Ultimate UW Madison Gift"
-                          }
+                          alt={""}
                           className={classNames(sty.img__ri0Zb)}
                           displayHeight={"auto" as const}
                           displayMaxHeight={"none" as const}
                           displayMaxWidth={"100%" as const}
                           displayMinHeight={"0" as const}
                           displayMinWidth={"0" as const}
-                          displayWidth={"590px" as const}
+                          displayWidth={"auto" as const}
                           loading={"lazy" as const}
                           src={{
                             src: "/plasmic/blank_project/images/wisconsinCapitalLogopng.png",
@@ -1467,9 +1440,7 @@ function PlasmicNewPage__RenderFunc(props: {
                   speed={20 as const}
                 >
                   <p.PlasmicImg
-                    alt={
-                      "Madisonopoly Dare Card Example - Madisonopoly UW Madison Ultimate Board Game - Ultimate UW Madison Gifts"
-                    }
+                    alt={""}
                     className={classNames(sty.img___6Sqeq)}
                     displayHeight={"auto" as const}
                     displayMaxHeight={"none" as const}
@@ -1494,9 +1465,7 @@ function PlasmicNewPage__RenderFunc(props: {
                 >
                   {true ? (
                     <p.PlasmicImg
-                      alt={
-                        "Madisonopoly Dare Cards - Madisonopoly UW Madison Ultimate Board Game - Ultimate UW Madison Gifts"
-                      }
+                      alt={""}
                       className={classNames(sty.img__okx7H)}
                       displayHeight={"auto" as const}
                       displayMaxHeight={"none" as const}
@@ -1522,9 +1491,7 @@ function PlasmicNewPage__RenderFunc(props: {
                       className={classNames(projectcss.all, sty.freeBox__tsSHj)}
                     >
                       <p.PlasmicImg
-                        alt={
-                          "Madisonopoly Dare Cards - Madisonopoly UW Madison Ultimate Board Game - Ultimate UW Madison Gifts"
-                        }
+                        alt={""}
                         className={classNames(sty.img__jTscR)}
                         displayHeight={"auto" as const}
                         displayMaxHeight={"none" as const}
@@ -1626,9 +1593,7 @@ function PlasmicNewPage__RenderFunc(props: {
 
                 {true ? (
                   <p.PlasmicImg
-                    alt={
-                      "Madisonopoly Campus Mail Cards - Madisonopoly UW Madison Ultimate Board Game - Ultimate UW Madison Gifts"
-                    }
+                    alt={""}
                     className={classNames(sty.img__bo3Vy)}
                     displayHeight={"auto" as const}
                     displayMaxHeight={"none" as const}
@@ -1657,7 +1622,48 @@ function PlasmicNewPage__RenderFunc(props: {
                           projectcss.all,
                           sty.freeBox__o0Usi
                         )}
-                      ></div>
+                      >
+                        {true ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__fkJ7X
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__gyJa4
+                              )}
+                            >
+                              {"Mail"}
+                            </div>
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__rqORr
+                              )}
+                            >
+                              {""}
+                            </div>
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__zmsOj
+                              )}
+                            >
+                              {
+                                "The high color fidelity and low compression of ProRes let you record, edit, and deliver broadcast-ready content on the go. Now you can complete a project in ProRes entirely on your iPhone. Or easily bring ProRes videos from your iPhone into Final Cut Pro on your Mac."
+                              }
+                            </div>
+                          </div>
+                        ) : null}
+                      </div>
                     ) : null}
                     {(
                       hasVariant(globalVariants, "screen", "mobileOnly")
@@ -1701,9 +1707,7 @@ function PlasmicNewPage__RenderFunc(props: {
             hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
           ) ? (
             <p.PlasmicImg
-              alt={
-                "Madison in future - Madisonopoly UW Madison Ultimate Board Game - UW Madison Gifts"
-              }
+              alt={""}
               className={classNames(sty.img__mm8Ow)}
               displayHeight={
                 hasVariant(globalVariants, "screen", "mobileOnly")

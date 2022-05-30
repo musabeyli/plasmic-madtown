@@ -1437,7 +1437,7 @@ function PlasmicNewPage__RenderFunc(props: {
                       >
                         <p.PlasmicImg
                           alt={
-                            "Wisconsin Capital Icon - Madisonopoly UW Madison Board Game - Ultimate UW Madison Gift"
+                            "Wisconsin Capital - Madisonopoly UW Madison Board Game - Ultimate UW Madison Gift"
                           }
                           className={classNames(sty.img__ri0Zb)}
                           displayHeight={"auto" as const}
@@ -1701,9 +1701,7 @@ function PlasmicNewPage__RenderFunc(props: {
             hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
           ) ? (
             <p.PlasmicImg
-              alt={
-                "Madison in future - Madisonopoly UW Madison Ultimate Board Game - UW Madison Gifts"
-              }
+              alt={""}
               className={classNames(sty.img__mm8Ow)}
               displayHeight={
                 hasVariant(globalVariants, "screen", "mobileOnly")

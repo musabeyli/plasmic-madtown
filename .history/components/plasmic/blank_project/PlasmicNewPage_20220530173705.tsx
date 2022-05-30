@@ -1702,7 +1702,7 @@ function PlasmicNewPage__RenderFunc(props: {
           ) ? (
             <p.PlasmicImg
               alt={
-                "Madison in future - Madisonopoly UW Madison Ultimate Board Game - UW Madison Gifts"
+                "Madison 2022 - Madisonopoly UW Madison Ultimate Board Game - UW Madison Gifts"
               }
               className={classNames(sty.img__mm8Ow)}
               displayHeight={

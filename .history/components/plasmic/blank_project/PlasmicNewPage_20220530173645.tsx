@@ -1701,9 +1701,7 @@ function PlasmicNewPage__RenderFunc(props: {
             hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
           ) ? (
             <p.PlasmicImg
-              alt={
-                "Madison in future - Madisonopoly UW Madison Ultimate Board Game - UW Madison Gifts"
-              }
+              alt={""}
               className={classNames(sty.img__mm8Ow)}
               displayHeight={
                 hasVariant(globalVariants, "screen", "mobileOnly")
