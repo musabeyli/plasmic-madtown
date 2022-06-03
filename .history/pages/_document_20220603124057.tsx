@@ -22,21 +22,14 @@ export default class MyDocument extends Document {
           `,
             }}
           />
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Y6G8YVLTMP"
-          ></script>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6G8YVLTMP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-              gtag('config', 'G-Y6G8YVLTMP');
-          `,
-            }}
-          />
+  gtag('config', 'G-Y6G8YVLTMP');
+</script>
         </Head>
         <body>
           <Main />

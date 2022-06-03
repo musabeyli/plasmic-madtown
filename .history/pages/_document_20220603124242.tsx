@@ -29,11 +29,11 @@ export default class MyDocument extends Document {
           <script
             dangerouslySetInnerHTML={{
               __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-              gtag('config', 'G-Y6G8YVLTMP');
+  gtag('config', 'G-Y6G8YVLTMP');
           `,
             }}
           />
