@@ -32,8 +32,11 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
 } from "@plasmicapp/react-web";
+import { Input, useColorModeValue, IconButton } from "@chakra-ui/react";
+import { BiMailSend } from "react-icons/bi";
+
 import Button from "../../Button"; // plasmic-import: aOTvFzJBlc_/component
 
 import { useScreenVariants as useScreenVariantsabUxTrbG0Cf5V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AbUXTrbG0Cf5V/globalVariant
@@ -90,7 +93,7 @@ function PlasmicFooterComponent__RenderFunc(props: {
   const $props = args;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsabUxTrbG0Cf5V()
+    screen: useScreenVariantsabUxTrbG0Cf5V(),
   });
 
   return (
@@ -140,7 +143,7 @@ function PlasmicFooterComponent__RenderFunc(props: {
                   src: "/plasmic/blank_project/images/madisonopolyLogopng.png",
                   fullWidth: 914,
                   fullHeight: 335,
-                  aspectRatio: undefined
+                  aspectRatio: undefined,
                 }}
               />
             </p.Stack>
@@ -197,24 +200,26 @@ function PlasmicFooterComponent__RenderFunc(props: {
                   {"FAQs"}
                 </div>
               </Button>
-
-              {true ? (
-                <Button
-                  className={classNames("__wab_instance", sty.button__cudSo)}
-                  color={"clear" as const}
-                  size={"minimal" as const}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___1PxHr
-                    )}
-                  >
-                    {"Status"}
-                  </div>
-                </Button>
-              ) : null}
+              <p.Stack direction={"row"}>
+                <Input
+                  placeholder={"Your email address"}
+                  bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
+                  border={0}
+                  _focus={{
+                    bg: "whiteAlpha.300",
+                  }}
+                />
+                <IconButton
+                  size={"lg"}
+                  bg={"green.800"}
+                  color={"green.800"}
+                  _hover={{
+                    bg: "green.600",
+                  }}
+                  aria-label="Subscribe"
+                  icon={<BiMailSend />}
+                />
+              </p.Stack>
             </p.Stack>
           </div>
 
@@ -224,16 +229,6 @@ function PlasmicFooterComponent__RenderFunc(props: {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__rWe14)}
             >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__lEk3W
-                )}
-              >
-                {"Company"}
-              </div>
-
               <Button
                 className={classNames("__wab_instance", sty.button__yxM5)}
                 color={"clear" as const}
@@ -267,41 +262,6 @@ function PlasmicFooterComponent__RenderFunc(props: {
                   {"Email: contact@madisonopoly.com"}
                 </div>
               </Button>
-
-              {true ? (
-                <Button
-                  className={classNames("__wab_instance", sty.button__byW3N)}
-                  color={"clear" as const}
-                  size={"minimal" as const}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__jaLiM
-                    )}
-                  >
-                    {"Careers"}
-                  </div>
-                </Button>
-              ) : null}
-              {true ? (
-                <Button
-                  className={classNames("__wab_instance", sty.button__vapLl)}
-                  color={"clear" as const}
-                  size={"minimal" as const}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___0FlZ
-                    )}
-                  >
-                    {"Media"}
-                  </div>
-                </Button>
-              ) : null}
             </p.Stack>
           </div>
         </p.Stack>
@@ -313,7 +273,7 @@ function PlasmicFooterComponent__RenderFunc(props: {
 const PlasmicDescendants = {
   root: ["root", "columns", "img"],
   columns: ["columns", "img"],
-  img: ["img"]
+  img: ["img"],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -360,7 +320,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicFooterComponent__ArgProps,
-          internalVariantPropNames: PlasmicFooterComponent__VariantProps
+          internalVariantPropNames: PlasmicFooterComponent__VariantProps,
         }),
       [props, nodeName]
     );
@@ -369,7 +329,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
   if (nodeName === "root") {
@@ -390,7 +350,7 @@ export const PlasmicFooterComponent = Object.assign(
 
     // Metadata about props expected for PlasmicFooterComponent
     internalVariantProps: PlasmicFooterComponent__VariantProps,
-    internalArgProps: PlasmicFooterComponent__ArgProps
+    internalArgProps: PlasmicFooterComponent__ArgProps,
   }
 );
 
