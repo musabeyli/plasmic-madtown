@@ -8,7 +8,7 @@
   align-items: center;
   min-width: 0;
   min-height: 0;
-  padding: 0px;
+  padding: 0px 0px 1054px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .root {
@@ -401,7 +401,7 @@
 }
 .freeBox___2Rnob {
   display: flex;
-  position: relative;
+  position: sticky;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -597,12 +597,11 @@
 .freeBox__gyVvI {
   flex-direction: column;
   display: flex;
-  position: sticky;
-  background: #ffffff;
+  position: relative;
   width: 100%;
   margin-right: 0px;
   margin-left: 0px;
-  plasmic-display-none: false;
+  /* plasmic-display-none: false; */
   margin-top: 135px;
   align-self: center;
   left: 0px;
