@@ -131,7 +131,9 @@ export default function Simple() {
                   type={state === "success" ? "button" : "submit"}
                 >
                   {state === "success" ? <CheckIcon /> : "Submit"}
-                  {state === "success" ? setShowNewsLetterForm(false) : "a"}
+                  {state === "success"
+                    ? setShowNewsLetterForm(false)
+                    : setShowNewsLetterForm(true)}
                 </Button>
               </FormControl>
             </Stack>
