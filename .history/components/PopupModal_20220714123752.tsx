@@ -40,7 +40,7 @@ export default function Simple() {
         <Flex position="fixed" bottom="0" right="0" py={12}>
           <Container
             maxW={"lg"}
-            bg={"whiteAlpha.100"}
+            bg={useColorModeValue("white", "whiteAlpha.100")}
             boxShadow={"xl"}
             rounded={"lg"}
             p={6}

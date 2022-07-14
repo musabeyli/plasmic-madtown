@@ -40,7 +40,7 @@ export default function Simple() {
         <Flex position="fixed" bottom="0" right="0" py={12}>
           <Container
             maxW={"lg"}
-            bg={"whiteAlpha.100"}
+            bg={useColorModeValue("white", "whiteAlpha.100")}
             boxShadow={"xl"}
             rounded={"lg"}
             p={6}
@@ -92,7 +92,7 @@ export default function Simple() {
                   _placeholder={{
                     color: "gray.400",
                   }}
-                  borderColor={"gray.700"}
+                  borderColor={useColorModeValue("gray.300", "gray.700")}
                   id={"name"}
                   required
                   placeholder={"Your Name"}
@@ -111,7 +111,7 @@ export default function Simple() {
                   _placeholder={{
                     color: "gray.400",
                   }}
-                  borderColor={"gray.700"}
+                  borderColor={useColorModeValue("gray.300", "gray.700")}
                   id={"email"}
                   type={"email"}
                   required
