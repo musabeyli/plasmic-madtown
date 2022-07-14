@@ -32,7 +32,7 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 
 import { useScreenVariants as useScreenVariantsabUxTrbG0Cf5V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AbUXTrbG0Cf5V/globalVariant
@@ -79,11 +79,23 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
 
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+
+        props.args
+      ),
+    [props.args]
+  );
+
+  const $props = args;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsabUxTrbG0Cf5V(),
+    screen: useScreenVariantsabUxTrbG0Cf5V()
   });
 
   return (
@@ -143,13 +155,13 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
                     src: "/plasmic/blank_project/images/madisonopolyLogopng.png",
                     fullWidth: 914,
                     fullHeight: 335,
-                    aspectRatio: undefined,
+                    aspectRatio: undefined
                   }
                 : {
                     src: "/plasmic/blank_project/images/madisonopolyLogopng.png",
                     fullWidth: 914,
                     fullHeight: 335,
-                    aspectRatio: undefined,
+                    aspectRatio: undefined
                   }
             }
             title={
@@ -203,7 +215,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
             ) : null}
           </p.Stack>
 
-          {/* <p.Stack
+          <p.Stack
             as={p.PlasmicLink}
             data-plasmic-name={"gameRules"}
             data-plasmic-override={overrides.gameRules}
@@ -236,7 +248,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
                 role={"img"}
               />
             ) : null}
-          </p.Stack> */}
+          </p.Stack>
 
           <p.Stack
             as={p.PlasmicLink}
@@ -361,7 +373,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
             ) : null}
           </p.Stack>
 
-          {/* <p.Stack
+          <p.Stack
             as={p.PlasmicLink}
             data-plasmic-name={"gameRules2"}
             data-plasmic-override={overrides.gameRules2}
@@ -394,7 +406,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
                 role={"img"}
               />
             ) : null}
-          </p.Stack> */}
+          </p.Stack>
 
           <p.Stack
             as={p.PlasmicLink}
@@ -473,7 +485,7 @@ const PlasmicDescendants = {
     "faq",
     "aboutUs2",
     "gameRules2",
-    "faq2",
+    "faq2"
   ],
   img: ["img"],
   aboutUs: ["aboutUs"],
@@ -481,7 +493,7 @@ const PlasmicDescendants = {
   faq: ["faq"],
   aboutUs2: ["aboutUs2"],
   gameRules2: ["gameRules2"],
-  faq2: ["faq2"],
+  faq2: ["faq2"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -527,18 +539,22 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicMadisonopolyHeaderFinal__ArgProps,
-      internalVariantPropNames: PlasmicMadisonopolyHeaderFinal__VariantProps,
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicMadisonopolyHeaderFinal__ArgProps,
+          internalVariantPropNames: PlasmicMadisonopolyHeaderFinal__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicMadisonopolyHeaderFinal__RenderFunc({
       variants,
       args,
       overrides,
-      forNode: nodeName,
+      forNode: nodeName
     });
   };
   if (nodeName === "root") {
@@ -564,7 +580,7 @@ export const PlasmicMadisonopolyHeaderFinal = Object.assign(
 
     // Metadata about props expected for PlasmicMadisonopolyHeaderFinal
     internalVariantProps: PlasmicMadisonopolyHeaderFinal__VariantProps,
-    internalArgProps: PlasmicMadisonopolyHeaderFinal__ArgProps,
+    internalArgProps: PlasmicMadisonopolyHeaderFinal__ArgProps
   }
 );
 

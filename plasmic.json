@@ -44,17 +44,11 @@
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         },
         {
-          "id": "Tg8iODh_BQ",
-          "name": "EmbedCss",
-          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
-        },
-        {
           "id": "PKldDYkH42",
           "name": "Embed",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "r3ASNrnyvLLLAtDvzUioQ",
@@ -73,8 +67,7 @@
           "name": "Slider",
           "componentImportPath": "react-slick"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "84wxoth5npGrp6RRXPL88z",
@@ -98,8 +91,7 @@
           "name": "ParallaxProviderWrapper",
           "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "szjgMQpPpxhmkjnaBvZQJG",
@@ -118,8 +110,7 @@
           "name": "Tilt",
           "componentImportPath": "@plasmicpkgs/react-parallax-tilt"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
@@ -138,8 +129,7 @@
           "name": "Reveal",
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -158,13 +148,12 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "wA73ZswqroE6r1m1xaxGJ1",
       "projectApiToken": "IfD6LNcMAarnAcXXen6vs7HAEzrhJHHvfAyRdDckdc5lVv7SNweMPcg33cyOZylMCdt0DhEsYm51mn0T5gBfg",
-      "projectName": "Blank project",
+      "projectName": "Madisonopoly",
       "version": "latest",
       "cssFilePath": "plasmic/blank_project/plasmic_blank_project.module.css",
       "components": [
@@ -646,26 +635,6 @@
           "filePath": "../public/plasmic/blank_project/images/cheese1Png.png"
         },
         {
-          "id": "QyL5KwPla-6",
-          "name": "image",
-          "filePath": "../public/plasmic/blank_project/images/image.png"
-        },
-        {
-          "id": "UCJS1jdIROg",
-          "name": "image 2",
-          "filePath": "../public/plasmic/blank_project/images/image2.png"
-        },
-        {
-          "id": "OCJaowFGWR7",
-          "name": "image 3",
-          "filePath": "../public/plasmic/blank_project/images/image3.png"
-        },
-        {
-          "id": "r5bFKo1-XfF",
-          "name": "image 4",
-          "filePath": "../public/plasmic/blank_project/images/image4.png"
-        },
-        {
           "id": "gHUu0Ba9Q",
           "name": "gamebox-board-detailed-PhotoRoom.png",
           "filePath": "../public/plasmic/blank_project/images/gameboxBoardDetailedPhotoRoompng.png"
@@ -721,194 +690,9 @@
           "filePath": "../public/plasmic/blank_project/images/sororityBackfacepng.png"
         },
         {
-          "id": "YZxF4MGiD",
-          "name": "monopoly_image.png",
-          "filePath": "../public/plasmic/blank_project/images/monopolyImagepng.png"
-        },
-        {
-          "id": "JM850Uzs7uN",
-          "name": "image 5",
-          "filePath": "../public/plasmic/blank_project/images/image5.svg"
-        },
-        {
           "id": "ZMqFA3jJZ",
           "name": "badger_money_profile.jpg",
           "filePath": "../public/plasmic/blank_project/images/badgerMoneyProfilejpg.jpeg"
-        },
-        {
-          "id": "s11thcOu9zR",
-          "name": "image 6",
-          "filePath": "../public/plasmic/blank_project/images/image6.jpeg"
-        },
-        {
-          "id": "QlnI-5VOWVy",
-          "name": "image 7",
-          "filePath": "../public/plasmic/blank_project/images/image7.jpeg"
-        },
-        {
-          "id": "yDeUZEv3TWk",
-          "name": "image 8",
-          "filePath": "../public/plasmic/blank_project/images/image8.jpeg"
-        },
-        {
-          "id": "rodameVDhoW",
-          "name": "image 9",
-          "filePath": "../public/plasmic/blank_project/images/image9.svg"
-        },
-        {
-          "id": "hKaSY1d-cri",
-          "name": "image 10",
-          "filePath": "../public/plasmic/blank_project/images/image10.jpeg"
-        },
-        {
-          "id": "AMWJDs5Ix76",
-          "name": "image 11",
-          "filePath": "../public/plasmic/blank_project/images/image11.jpeg"
-        },
-        {
-          "id": "CyJj6zbw3vY",
-          "name": "image 12",
-          "filePath": "../public/plasmic/blank_project/images/image12.jpeg"
-        },
-        {
-          "id": "3kEQEbZB3",
-          "name": "image 13",
-          "filePath": "../public/plasmic/blank_project/images/image13.svg"
-        },
-        {
-          "id": "NumaGM2flB",
-          "name": "image 14",
-          "filePath": "../public/plasmic/blank_project/images/image14.jpeg"
-        },
-        {
-          "id": "YRfQNAophn",
-          "name": "image 15",
-          "filePath": "../public/plasmic/blank_project/images/image15.jpeg"
-        },
-        {
-          "id": "hCz0n5nRzo",
-          "name": "image 16",
-          "filePath": "../public/plasmic/blank_project/images/image16.jpeg"
-        },
-        {
-          "id": "sTBYzB0Bfu",
-          "name": "image 17",
-          "filePath": "../public/plasmic/blank_project/images/image17.jpeg"
-        },
-        {
-          "id": "881-qfFw6E",
-          "name": "image 18",
-          "filePath": "../public/plasmic/blank_project/images/image18.jpeg"
-        },
-        {
-          "id": "QB-GuaZf8c",
-          "name": "image 19",
-          "filePath": "../public/plasmic/blank_project/images/image19.jpeg"
-        },
-        {
-          "id": "P0QmlEa4hi",
-          "name": "image 20",
-          "filePath": "../public/plasmic/blank_project/images/image20.jpeg"
-        },
-        {
-          "id": "6miFXVudYN9",
-          "name": "image 21",
-          "filePath": "../public/plasmic/blank_project/images/image21.jpeg"
-        },
-        {
-          "id": "wNganVZ1oeB",
-          "name": "image 22",
-          "filePath": "../public/plasmic/blank_project/images/image22.jpeg"
-        },
-        {
-          "id": "A1S4GMNGmIF",
-          "name": "image 23",
-          "filePath": "../public/plasmic/blank_project/images/image23.jpeg"
-        },
-        {
-          "id": "Mf4T5yhvLTd",
-          "name": "image 24",
-          "filePath": "../public/plasmic/blank_project/images/image24.jpeg"
-        },
-        {
-          "id": "a6kuoKd6z-Q",
-          "name": "image 25",
-          "filePath": "../public/plasmic/blank_project/images/image25.jpeg"
-        },
-        {
-          "id": "qabrEx3nE-g",
-          "name": "image 26",
-          "filePath": "../public/plasmic/blank_project/images/image26.png"
-        },
-        {
-          "id": "v_-zOMoJbP9",
-          "name": "image 27",
-          "filePath": "../public/plasmic/blank_project/images/image27.png"
-        },
-        {
-          "id": "_1hAs51MeCn",
-          "name": "image 28",
-          "filePath": "../public/plasmic/blank_project/images/image28.png"
-        },
-        {
-          "id": "QD-ZDFUho3K",
-          "name": "image 29",
-          "filePath": "../public/plasmic/blank_project/images/image29.png"
-        },
-        {
-          "id": "mZTPLW-sQUA",
-          "name": "image 30",
-          "filePath": "../public/plasmic/blank_project/images/image30.png"
-        },
-        {
-          "id": "8IwGyEJ-VGE",
-          "name": "image 31",
-          "filePath": "../public/plasmic/blank_project/images/image31.webp"
-        },
-        {
-          "id": "iFYlp0kC_7C",
-          "name": "image 32",
-          "filePath": "../public/plasmic/blank_project/images/image32.svg"
-        },
-        {
-          "id": "MhP2-DPcCVd",
-          "name": "image 33",
-          "filePath": "../public/plasmic/blank_project/images/image33.png"
-        },
-        {
-          "id": "QQpdIVVvf5D",
-          "name": "image 34",
-          "filePath": "../public/plasmic/blank_project/images/image34.png"
-        },
-        {
-          "id": "xAg6xLIB2uu",
-          "name": "image 35",
-          "filePath": "../public/plasmic/blank_project/images/image35.png"
-        },
-        {
-          "id": "PgE-PNkJoAJ",
-          "name": "image 36",
-          "filePath": "../public/plasmic/blank_project/images/image36.png"
-        },
-        {
-          "id": "n8YpYkGI-Lx",
-          "name": "image 37",
-          "filePath": "../public/plasmic/blank_project/images/image37.png"
-        },
-        {
-          "id": "SDLDpNZMGup",
-          "name": "image 38",
-          "filePath": "../public/plasmic/blank_project/images/image38.png"
-        },
-        {
-          "id": "8DgdhJzTPQa",
-          "name": "image 39",
-          "filePath": "../public/plasmic/blank_project/images/image39.webp"
-        },
-        {
-          "id": "iL2eIaflGiu",
-          "name": "image 40",
-          "filePath": "../public/plasmic/blank_project/images/image40.webp"
         },
         {
           "id": "6-L1oabK5",
@@ -924,41 +708,6 @@
           "id": "Dz1bSviLX",
           "name": "Class2020_CRS_BR21_2794-600x400.jpeg",
           "filePath": "../public/plasmic/blank_project/images/class2020CrsBr212794600X400Jpeg.jpeg"
-        },
-        {
-          "id": "MTf0JWSHLnxW",
-          "name": "image 41",
-          "filePath": "../public/plasmic/blank_project/images/image41.jpeg"
-        },
-        {
-          "id": "j-_tGRhF4zbA",
-          "name": "image 42",
-          "filePath": "../public/plasmic/blank_project/images/image42.jpeg"
-        },
-        {
-          "id": "P-EUzin5Rzi7",
-          "name": "image 43",
-          "filePath": "../public/plasmic/blank_project/images/image43.webp"
-        },
-        {
-          "id": "UeuiRqh9Y0dY",
-          "name": "image 44",
-          "filePath": "../public/plasmic/blank_project/images/image44.png"
-        },
-        {
-          "id": "dSpr90lsdJYu",
-          "name": "image 45",
-          "filePath": "../public/plasmic/blank_project/images/image45.png"
-        },
-        {
-          "id": "LleReW_ZeDG6",
-          "name": "image 46",
-          "filePath": "../public/plasmic/blank_project/images/image46.png"
-        },
-        {
-          "id": "K86jcaMe561I",
-          "name": "image 47",
-          "filePath": "../public/plasmic/blank_project/images/image47.png"
         },
         {
           "id": "--U7ZTNWL",
@@ -1024,6 +773,246 @@
           "id": "NEAbYFHgg",
           "name": "noun-cheese-2331835.png",
           "filePath": "../public/plasmic/blank_project/images/nounCheese2331835Png.png"
+        },
+        {
+          "id": "QyL5KwPla-6",
+          "name": "image",
+          "filePath": "../public/plasmic/madisonopoly/images/image.png"
+        },
+        {
+          "id": "UCJS1jdIROg",
+          "name": "image 2",
+          "filePath": "../public/plasmic/madisonopoly/images/image2.png"
+        },
+        {
+          "id": "OCJaowFGWR7",
+          "name": "image 3",
+          "filePath": "../public/plasmic/madisonopoly/images/image3.png"
+        },
+        {
+          "id": "r5bFKo1-XfF",
+          "name": "image 4",
+          "filePath": "../public/plasmic/madisonopoly/images/image4.png"
+        },
+        {
+          "id": "YZxF4MGiD",
+          "name": "monopoly_image.png",
+          "filePath": "../public/plasmic/madisonopoly/images/monopolyImagepng.png"
+        },
+        {
+          "id": "JM850Uzs7uN",
+          "name": "image 5",
+          "filePath": "../public/plasmic/madisonopoly/images/image5.svg"
+        },
+        {
+          "id": "s11thcOu9zR",
+          "name": "image 6",
+          "filePath": "../public/plasmic/madisonopoly/images/image6.jpeg"
+        },
+        {
+          "id": "QlnI-5VOWVy",
+          "name": "image 7",
+          "filePath": "../public/plasmic/madisonopoly/images/image7.jpeg"
+        },
+        {
+          "id": "yDeUZEv3TWk",
+          "name": "image 8",
+          "filePath": "../public/plasmic/madisonopoly/images/image8.jpeg"
+        },
+        {
+          "id": "rodameVDhoW",
+          "name": "image 9",
+          "filePath": "../public/plasmic/madisonopoly/images/image9.svg"
+        },
+        {
+          "id": "hKaSY1d-cri",
+          "name": "image 10",
+          "filePath": "../public/plasmic/madisonopoly/images/image10.jpeg"
+        },
+        {
+          "id": "AMWJDs5Ix76",
+          "name": "image 11",
+          "filePath": "../public/plasmic/madisonopoly/images/image11.jpeg"
+        },
+        {
+          "id": "CyJj6zbw3vY",
+          "name": "image 12",
+          "filePath": "../public/plasmic/madisonopoly/images/image12.jpeg"
+        },
+        {
+          "id": "3kEQEbZB3",
+          "name": "image 13",
+          "filePath": "../public/plasmic/madisonopoly/images/image13.svg"
+        },
+        {
+          "id": "NumaGM2flB",
+          "name": "image 14",
+          "filePath": "../public/plasmic/madisonopoly/images/image14.jpeg"
+        },
+        {
+          "id": "YRfQNAophn",
+          "name": "image 15",
+          "filePath": "../public/plasmic/madisonopoly/images/image15.jpeg"
+        },
+        {
+          "id": "hCz0n5nRzo",
+          "name": "image 16",
+          "filePath": "../public/plasmic/madisonopoly/images/image16.jpeg"
+        },
+        {
+          "id": "sTBYzB0Bfu",
+          "name": "image 17",
+          "filePath": "../public/plasmic/madisonopoly/images/image17.jpeg"
+        },
+        {
+          "id": "881-qfFw6E",
+          "name": "image 18",
+          "filePath": "../public/plasmic/madisonopoly/images/image18.jpeg"
+        },
+        {
+          "id": "QB-GuaZf8c",
+          "name": "image 19",
+          "filePath": "../public/plasmic/madisonopoly/images/image19.jpeg"
+        },
+        {
+          "id": "P0QmlEa4hi",
+          "name": "image 20",
+          "filePath": "../public/plasmic/madisonopoly/images/image20.jpeg"
+        },
+        {
+          "id": "6miFXVudYN9",
+          "name": "image 21",
+          "filePath": "../public/plasmic/madisonopoly/images/image21.jpeg"
+        },
+        {
+          "id": "wNganVZ1oeB",
+          "name": "image 22",
+          "filePath": "../public/plasmic/madisonopoly/images/image22.jpeg"
+        },
+        {
+          "id": "A1S4GMNGmIF",
+          "name": "image 23",
+          "filePath": "../public/plasmic/madisonopoly/images/image23.jpeg"
+        },
+        {
+          "id": "Mf4T5yhvLTd",
+          "name": "image 24",
+          "filePath": "../public/plasmic/madisonopoly/images/image24.jpeg"
+        },
+        {
+          "id": "a6kuoKd6z-Q",
+          "name": "image 25",
+          "filePath": "../public/plasmic/madisonopoly/images/image25.jpeg"
+        },
+        {
+          "id": "qabrEx3nE-g",
+          "name": "image 26",
+          "filePath": "../public/plasmic/madisonopoly/images/image26.png"
+        },
+        {
+          "id": "v_-zOMoJbP9",
+          "name": "image 27",
+          "filePath": "../public/plasmic/madisonopoly/images/image27.png"
+        },
+        {
+          "id": "_1hAs51MeCn",
+          "name": "image 28",
+          "filePath": "../public/plasmic/madisonopoly/images/image28.png"
+        },
+        {
+          "id": "QD-ZDFUho3K",
+          "name": "image 29",
+          "filePath": "../public/plasmic/madisonopoly/images/image29.png"
+        },
+        {
+          "id": "mZTPLW-sQUA",
+          "name": "image 30",
+          "filePath": "../public/plasmic/madisonopoly/images/image30.png"
+        },
+        {
+          "id": "8IwGyEJ-VGE",
+          "name": "image 31",
+          "filePath": "../public/plasmic/madisonopoly/images/image31.webp"
+        },
+        {
+          "id": "iFYlp0kC_7C",
+          "name": "image 32",
+          "filePath": "../public/plasmic/madisonopoly/images/image32.svg"
+        },
+        {
+          "id": "MhP2-DPcCVd",
+          "name": "image 33",
+          "filePath": "../public/plasmic/madisonopoly/images/image33.png"
+        },
+        {
+          "id": "QQpdIVVvf5D",
+          "name": "image 34",
+          "filePath": "../public/plasmic/madisonopoly/images/image34.png"
+        },
+        {
+          "id": "xAg6xLIB2uu",
+          "name": "image 35",
+          "filePath": "../public/plasmic/madisonopoly/images/image35.png"
+        },
+        {
+          "id": "PgE-PNkJoAJ",
+          "name": "image 36",
+          "filePath": "../public/plasmic/madisonopoly/images/image36.png"
+        },
+        {
+          "id": "n8YpYkGI-Lx",
+          "name": "image 37",
+          "filePath": "../public/plasmic/madisonopoly/images/image37.png"
+        },
+        {
+          "id": "SDLDpNZMGup",
+          "name": "image 38",
+          "filePath": "../public/plasmic/madisonopoly/images/image38.png"
+        },
+        {
+          "id": "8DgdhJzTPQa",
+          "name": "image 39",
+          "filePath": "../public/plasmic/madisonopoly/images/image39.webp"
+        },
+        {
+          "id": "iL2eIaflGiu",
+          "name": "image 40",
+          "filePath": "../public/plasmic/madisonopoly/images/image40.webp"
+        },
+        {
+          "id": "MTf0JWSHLnxW",
+          "name": "image 41",
+          "filePath": "../public/plasmic/madisonopoly/images/image41.jpeg"
+        },
+        {
+          "id": "j-_tGRhF4zbA",
+          "name": "image 42",
+          "filePath": "../public/plasmic/madisonopoly/images/image42.jpeg"
+        },
+        {
+          "id": "P-EUzin5Rzi7",
+          "name": "image 43",
+          "filePath": "../public/plasmic/madisonopoly/images/image43.webp"
+        },
+        {
+          "id": "UeuiRqh9Y0dY",
+          "name": "image 44",
+          "filePath": "../public/plasmic/madisonopoly/images/image44.png"
+        },
+        {
+          "id": "dSpr90lsdJYu",
+          "name": "image 45",
+          "filePath": "../public/plasmic/madisonopoly/images/image45.png"
+        },
+        {
+          "id": "LleReW_ZeDG6",
+          "name": "image 46",
+          "filePath": "../public/plasmic/madisonopoly/images/image46.png"
+        },
+        {
+          "id": "K86jcaMe561I",
+          "name": "image 47",
+          "filePath": "../public/plasmic/madisonopoly/images/image47.png"
         }
       ],
       "indirect": false,
@@ -1033,24 +1022,6 @@
   ],
   "globalVariants": {
     "variantGroups": [
-      {
-        "id": "q2e6W8ulGYz",
-        "name": "Screen",
-        "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
-        "contextFilePath": "plasmic/plasmic_basic_components/PlasmicGlobalVariant__Screen.tsx"
-      },
-      {
-        "id": "QvtMAh6IevC",
-        "name": "Screen",
-        "projectId": "r3ASNrnyvLLLAtDvzUioQ",
-        "contextFilePath": "plasmic/react_slick/PlasmicGlobalVariant__Screen.tsx"
-      },
-      {
-        "id": "ckLLdnw4lO",
-        "name": "Screen",
-        "projectId": "szjgMQpPpxhmkjnaBvZQJG",
-        "contextFilePath": "plasmic/react_parallax_tilt/PlasmicGlobalVariant__Screen.tsx"
-      },
       {
         "id": "AbUXTrbG0Cf5V",
         "name": "Screen",
@@ -1063,6 +1034,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.178",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.178/dist/plasmic.schema.json"
+  "cliVersion": "0.1.184",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.184/dist/plasmic.schema.json"
 }

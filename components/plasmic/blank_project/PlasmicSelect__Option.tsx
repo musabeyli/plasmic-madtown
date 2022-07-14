@@ -88,8 +88,20 @@ function PlasmicSelect__Option__RenderFunc(props: {
 
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+
+        props.args
+      ),
+    [props.args]
+  );
+
+  const $props = args;
 
   const superContexts = {
     Select: React.useContext(SUPER__PlasmicSelect.Context)
@@ -213,12 +225,16 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicSelect__Option__ArgProps,
-      internalVariantPropNames: PlasmicSelect__Option__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicSelect__Option__ArgProps,
+          internalVariantPropNames: PlasmicSelect__Option__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicSelect__Option__RenderFunc({
       variants,

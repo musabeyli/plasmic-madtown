@@ -112,8 +112,21 @@ function PlasmicTextInput__RenderFunc(props: {
 
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {
+          placeholder: "Enter something…" as const
+        },
+        props.args
+      ),
+    [props.args]
+  );
+
+  const $props = args;
 
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
@@ -227,11 +240,7 @@ function PlasmicTextInput__RenderFunc(props: {
           hasVariant(variants, "isDisabled", "isDisabled") ? true : undefined
         }
         name={args.name}
-        placeholder={
-          args.placeholder !== undefined
-            ? args.placeholder
-            : ("Enter something…" as const)
-        }
+        placeholder={args.placeholder}
         type={"text" as const}
         value={args.value}
       />
@@ -351,12 +360,16 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicTextInput__ArgProps,
-      internalVariantPropNames: PlasmicTextInput__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicTextInput__ArgProps,
+          internalVariantPropNames: PlasmicTextInput__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicTextInput__RenderFunc({
       variants,

@@ -17,7 +17,6 @@ import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
-import { useRouter } from "next/router";
 
 import {
   hasVariant,
@@ -33,7 +32,7 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Button from "../../Button"; // plasmic-import: aOTvFzJBlc_/component
 
@@ -75,13 +74,24 @@ function PlasmicFooterComponent__RenderFunc(props: {
 
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+
+        props.args
+      ),
+    [props.args]
+  );
+
+  const $props = args;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsabUxTrbG0Cf5V(),
+    screen: useScreenVariantsabUxTrbG0Cf5V()
   });
-  const router = useRouter();
 
   return (
     <div
@@ -110,7 +120,6 @@ function PlasmicFooterComponent__RenderFunc(props: {
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__oNxF)}
-              onClick={() => router.push("/")}
             >
               <p.PlasmicImg
                 data-plasmic-name={"img"}
@@ -131,7 +140,7 @@ function PlasmicFooterComponent__RenderFunc(props: {
                   src: "/plasmic/blank_project/images/madisonopolyLogopng.png",
                   fullWidth: 914,
                   fullHeight: 335,
-                  aspectRatio: undefined,
+                  aspectRatio: undefined
                 }}
               />
             </p.Stack>
@@ -153,7 +162,7 @@ function PlasmicFooterComponent__RenderFunc(props: {
                 {"About game"}
               </div>
 
-              {/* <Button
+              <Button
                 className={classNames("__wab_instance", sty.button__iynee)}
                 color={"clear" as const}
                 link={"/game-rules" as const}
@@ -169,7 +178,7 @@ function PlasmicFooterComponent__RenderFunc(props: {
                 >
                   {"Game Rules"}
                 </div>
-              </Button> */}
+              </Button>
 
               <Button
                 className={classNames("__wab_instance", sty.button___2XGXs)}
@@ -304,7 +313,7 @@ function PlasmicFooterComponent__RenderFunc(props: {
 const PlasmicDescendants = {
   root: ["root", "columns", "img"],
   columns: ["columns", "img"],
-  img: ["img"],
+  img: ["img"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -345,18 +354,22 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicFooterComponent__ArgProps,
-      internalVariantPropNames: PlasmicFooterComponent__VariantProps,
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicFooterComponent__ArgProps,
+          internalVariantPropNames: PlasmicFooterComponent__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicFooterComponent__RenderFunc({
       variants,
       args,
       overrides,
-      forNode: nodeName,
+      forNode: nodeName
     });
   };
   if (nodeName === "root") {
@@ -377,7 +390,7 @@ export const PlasmicFooterComponent = Object.assign(
 
     // Metadata about props expected for PlasmicFooterComponent
     internalVariantProps: PlasmicFooterComponent__VariantProps,
-    internalArgProps: PlasmicFooterComponent__ArgProps,
+    internalArgProps: PlasmicFooterComponent__ArgProps
   }
 );
 

@@ -32,13 +32,13 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  background: url("/plasmic/blank_project/images/image13.svg") top 50% left 0% / 2127px 2109px repeat;
+  background: url("/plasmic/madisonopoly/images/image13.svg") top 50% left 0% / 2127px 2109px repeat;
   min-width: 0;
   padding: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__q0Yny {
-    background: url("/plasmic/blank_project/images/image13.svg") top 50% right 50% / 2190px 810px repeat;
+    background: url("/plasmic/madisonopoly/images/image13.svg") top 50% right 50% / 2190px 810px repeat;
   }
 }
 .freeBox__ry80 {
@@ -58,7 +58,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__ry80 {
     margin-top: 0px;
-    background: url("/plasmic/blank_project/images/image41.jpeg") top 0% left 50% / contain no-repeat;
+    background: url("/plasmic/madisonopoly/images/image41.jpeg") top 0% left 50% / contain no-repeat;
   }
 }
 .img__xw4GN {
@@ -2828,7 +2828,7 @@
   align-items: center;
   padding-top: 128px;
   padding-bottom: 128px;
-  background: url("/plasmic/blank_project/images/image18.jpeg") 0% 0% / cover;
+  background: url("/plasmic/madisonopoly/images/image18.jpeg") 0% 0% / cover;
   min-height: 0;
 }
 .freeBox___8K721 {
@@ -5273,7 +5273,7 @@
   display: flex;
   position: relative;
   width: 100%;
-  background: url("/plasmic/blank_project/images/image32.svg") top -470px right -220px / auto 1360px
+  background: url("/plasmic/madisonopoly/images/image32.svg") top -470px right -220px / auto 1360px
       no-repeat padding-box border-box local,
     #88dd9b;
   min-width: 0;
@@ -5299,7 +5299,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__mQlUa {
-    background: url("/plasmic/blank_project/images/image32.svg") top -470px right -390px / auto 1190px
+    background: url("/plasmic/madisonopoly/images/image32.svg") top -470px right -390px / auto 1190px
         no-repeat padding-box border-box local,
       #88dd9b;
     padding: 70px 30px;
@@ -8047,7 +8047,7 @@
   display: flex;
   position: relative;
   width: 100%;
-  background: url("/plasmic/blank_project/images/image32.svg") top -470px right -220px / auto 1360px
+  background: url("/plasmic/madisonopoly/images/image32.svg") top -470px right -220px / auto 1360px
       no-repeat padding-box border-box local,
     #88dd9b;
   min-width: 0;
@@ -8073,7 +8073,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__pdwOb {
-    background: url("/plasmic/blank_project/images/image32.svg") top -470px right -390px / auto 1190px
+    background: url("/plasmic/madisonopoly/images/image32.svg") top -470px right -390px / auto 1190px
         no-repeat padding-box border-box local,
       #88dd9b;
     padding: 70px 30px;

@@ -86,8 +86,20 @@ function PlasmicProduct__RenderFunc(props: {
 
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode } = props;
-  const $props = props.args;
+  const { variants, overrides, forNode } = props;
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+
+        props.args
+      ),
+    [props.args]
+  );
+
+  const $props = args;
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsabUxTrbG0Cf5V()
@@ -143,7 +155,7 @@ function PlasmicProduct__RenderFunc(props: {
                       displayWidth={"100%" as const}
                       loading={"lazy" as const}
                       src={{
-                        src: "/plasmic/blank_project/images/image42.jpeg",
+                        src: "/plasmic/madisonopoly/images/image42.jpeg",
                         fullWidth: 502,
                         fullHeight: 872,
                         aspectRatio: undefined
@@ -364,7 +376,7 @@ function PlasmicProduct__RenderFunc(props: {
                             displayWidth={"auto" as const}
                             loading={"lazy" as const}
                             src={{
-                              src: "/plasmic/blank_project/images/image43.webp",
+                              src: "/plasmic/madisonopoly/images/image43.webp",
                               fullWidth: 900,
                               fullHeight: 900,
                               aspectRatio: undefined
@@ -719,7 +731,7 @@ function PlasmicProduct__RenderFunc(props: {
                           displayMinWidth={"0" as const}
                           displayWidth={"100%" as const}
                           src={{
-                            src: "/plasmic/blank_project/images/image14.jpeg",
+                            src: "/plasmic/madisonopoly/images/image14.jpeg",
                             fullWidth: 1920,
                             fullHeight: 1278,
                             aspectRatio: undefined
@@ -958,7 +970,7 @@ function PlasmicProduct__RenderFunc(props: {
                           displayMinWidth={"0" as const}
                           displayWidth={"100%" as const}
                           src={{
-                            src: "/plasmic/blank_project/images/image15.jpeg",
+                            src: "/plasmic/madisonopoly/images/image15.jpeg",
                             fullWidth: 640,
                             fullHeight: 481,
                             aspectRatio: undefined
@@ -1200,7 +1212,7 @@ function PlasmicProduct__RenderFunc(props: {
                           displayMinWidth={"0" as const}
                           displayWidth={"100%" as const}
                           src={{
-                            src: "/plasmic/blank_project/images/image16.jpeg",
+                            src: "/plasmic/madisonopoly/images/image16.jpeg",
                             fullWidth: 1920,
                             fullHeight: 1280,
                             aspectRatio: undefined
@@ -1442,7 +1454,7 @@ function PlasmicProduct__RenderFunc(props: {
                           displayMinWidth={"0" as const}
                           displayWidth={"100%" as const}
                           src={{
-                            src: "/plasmic/blank_project/images/image17.jpeg",
+                            src: "/plasmic/madisonopoly/images/image17.jpeg",
                             fullWidth: 640,
                             fullHeight: 427,
                             aspectRatio: undefined
@@ -1809,7 +1821,7 @@ function PlasmicProduct__RenderFunc(props: {
                           displayMinWidth={"0" as const}
                           displayWidth={"100%" as const}
                           src={{
-                            src: "/plasmic/blank_project/images/image19.jpeg",
+                            src: "/plasmic/madisonopoly/images/image19.jpeg",
                             fullWidth: 270,
                             fullHeight: 310,
                             aspectRatio: undefined
@@ -2055,7 +2067,7 @@ function PlasmicProduct__RenderFunc(props: {
                           displayMinWidth={"0" as const}
                           displayWidth={"100%" as const}
                           src={{
-                            src: "/plasmic/blank_project/images/image20.jpeg",
+                            src: "/plasmic/madisonopoly/images/image20.jpeg",
                             fullWidth: 270,
                             fullHeight: 310,
                             aspectRatio: undefined
@@ -2300,7 +2312,7 @@ function PlasmicProduct__RenderFunc(props: {
                           displayMinWidth={"0" as const}
                           displayWidth={"100%" as const}
                           src={{
-                            src: "/plasmic/blank_project/images/image21.jpeg",
+                            src: "/plasmic/madisonopoly/images/image21.jpeg",
                             fullWidth: 270,
                             fullHeight: 310,
                             aspectRatio: undefined
@@ -2546,7 +2558,7 @@ function PlasmicProduct__RenderFunc(props: {
                           displayMinWidth={"0" as const}
                           displayWidth={"100%" as const}
                           src={{
-                            src: "/plasmic/blank_project/images/image22.jpeg",
+                            src: "/plasmic/madisonopoly/images/image22.jpeg",
                             fullWidth: 270,
                             fullHeight: 310,
                             aspectRatio: undefined
@@ -2808,7 +2820,7 @@ function PlasmicProduct__RenderFunc(props: {
                           displayMinWidth={"0" as const}
                           displayWidth={"100%" as const}
                           src={{
-                            src: "/plasmic/blank_project/images/image23.jpeg",
+                            src: "/plasmic/madisonopoly/images/image23.jpeg",
                             fullWidth: 370,
                             fullHeight: 250,
                             aspectRatio: undefined
@@ -2883,7 +2895,7 @@ function PlasmicProduct__RenderFunc(props: {
                           displayMinWidth={"0" as const}
                           displayWidth={"100%" as const}
                           src={{
-                            src: "/plasmic/blank_project/images/image24.jpeg",
+                            src: "/plasmic/madisonopoly/images/image24.jpeg",
                             fullWidth: 370,
                             fullHeight: 250,
                             aspectRatio: undefined
@@ -2961,7 +2973,7 @@ function PlasmicProduct__RenderFunc(props: {
                           displayMinWidth={"0" as const}
                           displayWidth={"100%" as const}
                           src={{
-                            src: "/plasmic/blank_project/images/image25.jpeg",
+                            src: "/plasmic/madisonopoly/images/image25.jpeg",
                             fullWidth: 370,
                             fullHeight: 250,
                             aspectRatio: undefined
@@ -3029,7 +3041,7 @@ function PlasmicProduct__RenderFunc(props: {
                     displayMinWidth={"0" as const}
                     displayWidth={"90px" as const}
                     src={{
-                      src: "/plasmic/blank_project/images/image26.png",
+                      src: "/plasmic/madisonopoly/images/image26.png",
                       fullWidth: 90,
                       fullHeight: 60,
                       aspectRatio: undefined
@@ -3046,7 +3058,7 @@ function PlasmicProduct__RenderFunc(props: {
                     displayMinWidth={"0" as const}
                     displayWidth={"91px" as const}
                     src={{
-                      src: "/plasmic/blank_project/images/image27.png",
+                      src: "/plasmic/madisonopoly/images/image27.png",
                       fullWidth: 91,
                       fullHeight: 60,
                       aspectRatio: undefined
@@ -3063,7 +3075,7 @@ function PlasmicProduct__RenderFunc(props: {
                     displayMinWidth={"0" as const}
                     displayWidth={"98px" as const}
                     src={{
-                      src: "/plasmic/blank_project/images/image28.png",
+                      src: "/plasmic/madisonopoly/images/image28.png",
                       fullWidth: 98,
                       fullHeight: 60,
                       aspectRatio: undefined
@@ -3080,7 +3092,7 @@ function PlasmicProduct__RenderFunc(props: {
                     displayMinWidth={"0" as const}
                     displayWidth={"124px" as const}
                     src={{
-                      src: "/plasmic/blank_project/images/image29.png",
+                      src: "/plasmic/madisonopoly/images/image29.png",
                       fullWidth: 124,
                       fullHeight: 60,
                       aspectRatio: undefined
@@ -3097,7 +3109,7 @@ function PlasmicProduct__RenderFunc(props: {
                     displayMinWidth={"0" as const}
                     displayWidth={"125px" as const}
                     src={{
-                      src: "/plasmic/blank_project/images/image30.png",
+                      src: "/plasmic/madisonopoly/images/image30.png",
                       fullWidth: 125,
                       fullHeight: 60,
                       aspectRatio: undefined
@@ -3130,7 +3142,7 @@ function PlasmicProduct__RenderFunc(props: {
                         displayWidth={"auto" as const}
                         loading={"lazy" as const}
                         src={{
-                          src: "/plasmic/blank_project/images/image31.webp",
+                          src: "/plasmic/madisonopoly/images/image31.webp",
                           fullWidth: 720,
                           fullHeight: 525,
                           aspectRatio: undefined
@@ -3394,7 +3406,7 @@ function PlasmicProduct__RenderFunc(props: {
                     displayWidth={"100%" as const}
                     loading={"lazy" as const}
                     src={{
-                      src: "/plasmic/blank_project/images/image33.png",
+                      src: "/plasmic/madisonopoly/images/image33.png",
                       fullWidth: 400,
                       fullHeight: 400,
                       aspectRatio: undefined
@@ -3470,7 +3482,7 @@ function PlasmicProduct__RenderFunc(props: {
                     displayWidth={"100%" as const}
                     loading={"lazy" as const}
                     src={{
-                      src: "/plasmic/blank_project/images/image34.png",
+                      src: "/plasmic/madisonopoly/images/image34.png",
                       fullWidth: 400,
                       fullHeight: 400,
                       aspectRatio: undefined
@@ -3543,7 +3555,7 @@ function PlasmicProduct__RenderFunc(props: {
                     displayWidth={"100%" as const}
                     loading={"lazy" as const}
                     src={{
-                      src: "/plasmic/blank_project/images/image35.png",
+                      src: "/plasmic/madisonopoly/images/image35.png",
                       fullWidth: 400,
                       fullHeight: 400,
                       aspectRatio: undefined
@@ -3610,7 +3622,7 @@ function PlasmicProduct__RenderFunc(props: {
                     displayWidth={"100%" as const}
                     loading={"lazy" as const}
                     src={{
-                      src: "/plasmic/blank_project/images/image36.png",
+                      src: "/plasmic/madisonopoly/images/image36.png",
                       fullWidth: 400,
                       fullHeight: 400,
                       aspectRatio: undefined
@@ -3717,7 +3729,7 @@ function PlasmicProduct__RenderFunc(props: {
                     displayWidth={"100%" as const}
                     loading={"lazy" as const}
                     src={{
-                      src: "/plasmic/blank_project/images/image37.png",
+                      src: "/plasmic/madisonopoly/images/image37.png",
                       fullWidth: 400,
                       fullHeight: 400,
                       aspectRatio: undefined
@@ -3790,7 +3802,7 @@ function PlasmicProduct__RenderFunc(props: {
                     displayWidth={"100%" as const}
                     loading={"lazy" as const}
                     src={{
-                      src: "/plasmic/blank_project/images/image38.png",
+                      src: "/plasmic/madisonopoly/images/image38.png",
                       fullWidth: 400,
                       fullHeight: 400,
                       aspectRatio: undefined
@@ -3863,7 +3875,7 @@ function PlasmicProduct__RenderFunc(props: {
                     displayWidth={"100%" as const}
                     loading={"lazy" as const}
                     src={{
-                      src: "/plasmic/blank_project/images/image39.webp",
+                      src: "/plasmic/madisonopoly/images/image39.webp",
                       fullWidth: 400,
                       fullHeight: 400,
                       aspectRatio: undefined
@@ -3936,7 +3948,7 @@ function PlasmicProduct__RenderFunc(props: {
                     displayWidth={"100%" as const}
                     loading={"lazy" as const}
                     src={{
-                      src: "/plasmic/blank_project/images/image40.webp",
+                      src: "/plasmic/madisonopoly/images/image40.webp",
                       fullWidth: 400,
                       fullHeight: 400,
                       aspectRatio: undefined
@@ -4048,7 +4060,7 @@ function PlasmicProduct__RenderFunc(props: {
                     displayWidth={"100%" as const}
                     loading={"lazy" as const}
                     src={{
-                      src: "/plasmic/blank_project/images/image44.png",
+                      src: "/plasmic/madisonopoly/images/image44.png",
                       fullWidth: 400,
                       fullHeight: 400,
                       aspectRatio: undefined
@@ -4121,7 +4133,7 @@ function PlasmicProduct__RenderFunc(props: {
                     displayWidth={"100%" as const}
                     loading={"lazy" as const}
                     src={{
-                      src: "/plasmic/blank_project/images/image45.png",
+                      src: "/plasmic/madisonopoly/images/image45.png",
                       fullWidth: 400,
                       fullHeight: 400,
                       aspectRatio: undefined
@@ -4194,7 +4206,7 @@ function PlasmicProduct__RenderFunc(props: {
                     displayWidth={"100%" as const}
                     loading={"lazy" as const}
                     src={{
-                      src: "/plasmic/blank_project/images/image46.png",
+                      src: "/plasmic/madisonopoly/images/image46.png",
                       fullWidth: 400,
                       fullHeight: 400,
                       aspectRatio: undefined
@@ -4267,7 +4279,7 @@ function PlasmicProduct__RenderFunc(props: {
                     displayWidth={"100%" as const}
                     loading={"lazy" as const}
                     src={{
-                      src: "/plasmic/blank_project/images/image47.png",
+                      src: "/plasmic/madisonopoly/images/image47.png",
                       fullWidth: 400,
                       fullHeight: 400,
                       aspectRatio: undefined
@@ -4349,7 +4361,7 @@ function PlasmicProduct__RenderFunc(props: {
                   displayWidth={"auto" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/blank_project/images/image31.webp",
+                    src: "/plasmic/madisonopoly/images/image31.webp",
                     fullWidth: 720,
                     fullHeight: 525,
                     aspectRatio: undefined
@@ -4605,12 +4617,16 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicProduct__ArgProps,
-      internalVariantPropNames: PlasmicProduct__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicProduct__ArgProps,
+          internalVariantPropNames: PlasmicProduct__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicProduct__RenderFunc({
       variants,
