@@ -34,7 +34,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants,
 } from "@plasmicapp/react-web";
-import { Input, useColorModeValue, IconButton, HStack } from "@chakra-ui/react";
+import { Input, useColorModeValue, IconButton } from "@chakra-ui/react";
 import { BiMailSend } from "react-icons/bi";
 
 import Button from "../../Button"; // plasmic-import: aOTvFzJBlc_/component
@@ -200,7 +200,7 @@ function PlasmicFooterComponent__RenderFunc(props: {
                   {"FAQs"}
                 </div>
               </Button>
-              <HStack direction={"column"}>
+              <p.Stack direction={"row"}>
                 <Input
                   placeholder={"Your email address"}
                   bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
@@ -210,13 +210,12 @@ function PlasmicFooterComponent__RenderFunc(props: {
                   }}
                 />
                 <IconButton
-                  fontSize="30px"
                   variant="outline"
-                  colorScheme="green"
+                  colorScheme="teal"
                   aria-label="Send email"
-                  icon={<BiMailSend />}
+                  icon={<EmailIcon />}
                 />
-              </HStack>
+              </p.Stack>
             </p.Stack>
           </div>
 

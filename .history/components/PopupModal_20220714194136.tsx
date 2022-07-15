@@ -37,7 +37,7 @@ export default function Simple() {
   return (
     <div>
       {showNewsLetterForm && (
-        <Flex position="fixed" bottom="0" right="0" py={12}>
+        <Flex bg="red" position="fixed" bottom="0" right="0" py={12}>
           <Container
             maxW={"lg"}
             bg={"white"}
@@ -130,10 +130,9 @@ export default function Simple() {
                   w="100%"
                   type={state === "success" ? "button" : "submit"}
                 >
-                  <>
-                    {state === "success" ? <CheckIcon /> : "Submit"}
-                    {state === "success" ? setShowNewsLetterForm(false) : ""}
-                  </>
+                  {state === "success" ? <CheckIcon /> : "Submit"} &&
+                  {state === "success" ? <CheckIcon /> : "Submit"}
+                  {/* {state === "success" ? setShowNewsLetterForm(false) : "a"} */}
                 </Button>
               </FormControl>
             </Stack>

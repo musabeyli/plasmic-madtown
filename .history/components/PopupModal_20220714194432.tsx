@@ -130,10 +130,10 @@ export default function Simple() {
                   w="100%"
                   type={state === "success" ? "button" : "submit"}
                 >
-                  <>
+                  <div>
                     {state === "success" ? <CheckIcon /> : "Submit"}
                     {state === "success" ? setShowNewsLetterForm(false) : ""}
-                  </>
+                  </div>
                 </Button>
               </FormControl>
             </Stack>

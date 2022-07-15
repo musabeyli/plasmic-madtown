@@ -212,11 +212,11 @@ function PlasmicFooterComponent__RenderFunc(props: {
                 <IconButton
                   fontSize="30px"
                   variant="outline"
-                  colorScheme="green"
+                  colorScheme="teal"
                   aria-label="Send email"
                   icon={<BiMailSend />}
                 />
-              </HStack>
+              </p.Stack>
             </p.Stack>
           </div>
 

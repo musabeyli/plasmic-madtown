@@ -212,7 +212,7 @@ function PlasmicFooterComponent__RenderFunc(props: {
                 <IconButton
                   fontSize="30px"
                   variant="outline"
-                  colorScheme="green"
+                  colorScheme="green.800"
                   aria-label="Send email"
                   icon={<BiMailSend />}
                 />
