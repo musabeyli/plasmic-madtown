@@ -48,7 +48,8 @@
           "name": "Embed",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "r3ASNrnyvLLLAtDvzUioQ",
@@ -67,7 +68,8 @@
           "name": "Slider",
           "componentImportPath": "react-slick"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "84wxoth5npGrp6RRXPL88z",
@@ -91,7 +93,8 @@
           "name": "ParallaxProviderWrapper",
           "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "szjgMQpPpxhmkjnaBvZQJG",
@@ -110,7 +113,8 @@
           "name": "Tilt",
           "componentImportPath": "@plasmicpkgs/react-parallax-tilt"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
@@ -129,7 +133,8 @@
           "name": "Reveal",
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -148,7 +153,8 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "wA73ZswqroE6r1m1xaxGJ1",
@@ -596,6 +602,11 @@
           "id": "NgHbz3vXdE",
           "name": "ChevronUpsvgIcon",
           "moduleFilePath": "plasmic/blank_project/icons/PlasmicIcon__ChevronUpsvg.tsx"
+        },
+        {
+          "id": "kuNe1-KpC2_",
+          "name": "_227601RightArrowIconsvgIcon",
+          "moduleFilePath": "plasmic/madisonopoly/icons/PlasmicIcon___227601RightArrowIconsvg.tsx"
         }
       ],
       "images": [
@@ -1013,6 +1024,106 @@
           "id": "K86jcaMe561I",
           "name": "image 47",
           "filePath": "../public/plasmic/madisonopoly/images/image47.png"
+        },
+        {
+          "id": "amdbtVZnRiM",
+          "name": "image 48",
+          "filePath": "../public/plasmic/madisonopoly/images/image48.png"
+        },
+        {
+          "id": "QGBktDcTt8_",
+          "name": "image 49",
+          "filePath": "../public/plasmic/madisonopoly/images/image49.png"
+        },
+        {
+          "id": "M0scnOUlQXR",
+          "name": "image 50",
+          "filePath": "../public/plasmic/madisonopoly/images/image50.svg"
+        },
+        {
+          "id": "Z01vh5oTNSb",
+          "name": "image 51",
+          "filePath": "../public/plasmic/madisonopoly/images/image51.svg"
+        },
+        {
+          "id": "A8qAVXjIGD0",
+          "name": "image 52",
+          "filePath": "../public/plasmic/madisonopoly/images/image52.svg"
+        },
+        {
+          "id": "S-FSfdlFdWq",
+          "name": "image 53",
+          "filePath": "../public/plasmic/madisonopoly/images/image53.svg"
+        },
+        {
+          "id": "_1UWVlBfOtm",
+          "name": "image 54",
+          "filePath": "../public/plasmic/madisonopoly/images/image54.svg"
+        },
+        {
+          "id": "peGZvqlBJ3i",
+          "name": "image 55",
+          "filePath": "../public/plasmic/madisonopoly/images/image55.svg"
+        },
+        {
+          "id": "U3_2GYtovqf",
+          "name": "image 56",
+          "filePath": "../public/plasmic/madisonopoly/images/image56.svg"
+        },
+        {
+          "id": "pRjpmYHpsDQ",
+          "name": "image 57",
+          "filePath": "../public/plasmic/madisonopoly/images/image57.png"
+        },
+        {
+          "id": "zsk4uHPXA5J",
+          "name": "image 58",
+          "filePath": "../public/plasmic/madisonopoly/images/image58.png"
+        },
+        {
+          "id": "xrhFhqD5zAr",
+          "name": "image 59",
+          "filePath": "../public/plasmic/madisonopoly/images/image59.png"
+        },
+        {
+          "id": "JVFA_k9VqYc",
+          "name": "image 60",
+          "filePath": "../public/plasmic/madisonopoly/images/image60.png"
+        },
+        {
+          "id": "HwYfWCuMNPW",
+          "name": "image 61",
+          "filePath": "../public/plasmic/madisonopoly/images/image61.png"
+        },
+        {
+          "id": "E5nYNe5osXZ",
+          "name": "image 62",
+          "filePath": "../public/plasmic/madisonopoly/images/image62.png"
+        },
+        {
+          "id": "ut3dTi2Zv8V",
+          "name": "image 63",
+          "filePath": "../public/plasmic/madisonopoly/images/image63.png"
+        },
+        {
+          "id": "ucSP3LX__r9",
+          "name": "image 64",
+          "filePath": "../public/plasmic/madisonopoly/images/image64.svg"
+        },
+        {
+          "id": "2Gekwj7Q47A",
+          "name": "image 65",
+          "filePath": "../public/plasmic/madisonopoly/images/image65.svg"
+        },
+        {
+          "id": "LYRNvV_qPeQ",
+          "name": "image 66",
+          "filePath": "../public/plasmic/madisonopoly/images/image66.svg"
+        },
+        {
+          "id": "E9FstFPYj9d",
+          "name": "image 67",
+          "filePath": "../public/plasmic/madisonopoly/images/image67.svg"
         }
       ],
       "indirect": false,
