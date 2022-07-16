@@ -46,6 +46,7 @@ export default async function handler(
             product_data: {
             name: 'Madisonopoly',
           },
+          unit_amount: 2000,
         },
             // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
             price: 'price_1LMDMSLZ8TMriulmm899tlQ4',

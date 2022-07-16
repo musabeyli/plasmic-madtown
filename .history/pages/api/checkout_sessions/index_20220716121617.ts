@@ -37,16 +37,30 @@ export default async function handler(
               }
             }
           },
-          
+          {
+            shipping_rate_data: {
+              type: 'fixed_amount',
+              fixed_amount: {
+                amount: 1500,
+                currency: 'usd',
+              },
+              display_name: 'Next day air',
+              // Delivers in exactly 1 business day
+              delivery_estimate: {
+                minimum: {
+                  unit: 'business_day',
+                  value: 1,
+                },
+                maximum: {
+                  unit: 'business_day',
+                  value: 1,
+                },
+              }
+            }
+          },
         ],
         line_items: [
           {
-          price_data: {
-            currency: 'usd',
-            product_data: {
-            name: 'Madisonopoly',
-          },
-        },
             // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
             price: 'price_1LMDMSLZ8TMriulmm899tlQ4',
             quantity: req.body.amount,
