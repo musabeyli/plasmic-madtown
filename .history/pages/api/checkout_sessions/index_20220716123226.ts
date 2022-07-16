@@ -52,13 +52,6 @@ export default async function handler(
         //     quantity: req.body.amount,
         //   },
         // ],
-        line_items: [
-          {
-            // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-            price: 'price_1L2mzKLZ8TMriulmrHhPTsrD',
-            quantity: req.body.amount,
-          },
-        ],
         mode: 'payment',
         success_url: `${req.headers.origin}/?success=true`,
         cancel_url: `${req.headers.origin}/?canceled=true`,
