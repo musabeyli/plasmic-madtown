@@ -12,10 +12,9 @@ export default async function handler(
       stripe.checkout
           const session = await stripe.checkout.sessions.create({
           payment_method_types: ['card'],
-          shipping_address_collection: {
-			      allowed_countries: ['US']
-		      },
-          
+          		shipping_address_collection: {
+			allowed_countries: ['US']
+		},
           line_items: [
             {
             // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
