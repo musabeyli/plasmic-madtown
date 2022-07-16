@@ -32,7 +32,7 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import MadisonopolyHeaderFinal from "../../MadisonopolyHeaderFinal"; // plasmic-import: zLYGck-fye5/component
 import HeaderMadisonopoly from "../../HeaderMadisonopoly"; // plasmic-import: SbmFAmFl460/component
@@ -103,7 +103,7 @@ function PlasmicNewPage__RenderFunc(props: {
   const $props = args;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsabUxTrbG0Cf5V(),
+    screen: useScreenVariantsabUxTrbG0Cf5V()
   });
 
   return (
@@ -198,7 +198,7 @@ function PlasmicNewPage__RenderFunc(props: {
                         src: "/plasmic/blank_project/images/sideMadisonopolyRemovebgPreview1Png.png",
                         fullWidth: 500,
                         fullHeight: 500,
-                        aspectRatio: undefined,
+                        aspectRatio: undefined
                       }}
                     />
                   </p.PlasmicLink>
@@ -400,7 +400,7 @@ function PlasmicNewPage__RenderFunc(props: {
                           src: "/plasmic/blank_project/images/madison1980SEditedjpg.jpeg",
                           fullWidth: 4000,
                           fullHeight: 2670,
-                          aspectRatio: undefined,
+                          aspectRatio: undefined
                         }}
                       />
                     </Reveal>
@@ -433,7 +433,7 @@ function PlasmicNewPage__RenderFunc(props: {
                           src: "/plasmic/blank_project/images/madison2022Jpg.jpeg",
                           fullWidth: 640,
                           fullHeight: 480,
-                          aspectRatio: undefined,
+                          aspectRatio: undefined
                         }}
                       />
                     </Reveal>
@@ -466,7 +466,7 @@ function PlasmicNewPage__RenderFunc(props: {
                           src: "/plasmic/blank_project/images/madisonFuturejpg.jpeg",
                           fullWidth: 1920,
                           fullHeight: 1080,
-                          aspectRatio: undefined,
+                          aspectRatio: undefined
                         }}
                       />
                     </Reveal>
@@ -495,7 +495,7 @@ function PlasmicNewPage__RenderFunc(props: {
                       src: "/plasmic/blank_project/images/gameboxBoardDetailedpng.png",
                       fullWidth: 4000,
                       fullHeight: 3091,
-                      aspectRatio: undefined,
+                      aspectRatio: undefined
                     }}
                   />
                 </Tilt>
@@ -545,7 +545,7 @@ function PlasmicNewPage__RenderFunc(props: {
                                 src: "/plasmic/blank_project/images/cheese1Png.png",
                                 fullWidth: 512,
                                 fullHeight: 512,
-                                aspectRatio: undefined,
+                                aspectRatio: undefined
                               }}
                             />
                           </Reveal>
@@ -592,7 +592,7 @@ function PlasmicNewPage__RenderFunc(props: {
                                   src: "/plasmic/blank_project/images/madison1980SEditedjpg.jpeg",
                                   fullWidth: 4000,
                                   fullHeight: 2670,
-                                  aspectRatio: undefined,
+                                  aspectRatio: undefined
                                 }}
                               />
                             </Reveal>
@@ -629,7 +629,7 @@ function PlasmicNewPage__RenderFunc(props: {
                                   src: "/plasmic/blank_project/images/madison2022Jpg.jpeg",
                                   fullWidth: 640,
                                   fullHeight: 480,
-                                  aspectRatio: undefined,
+                                  aspectRatio: undefined
                                 }}
                               />
                             </Reveal>
@@ -666,7 +666,7 @@ function PlasmicNewPage__RenderFunc(props: {
                                   src: "/plasmic/blank_project/images/madisonFuturejpg.jpeg",
                                   fullWidth: 1920,
                                   fullHeight: 1080,
-                                  aspectRatio: undefined,
+                                  aspectRatio: undefined
                                 }}
                               />
                             </Reveal>
@@ -785,13 +785,13 @@ function PlasmicNewPage__RenderFunc(props: {
                                           src: "/plasmic/blank_project/images/madison1980SEditedjpg.jpeg",
                                           fullWidth: 4000,
                                           fullHeight: 2670,
-                                          aspectRatio: undefined,
+                                          aspectRatio: undefined
                                         }
                                       : {
                                           src: "/plasmic/blank_project/images/madison2022Jpg.jpeg",
                                           fullWidth: 640,
                                           fullHeight: 480,
-                                          aspectRatio: undefined,
+                                          aspectRatio: undefined
                                         }
                                   }
                                 />
@@ -823,13 +823,13 @@ function PlasmicNewPage__RenderFunc(props: {
                                           src: "/plasmic/blank_project/images/madison2022Jpg.jpeg",
                                           fullWidth: 640,
                                           fullHeight: 480,
-                                          aspectRatio: undefined,
+                                          aspectRatio: undefined
                                         }
                                       : {
                                           src: "/plasmic/blank_project/images/madisonFuturejpg.jpeg",
                                           fullWidth: 1920,
                                           fullHeight: 1080,
-                                          aspectRatio: undefined,
+                                          aspectRatio: undefined
                                         }
                                   }
                                 />
@@ -861,13 +861,13 @@ function PlasmicNewPage__RenderFunc(props: {
                                           src: "/plasmic/blank_project/images/madisonFuturejpg.jpeg",
                                           fullWidth: 1920,
                                           fullHeight: 1080,
-                                          aspectRatio: undefined,
+                                          aspectRatio: undefined
                                         }
                                       : {
                                           src: "/plasmic/blank_project/images/madison2022Jpg.jpeg",
                                           fullWidth: 640,
                                           fullHeight: 480,
-                                          aspectRatio: undefined,
+                                          aspectRatio: undefined
                                         }
                                   }
                                 />
@@ -956,7 +956,7 @@ function PlasmicNewPage__RenderFunc(props: {
                             src: "/plasmic/blank_project/images/cheese1Png.png",
                             fullWidth: 512,
                             fullHeight: 512,
-                            aspectRatio: undefined,
+                            aspectRatio: undefined
                           }}
                         />
                       </Reveal>
@@ -1001,7 +1001,7 @@ function PlasmicNewPage__RenderFunc(props: {
                               src: "/plasmic/blank_project/images/madison1980SEditedjpg.jpeg",
                               fullWidth: 4000,
                               fullHeight: 2670,
-                              aspectRatio: undefined,
+                              aspectRatio: undefined
                             }}
                           />
                         </Reveal>
@@ -1034,7 +1034,7 @@ function PlasmicNewPage__RenderFunc(props: {
                               src: "/plasmic/blank_project/images/madison2022Jpg.jpeg",
                               fullWidth: 640,
                               fullHeight: 480,
-                              aspectRatio: undefined,
+                              aspectRatio: undefined
                             }}
                           />
                         </Reveal>
@@ -1068,7 +1068,7 @@ function PlasmicNewPage__RenderFunc(props: {
                               src: "/plasmic/blank_project/images/madisonFuturejpg.jpeg",
                               fullWidth: 1920,
                               fullHeight: 1080,
-                              aspectRatio: undefined,
+                              aspectRatio: undefined
                             }}
                           />
                         </Reveal>
@@ -1180,7 +1180,7 @@ function PlasmicNewPage__RenderFunc(props: {
             <div
               className={classNames(projectcss.all, sty.freeBox__bgOxB)}
               id={"section2" as const}
-              itemID={"section2" as const}
+              itemid={"section2" as const}
             >
               <div
                 className={classNames(projectcss.all, sty.freeBox__kXTpJ)}
@@ -1216,7 +1216,7 @@ function PlasmicNewPage__RenderFunc(props: {
                       src: "/plasmic/blank_project/images/gameboxBoardDetailedPhotoRoompng.png",
                       fullWidth: 1000,
                       fullHeight: 772,
-                      aspectRatio: undefined,
+                      aspectRatio: undefined
                     }}
                   />
                 </ParallaxWrapper>
@@ -1248,7 +1248,7 @@ function PlasmicNewPage__RenderFunc(props: {
                           src: "/plasmic/blank_project/images/boardGamepng.png",
                           fullWidth: 512,
                           fullHeight: 512,
-                          aspectRatio: undefined,
+                          aspectRatio: undefined
                         }}
                       />
                     </div>
@@ -1356,7 +1356,7 @@ function PlasmicNewPage__RenderFunc(props: {
                       src: "/plasmic/blank_project/images/sampleDeedpng.png",
                       fullWidth: 789,
                       fullHeight: 900,
-                      aspectRatio: undefined,
+                      aspectRatio: undefined
                     }}
                   />
                 </ParallaxWrapper>
@@ -1468,7 +1468,7 @@ function PlasmicNewPage__RenderFunc(props: {
                             src: "/plasmic/blank_project/images/wisconsinCapitalLogopng.png",
                             fullWidth: 700,
                             fullHeight: 454,
-                            aspectRatio: undefined,
+                            aspectRatio: undefined
                           }}
                         />
                       </Tilt>
@@ -1497,7 +1497,7 @@ function PlasmicNewPage__RenderFunc(props: {
                       src: "/plasmic/blank_project/images/dare10Png.png",
                       fullWidth: 1039,
                       fullHeight: 661,
-                      aspectRatio: undefined,
+                      aspectRatio: undefined
                     }}
                   />
                 </ParallaxWrapper>
@@ -1522,7 +1522,7 @@ function PlasmicNewPage__RenderFunc(props: {
                         src: "/plasmic/blank_project/images/nounCheese2331835Png.png",
                         fullWidth: 700,
                         fullHeight: 442,
-                        aspectRatio: undefined,
+                        aspectRatio: undefined
                       }}
                     />
                   ) : null}
@@ -1548,7 +1548,7 @@ function PlasmicNewPage__RenderFunc(props: {
                           src: "/plasmic/blank_project/images/cheesepng.png",
                           fullWidth: 512,
                           fullHeight: 512,
-                          aspectRatio: undefined,
+                          aspectRatio: undefined
                         }}
                       />
                     </div>
@@ -1650,7 +1650,7 @@ function PlasmicNewPage__RenderFunc(props: {
                       src: "/plasmic/blank_project/images/change9Png.png",
                       fullWidth: 1039,
                       fullHeight: 661,
-                      aspectRatio: undefined,
+                      aspectRatio: undefined
                     }}
                   />
                 ) : null}
@@ -2090,7 +2090,7 @@ function PlasmicNewPage__RenderFunc(props: {
                               src: "/plasmic/madisonopoly/images/image5.svg",
                               fullWidth: 150,
                               fullHeight: 150,
-                              aspectRatio: 1,
+                              aspectRatio: 1
                             }}
                           />
 
@@ -2467,7 +2467,7 @@ function PlasmicNewPage__RenderFunc(props: {
                 src: "/plasmic/blank_project/images/madisonFuturejpg.jpeg",
                 fullWidth: 1920,
                 fullHeight: 1080,
-                aspectRatio: undefined,
+                aspectRatio: undefined
               }}
             />
           ) : null}
@@ -2487,7 +2487,7 @@ const PlasmicDescendants = {
     "riseSection",
     "defySection2",
     "riseSection2",
-    "footerComponent",
+    "footerComponent"
   ],
   madisonopolyHeaderFinal: ["madisonopolyHeaderFinal"],
   headerMadisonopoly: ["headerMadisonopoly"],
@@ -2496,7 +2496,7 @@ const PlasmicDescendants = {
   riseSection: ["riseSection"],
   defySection2: ["defySection2"],
   riseSection2: ["riseSection2"],
-  footerComponent: ["footerComponent"],
+  footerComponent: ["footerComponent"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -2549,7 +2549,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicNewPage__ArgProps,
-          internalVariantPropNames: PlasmicNewPage__VariantProps,
+          internalVariantPropNames: PlasmicNewPage__VariantProps
         }),
       [props, nodeName]
     );
@@ -2558,7 +2558,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName,
+      forNode: nodeName
     });
   };
   if (nodeName === "root") {
@@ -2585,7 +2585,7 @@ export const PlasmicNewPage = Object.assign(
 
     // Metadata about props expected for PlasmicNewPage
     internalVariantProps: PlasmicNewPage__VariantProps,
-    internalArgProps: PlasmicNewPage__ArgProps,
+    internalArgProps: PlasmicNewPage__ArgProps
   }
 );
 
