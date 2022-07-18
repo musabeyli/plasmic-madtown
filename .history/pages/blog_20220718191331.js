@@ -28,7 +28,7 @@ export async function getStaticProps() {
   const categoriesRes = await fetchAPI("/categories", {
     populate: "*",
   });
-  const homepageRes = await fetchAPI("/homepage", {
+  const homepageRes = await fetchAPI("/categories", {
     populate: {
       hero: "*",
       seo: { populate: "*" },
