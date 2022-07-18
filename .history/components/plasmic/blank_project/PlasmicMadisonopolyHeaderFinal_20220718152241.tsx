@@ -222,7 +222,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, projectcss.a, sty.gameRules)}
             component={Link}
-            href={"/blog" as const}
+            href={"/game-rules" as const}
             platform={"nextjs"}
           >
             {false ? (

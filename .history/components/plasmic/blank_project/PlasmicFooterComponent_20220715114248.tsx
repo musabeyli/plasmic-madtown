@@ -168,7 +168,7 @@ function PlasmicFooterComponent__RenderFunc(props: {
               <Button
                 className={classNames("__wab_instance", sty.button__iynee)}
                 color={"clear" as const}
-                link={"/blog" as const}
+                link={"/game-rules" as const}
                 showEndIcon={true}
                 size={"minimal" as const}
               >
