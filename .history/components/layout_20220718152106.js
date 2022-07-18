@@ -3,7 +3,10 @@ import MadisonopolyHeaderFinal from "../components/MadisonopolyHeaderFinal"; // 
 
 const Layout = ({ children, categories, seo }) => (
   <>
-    <MadisonopolyHeaderFinal data-plasmic-name={"madisonopolyHeaderFinal"} />{" "}
+    <MadisonopolyHeaderFinal
+      data-plasmic-name={"madisonopolyHeaderFinal"}
+      className={classNames("__wab_instance", sty.madisonopolyHeaderFinal)}
+    />{" "}
     {children}
   </>
 );
