@@ -6,7 +6,7 @@ const nextConfig = {
   },
   images: {
     loader: "default",
-    domains: ["localhost", "madisonopoly-strapi.herokuapp.com"],
+    domains: ["localhost"],
   },
   reactStrictMode: true,
 };

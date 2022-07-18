@@ -4,10 +4,6 @@ const nextConfig = {
     locales: ["en"],
     defaultLocale: "en",
   },
-  images: {
-    loader: "default",
-    domains: ["localhost", "madisonopoly-strapi.herokuapp.com"],
-  },
   reactStrictMode: true,
 };
 
