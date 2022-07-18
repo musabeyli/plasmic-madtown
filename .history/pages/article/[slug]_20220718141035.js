@@ -36,7 +36,6 @@ const Article = ({ article, categories }) => {
           <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
             <div>
               {article.attributes.author.data.attributes.picture && (
-                // eslint-disable-next-line @next/next/no-img-element
                 <img
                   src={getStrapiMedia(
                     article.attributes.author.data.attributes.picture

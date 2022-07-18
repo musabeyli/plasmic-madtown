@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^1.1.0",
     "@chakra-ui/icons": "^2.0.0",
     "@chakra-ui/react": "^2.0.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
+    "@exfabrica/strapi-plugin-awesome-seo": "^1.0.0-beta.1.1",
     "@plasmicapp/cli": "^0.1.184",
     "@plasmicapp/host": "^1.0.71",
     "@plasmicapp/loader-nextjs": "^1.0.110",
