@@ -37,12 +37,6 @@ export default class MyDocument extends Document {
           `,
             }}
           />
-          <script
-            defer
-            data-domain="madisonopoly.com"
-            src="https://plausible.io/js/plausible.js"
-          ></script>
-
           <link rel="shortcut icon" href="/favicon.ico" />
           <link
             rel="stylesheet"
