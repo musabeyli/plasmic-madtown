@@ -5,7 +5,6 @@ import GlobalContextsProvider from "../components/plasmic/blank_project/PlasmicG
 import { ScreenVariantProvider } from "../components/plasmic/blank_project/PlasmicGlobalVariant__Screen";
 import { PlasmicPrdct } from "../components/plasmic/blank_project/PlasmicPrdct";
 import { NextSeo } from "next-seo";
-import { SocialProfileJsonLd } from "next-seo";
 
 function Prdct() {
   // Use PlasmicPrdct to render this component as it was
@@ -47,16 +46,6 @@ function Prdct() {
             content:
               "UW Madison Board Game, uw madison monopoly, UW-Madison Monopoly, University of Wisconsin Madison Board Game, University of Wisconsin Board Game, University of Wisconsin Madison Monopoly, uw madison board game, madisonopoly, Madison Board Game, madison board game, uw madison gifts, UW Madison gifts",
           },
-        ]}
-      />
-      <SocialProfileJsonLd
-        type="Organization"
-        name="Madisonopoly"
-        url="http://www.madisonopoly.com"
-        sameAs={[
-          "http://instagram.com/madisonopoly.wi",
-          "https://twitter.com/madisonopolyy/",
-          "https://www.tiktok.com/@madisonopoly",
         ]}
       />
       <GlobalContextsProvider>

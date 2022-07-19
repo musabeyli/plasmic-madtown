@@ -3,24 +3,28 @@
 import * as React from "react";
 import GlobalContextsProvider from "../components/plasmic/blank_project/PlasmicGlobalContextsProvider";
 import { ScreenVariantProvider } from "../components/plasmic/blank_project/PlasmicGlobalVariant__Screen";
-import { PlasmicPrdct } from "../components/plasmic/blank_project/PlasmicPrdct";
+import { PlasmicNewPage } from "../components/plasmic/blank_project/PlasmicNewPage";
 import { NextSeo } from "next-seo";
+import { ChakraProvider } from "@chakra-ui/react";
+import PopupModal from "../components/PopupModal";
+import { HeadBanner } from "../components/headbanner";
+import SEO from "../components/global/SEO.js";
 import { SocialProfileJsonLd } from "next-seo";
 
-function Prdct() {
-  // Use PlasmicPrdct to render this component as it was
+function NewPage() {
+  // Use PlasmicNewPage to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
   // can also install whatever React hooks you need here to manage state or
   // fetch data.
   //
-  // Props you can pass into PlasmicPrdct are:
+  // Props you can pass into PlasmicNewPage are:
   // 1. Variants you want to activate,
   // 2. Contents for slots you want to fill,
   // 3. Overrides for any named node in the component to attach behavior and data,
   // 4. Props to set on the root node.
   //
-  // By default, PlasmicPrdct is wrapped by your project's global
+  // By default, PlasmicNewPage is wrapped by your project's global
   // variant context providers. These wrappers may be moved to
   // Next.js Custom App component
   // (https://nextjs.org/docs/advanced-features/custom-app).
@@ -51,19 +55,26 @@ function Prdct() {
       />
       <SocialProfileJsonLd
         type="Organization"
-        name="Madisonopoly"
-        url="http://www.madisonopoly.com"
+        name="your name"
+        url="http://www.your-site.com"
         sameAs={[
-          "http://instagram.com/madisonopoly.wi",
-          "https://twitter.com/madisonopolyy/",
-          "https://www.tiktok.com/@madisonopoly",
+          "http://www.facebook.com/your-profile",
+          "http://instagram.com/yourProfile",
+          "http://www.linkedin.com/in/yourprofile",
+          "http://plus.google.com/your_profile",
         ]}
       />
+      <ChakraProvider>
+        <HeadBanner></HeadBanner>
+      </ChakraProvider>
       <GlobalContextsProvider>
-        <PlasmicPrdct />
+        <PlasmicNewPage />
       </GlobalContextsProvider>
+      <ChakraProvider>
+        <PopupModal></PopupModal>
+      </ChakraProvider>
     </div>
   );
 }
 
-export default Prdct;
+export default NewPage;

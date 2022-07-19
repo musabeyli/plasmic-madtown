@@ -5,7 +5,6 @@ import GlobalContextsProvider from "../components/plasmic/blank_project/PlasmicG
 import { ScreenVariantProvider } from "../components/plasmic/blank_project/PlasmicGlobalVariant__Screen";
 import { PlasmicPrdct } from "../components/plasmic/blank_project/PlasmicPrdct";
 import { NextSeo } from "next-seo";
-import { SocialProfileJsonLd } from "next-seo";
 
 function Prdct() {
   // Use PlasmicPrdct to render this component as it was
