@@ -4,7 +4,6 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { fetchAPI } from "../lib/api";
 import { SocialProfileJsonLd } from "next-seo";
-import { NextSeo } from "next-seo";
 
 const Home = ({ articles, categories, homepage }) => {
   return (
