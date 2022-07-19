@@ -21,7 +21,6 @@ export default async function handler(
           type: 'fixed_amount',
           fixed_amount: {
             amount: 0,
-            
             currency: 'usd',
           },
           display_name: 'Free shipping',
