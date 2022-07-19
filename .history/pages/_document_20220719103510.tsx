@@ -15,6 +15,7 @@ export default class MyDocument extends Document {
             data-domain="madisonopoly.com"
             src="https://plausible.io/js/plausible.js"
           ></script>
+
           <script
             dangerouslySetInnerHTML={{
               __html: `

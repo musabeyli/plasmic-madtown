@@ -11,11 +11,6 @@ export default class MyDocument extends Document {
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
           />
           <script
-            defer
-            data-domain="madisonopoly.com"
-            src="https://plausible.io/js/plausible.js"
-          ></script>
-          <script
             dangerouslySetInnerHTML={{
               __html: `
             window.dataLayer = window.dataLayer || [];
