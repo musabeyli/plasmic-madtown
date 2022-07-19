@@ -106,10 +106,11 @@ function PlasmicNewPage__RenderFunc(props: {
     screen: useScreenVariantsabUxTrbG0Cf5V(),
   });
 
-  const handleImageClick = (sectionID) => {
+    const handleImageClick = (sectionID) => {
     document.getElementById(sectionID).scrollIntoView({ behavior: "smooth" });
   };
-  const router = useRouter();
+  
+
   return (
     <React.Fragment>
       {}
@@ -356,7 +357,6 @@ function PlasmicNewPage__RenderFunc(props: {
                   ) ? (
                     <Button
                       className={classNames("__wab_instance", sty.button__pXl4)}
-                      onClick={() => handleImageClick("section1")}
                     >
                       <div
                         className={classNames(
@@ -906,7 +906,6 @@ function PlasmicNewPage__RenderFunc(props: {
                             sty.button__c53TY
                           )}
                           color={"clear" as const}
-                          onClick={() => handleImageClick("section2")}
                         >
                           <div
                             className={classNames(
@@ -1148,7 +1147,7 @@ function PlasmicNewPage__RenderFunc(props: {
                           sty.button__y5X90
                         )}
                         color={"blue" as const}
-                        onClick={() => router.push("/product")}
+                        link={"/product" as const}
                       >
                         <div
                           className={classNames(
@@ -1167,7 +1166,6 @@ function PlasmicNewPage__RenderFunc(props: {
                           sty.button__rs85P
                         )}
                         color={"clear" as const}
-                        onClick={() => handleImageClick("section2")}
                       >
                         <div
                           className={classNames(
@@ -1639,7 +1637,6 @@ function PlasmicNewPage__RenderFunc(props: {
                   color={"blue" as const}
                   link={"/product" as const}
                   showEndIcon={true}
-                  onClick={() => router.push("/product")}
                 >
                   {"Buy now"}
                 </Button>

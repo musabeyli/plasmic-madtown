@@ -109,7 +109,7 @@ function PlasmicNewPage__RenderFunc(props: {
   const handleImageClick = (sectionID) => {
     document.getElementById(sectionID).scrollIntoView({ behavior: "smooth" });
   };
-  const router = useRouter();
+
   return (
     <React.Fragment>
       {}
@@ -1148,7 +1148,7 @@ function PlasmicNewPage__RenderFunc(props: {
                           sty.button__y5X90
                         )}
                         color={"blue" as const}
-                        onClick={() => router.push("/product")}
+                        link={"/product" as const}
                       >
                         <div
                           className={classNames(
@@ -1639,7 +1639,7 @@ function PlasmicNewPage__RenderFunc(props: {
                   color={"blue" as const}
                   link={"/product" as const}
                   showEndIcon={true}
-                  onClick={() => router.push("/product")}
+                                    onClick={() => router.push("/product")}
                 >
                   {"Buy now"}
                 </Button>
