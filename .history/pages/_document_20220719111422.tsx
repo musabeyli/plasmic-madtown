@@ -16,12 +16,6 @@ export default class MyDocument extends Document {
             src="https://plausible.io/js/plausible.js"
           ></script>
           <script
-            defer
-            data-domain="madisonopoly.com"
-            src="https://plausible.io/js/plausible.js"
-          ></script>
-
-          <script
             dangerouslySetInnerHTML={{
               __html: `
             window.dataLayer = window.dataLayer || [];

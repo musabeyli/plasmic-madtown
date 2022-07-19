@@ -28,7 +28,7 @@ function NewPage() {
   // Next.js Custom App component
   // (https://nextjs.org/docs/advanced-features/custom-app).
   return (
-    <PlausibleProvider domain="madisonopoly.com">
+    <PlausibleProvider>
       <NextSeo
         title="Madisonopoly | Ultimate UW Madison Board Game"
         description="Only board game of UW Madison | Enjoy playing Madison Monopoly College Edition | UW Madison Gifts"

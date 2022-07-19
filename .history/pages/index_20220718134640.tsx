@@ -8,7 +8,6 @@ import { NextSeo } from "next-seo";
 import { ChakraProvider } from "@chakra-ui/react";
 import PopupModal from "../components/PopupModal";
 import { HeadBanner } from "../components/headbanner";
-import PlausibleProvider from "next-plausible";
 
 function NewPage() {
   // Use PlasmicNewPage to render this component as it was
@@ -28,7 +27,7 @@ function NewPage() {
   // Next.js Custom App component
   // (https://nextjs.org/docs/advanced-features/custom-app).
   return (
-    <PlausibleProvider domain="madisonopoly.com">
+    <div>
       <NextSeo
         title="Madisonopoly | Ultimate UW Madison Board Game"
         description="Only board game of UW Madison | Enjoy playing Madison Monopoly College Edition | UW Madison Gifts"
@@ -61,7 +60,7 @@ function NewPage() {
       <ChakraProvider>
         <PopupModal></PopupModal>
       </ChakraProvider>
-    </PlausibleProvider>
+    </div>
   );
 }
 
