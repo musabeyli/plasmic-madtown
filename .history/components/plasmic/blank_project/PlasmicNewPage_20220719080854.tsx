@@ -299,7 +299,7 @@ function PlasmicNewPage__RenderFunc(props: {
                     {
                       "Think of it as Monopoly meets Cards Against Humanity. And of course it takes place in Madtown."
                     }
-                  </h2>
+                  </div>
 
                   {true ? (
                     <div
