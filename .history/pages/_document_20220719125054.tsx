@@ -19,11 +19,11 @@ export default class MyDocument extends Document {
             name="twitter:description"
             content="Ultimate UW Madison Board Game "
           />
-          <meta name="twitter:title" content="Ultimate UW Madison Board Game" />
-          <meta name="twitter:domain" content="https://madisonopoly.com" />
+          <meta name="twitter:title" content="Felipe V. Sobral" />
+          <meta name="twitter:domain" content="https://felipesobral.com" />
           <meta
             name="twitter:image"
-            content="https://pbs.twimg.com/profile_images/1547632904687144963/EJFO_gGz_400x400.jpg"
+            content="https://felipesobral.com/assets/images/banner.jpg"
           />
           <script
             async

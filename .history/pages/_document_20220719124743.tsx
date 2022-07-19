@@ -11,20 +11,6 @@ export default class MyDocument extends Document {
             name="Instagram:site"
             content="https://www.instagram.com/madisonopoly.wi/"
           />
-          <meta
-            name="twitter:site"
-            content="https://twitter.com/madisonopolyy/"
-          />
-          <meta
-            name="twitter:description"
-            content="Ultimate UW Madison Board Game "
-          />
-          <meta name="twitter:title" content="Ultimate UW Madison Board Game" />
-          <meta name="twitter:domain" content="https://madisonopoly.com" />
-          <meta
-            name="twitter:image"
-            content="https://pbs.twimg.com/profile_images/1547632904687144963/EJFO_gGz_400x400.jpg"
-          />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
