@@ -888,7 +888,6 @@ function PlasmicNewPage__RenderFunc(props: {
                             sty.button__wDtgy
                           )}
                           color={"blue" as const}
-                          onClick={() => router.push("/product")}
                         >
                           <div
                             className={classNames(

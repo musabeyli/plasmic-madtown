@@ -39,9 +39,8 @@ import Slider from "react-slick"; // plasmic-import: HOQUyOpClJ/codeComponent
 import Select from "../../Select"; // plasmic-import: eL6LYOdI6RC/component
 import Select__Option from "../../Select__Option"; // plasmic-import: ioSFR3lRmqr/component
 import FooterComponent from "../../FooterComponent"; // plasmic-import: Mfi3gMBJIGb/component
-import { GalleriesModel } from "./ecommerce_image_slider/models/Gallery";
+
 import { useScreenVariants as useScreenVariantsabUxTrbG0Cf5V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AbUXTrbG0Cf5V/globalVariant
-import GalleryDetail from "../../ecommerce_image_slider/components/GalleryDetail";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -57,7 +56,6 @@ import { SliderData } from "../../SliderData.js";
 import { loadStripe } from "@stripe/stripe-js";
 import { fetchPostJSON } from "../../../utils/api-helpers";
 import getStripe from "../../../utils/get-stripejs";
-import { fakeDataItems } from "../../ProductImages";
 
 loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || "");
 
@@ -82,11 +80,6 @@ export type PlasmicPrdct__OverridesType = {
 };
 
 export interface DefaultPrdctProps {}
-
-const ballStyle = {
-  marginRight: "0.5em",
-  marginTop: "50px",
-};
 
 function PlasmicPrdct__RenderFunc(props: {
   variants: PlasmicPrdct__VariantsArgs;
@@ -222,7 +215,16 @@ function PlasmicPrdct__RenderFunc(props: {
               sty.madisonopolyHeaderFinal
             )}
           />
-
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+          ) ? (
+            <ShoppingCartIcon
+              data-plasmic-name={"svg"}
+              data-plasmic-override={overrides.svg}
+              className={classNames(projectcss.all, sty.svg)}
+              role={"img"}
+            />
+          ) : null}
           <div className={classNames(projectcss.all, sty.freeBox__mDtZy)}>
             {(
               hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
@@ -244,9 +246,6 @@ function PlasmicPrdct__RenderFunc(props: {
               data-plasmic-override={overrides.columns}
               className={classNames(projectcss.all, sty.columns)}
             >
-              {/* <GalleryDetail galleries={fakeDataItems()} thumbsPerView={3} /> */}
-              {/* <GalleryDetail galleries={images} /> */}
-
               <div className={classNames(projectcss.all, sty.column__gRxnh)}>
                 <p.PlasmicImg
                   alt={""}
@@ -265,8 +264,6 @@ function PlasmicPrdct__RenderFunc(props: {
                     aspectRatio: undefined,
                   }}
                 />
-                <div style={ballStyle}></div>
-                <ImageGallery originalHeight={"100"} items={images} />
 
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
@@ -658,9 +655,6 @@ function PlasmicPrdct__RenderFunc(props: {
                           {"2 Dices"}
                         </li>
                       </ul>
-                      <React.Fragment>
-                        {"** 30 Day Moneyback Guarantee **"}
-                      </React.Fragment>
                       <React.Fragment>{""}</React.Fragment>
                     </React.Fragment>
                   </div>
@@ -774,6 +768,8 @@ function PlasmicPrdct__RenderFunc(props: {
               </div>
             </div>
           </div>
+          <ImageGallery originalHeight={"500"} items={images} />
+          {/* <ImageSlider slides={SliderData} />; */}
           <FooterComponent
             data-plasmic-name={"footerComponent"}
             data-plasmic-override={overrides.footerComponent}
