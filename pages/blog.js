@@ -4,12 +4,11 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { fetchAPI } from "../lib/api";
 import { SocialProfileJsonLd } from "next-seo";
-import { NextSeo } from "next-seo";
 
 const Home = ({ articles, categories, homepage }) => {
   return (
     <>
-      <NextSeo
+        <NextSeo
         title="Madisonopoly | Ultimate UW Madison Board Game"
         description="Only board game of UW Madison | Enjoy playing Madison Monopoly College Edition | UW Madison Gifts"
         canonical="https://www.madisonopoly.com/"
@@ -42,19 +41,19 @@ const Home = ({ articles, categories, homepage }) => {
           "https://www.tiktok.com/@madisonopoly",
         ]}
       />
-
-      <Layout categories={categories}>
-        {/* <Seo seo={homepage.attributes.seo} /> */}
-        <div className="uk-section">
-          <div className="uk-container uk-container-large">
-            {console.log(homepage.attributes)}
-            <h1>{"Madisonopoly Blogs & Bites"}</h1>
-            <Articles articles={articles} />
-          </div>
+      
+    <Layout categories={categories}>
+      {/* <Seo seo={homepage.attributes.seo} /> */}
+      <div className="uk-section">
+        <div className="uk-container uk-container-large">
+          {console.log(homepage.attributes)}
+          <h1>{"Madisonopoly Blogs & Bites"}</h1>
+          <Articles articles={articles} />
         </div>
-      </Layout>
-    </>
+      </div>
+    </Layout>
   );
+  </>
 };
 
 export async function getStaticProps() {
