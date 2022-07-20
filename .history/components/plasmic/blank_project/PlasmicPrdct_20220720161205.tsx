@@ -39,10 +39,9 @@ import Slider from "react-slick"; // plasmic-import: HOQUyOpClJ/codeComponent
 import Select from "../../Select"; // plasmic-import: eL6LYOdI6RC/component
 import Select__Option from "../../Select__Option"; // plasmic-import: ioSFR3lRmqr/component
 import FooterComponent from "../../FooterComponent"; // plasmic-import: Mfi3gMBJIGb/component
-import { GalleriesModel } from "./ecommerce_image_slider/models/Gallery";
+
 import { useScreenVariants as useScreenVariantsabUxTrbG0Cf5V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AbUXTrbG0Cf5V/globalVariant
-import GalleryDetail from "../../ecommerce_image_slider/components/GalleryDetail";
-import { HStack } from "@chakra-ui/react";
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_blank_project.module.css"; // plasmic-import: wA73ZswqroE6r1m1xaxGJ1/projectcss
@@ -57,8 +56,6 @@ import { SliderData } from "../../SliderData.js";
 import { loadStripe } from "@stripe/stripe-js";
 import { fetchPostJSON } from "../../../utils/api-helpers";
 import getStripe from "../../../utils/get-stripejs";
-import { fakeDataItems } from "../../ProductImages";
-import { TikTok } from "react-tiktok";
 
 loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || "");
 
@@ -83,11 +80,6 @@ export type PlasmicPrdct__OverridesType = {
 };
 
 export interface DefaultPrdctProps {}
-
-const ballStyle = {
-  marginRight: "0.5em",
-  marginTop: "50px",
-};
 
 function PlasmicPrdct__RenderFunc(props: {
   variants: PlasmicPrdct__VariantsArgs;
@@ -117,13 +109,6 @@ function PlasmicPrdct__RenderFunc(props: {
     setSelectedValue(e);
   };
 
-  const state = {
-    showVideo: {},
-    showGalleryPlayButton: true,
-    showVide: {},
-    showGalleryFullscreenButton: true,
-  };
-
   const images = [
     {
       original:
@@ -149,86 +134,9 @@ function PlasmicPrdct__RenderFunc(props: {
       thumbnail:
         "/plasmic/blank_project/images/website_images/gamebox_gameplay_side.jpg",
     },
-    {
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/tiktok_image.jpg",
-      original: "/plasmic/blank_project/images/website_images/tiktok_image.jpg",
-      embedUrl: "https://www.tiktok.com/embed/7121119118769622318",
-      description: "Madisonopoly Tiktok Video",
-      renderItem: _renderVideo.bind(),
-    },
   ];
 
   const [loading, setLoading] = useState(false);
-
-  const iframe_container = {
-    left: 0,
-    width: "100%",
-    height: 500,
-    position: "relative",
-  };
-
-  const iframe = {
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    position: "relative",
-    border: 0,
-  };
-
-  function _renderVideo(item) {
-    return (
-      <div>
-        <div className={classNames(projectcss.all, sty.row_container)}>
-          <div className={classNames(projectcss.all, sty.first_row)}>
-            <p>Madisonopoly on Tiktok</p>
-          </div>
-          <HStack>
-            <iframe
-              src="https://www.tiktok.com/embed/7120005683860311339"
-              className={classNames(projectcss.all, sty.second_row)}
-            ></iframe>
-            <iframe
-              src="https://www.tiktok.com/embed/7121085878209989930"
-              className={classNames(projectcss.all, sty.second_row)}
-            ></iframe>
-            <iframe
-              src="https://www.tiktok.com/embed/7121119118769622318"
-              className={classNames(projectcss.all, sty.second_row)}
-            ></iframe>
-            {/* <iframe
-              src="https://www.tiktok.com/embed7120346132080790830"
-              className={classNames(projectcss.all, sty.second_row)}
-            ></iframe> */}
-            <iframe
-              src="https://www.tiktok.com/embed/7122232365149130030"
-              className={classNames(projectcss.all, sty.second_row)}
-            ></iframe>
-          </HStack>
-        </div>
-        {/* <div className="video-wrapper">
-          <div className={iframe_container} bg="red">
-            <iframe
-              src="https://www.tiktok.com/embed/7072819797184171310"
-              className={iframe}
-              allowfullscreen
-              scrolling="no"
-              allow="encrypted-media;"
-            ></iframe>
-          </div>
-        </div> */}
-      </div>
-    );
-  }
-
-  function _toggleShowVideo(url) {
-    state.showVideo[url] = !Boolean(state.showVideo[url]);
-    state.showVideo = state.showVideo;
-    // setState({
-    //   showVideo: state.showVideo,
-    // });
-  }
 
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
@@ -257,6 +165,23 @@ function PlasmicPrdct__RenderFunc(props: {
     console.warn(error.message);
     setLoading(false);
   };
+
+  function _toggleShowVideo(url) {
+    this.state.showVideo[url] = !Boolean(this.state.showVideo[url]);
+    this.setState({
+      showVideo: this.state.showVideo,
+    });
+
+    if (this.state.showVideo[url]) {
+      if (this.state.showPlayButton) {
+        this.setState({ showGalleryPlayButton: false });
+      }
+
+      if (this.state.showFullscreenButton) {
+        this.setState({ showGalleryFullscreenButton: false });
+      }
+    }
+  }
 
   return (
     <React.Fragment>
@@ -290,7 +215,16 @@ function PlasmicPrdct__RenderFunc(props: {
               sty.madisonopolyHeaderFinal
             )}
           />
-
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+          ) ? (
+            <ShoppingCartIcon
+              data-plasmic-name={"svg"}
+              data-plasmic-override={overrides.svg}
+              className={classNames(projectcss.all, sty.svg)}
+              role={"img"}
+            />
+          ) : null}
           <div className={classNames(projectcss.all, sty.freeBox__mDtZy)}>
             {(
               hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
@@ -330,8 +264,6 @@ function PlasmicPrdct__RenderFunc(props: {
                     aspectRatio: undefined,
                   }}
                 />
-                <div style={ballStyle}></div>
-                <ImageGallery originalHeight={"100"} items={images} />
 
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
@@ -723,9 +655,6 @@ function PlasmicPrdct__RenderFunc(props: {
                           {"2 Dices"}
                         </li>
                       </ul>
-                      <React.Fragment>
-                        {"** 30 Day Moneyback Guarantee **"}
-                      </React.Fragment>
                       <React.Fragment>{""}</React.Fragment>
                     </React.Fragment>
                   </div>
@@ -839,6 +768,8 @@ function PlasmicPrdct__RenderFunc(props: {
               </div>
             </div>
           </div>
+          <ImageGallery originalHeight={"500"} items={images} />
+          {/* <ImageSlider slides={SliderData} />; */}
           <FooterComponent
             data-plasmic-name={"footerComponent"}
             data-plasmic-override={overrides.footerComponent}
