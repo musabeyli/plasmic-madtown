@@ -6,7 +6,7 @@ const ContentSecurityPolicy = `
   img-src * blob: data:;
   media-src 'none';
   connect-src *;
-  font-src 'self' data;
+  font-src 'self';
   frame-src giscus.app https://www.disqus.com https://www.youtu.be https://www.youtube.com https://www.google.com https://www.tiktok.com
 `;
 const securityHeaders = [
@@ -17,10 +17,6 @@ const securityHeaders = [
   {
     key: "Referrer-Policy",
     value: "origin-when-cross-origin",
-  },
-  {
-    key: "X-Frame-Options",
-    value: "SAMEORIGIN",
   },
   {
     key: "X-Content-Type-Options",
@@ -47,7 +43,7 @@ const nextConfig = {
   },
   async headers() {
     return [
-      { source: "/product", headers: securityHeaders },
+      { source: "/", headers: securityHeaders },
       { source: "/:path*", headers: securityHeaders },
     ];
   },

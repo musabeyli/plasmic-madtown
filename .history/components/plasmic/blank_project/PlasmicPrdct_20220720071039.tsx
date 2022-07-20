@@ -151,8 +151,9 @@ function PlasmicPrdct__RenderFunc(props: {
     },
     {
       thumbnail:
-        "/plasmic/blank_project/images/website_images/tiktok_image.jpg",
-      original: "/plasmic/blank_project/images/website_images/tiktok_image.jpg",
+        "/plasmic/blank_project/images/website_images/gamebox_back_cover.JPG",
+      original:
+        "/plasmic/blank_project/images/website_images/gamebox_back_cover.JPG",
       embedUrl: "https://www.tiktok.com/embed/7121119118769622318",
       description: "Madisonopoly Tiktok Video",
       renderItem: _renderVideo.bind(),
@@ -171,8 +172,8 @@ function PlasmicPrdct__RenderFunc(props: {
   const iframe = {
     top: 0,
     left: 0,
-    width: "100%",
-    height: "100%",
+    width: "50px",
+    height: "500px",
     position: "relative",
     border: 0,
   };

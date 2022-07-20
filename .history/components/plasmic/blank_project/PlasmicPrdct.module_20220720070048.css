@@ -18,15 +18,18 @@
   width: auto;
   height: auto;
   flex-direction: column;
+  background-color: blue;
   overflow: hidden;
 }
 .first_row {
+  background-color: lime;
 }
 .second_row {
   display: flex;
-  width: 100%;
+  width: auto;
   height: auto;
   flex-direction: column;
+  background-color: redblue;
   overflow: hidden;
 }
 .svg {

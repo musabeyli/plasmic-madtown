@@ -42,7 +42,7 @@ import FooterComponent from "../../FooterComponent"; // plasmic-import: Mfi3gMBJ
 import { GalleriesModel } from "./ecommerce_image_slider/models/Gallery";
 import { useScreenVariants as useScreenVariantsabUxTrbG0Cf5V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AbUXTrbG0Cf5V/globalVariant
 import GalleryDetail from "../../ecommerce_image_slider/components/GalleryDetail";
-import { HStack } from "@chakra-ui/react";
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_blank_project.module.css"; // plasmic-import: wA73ZswqroE6r1m1xaxGJ1/projectcss
@@ -151,9 +151,11 @@ function PlasmicPrdct__RenderFunc(props: {
     },
     {
       thumbnail:
-        "/plasmic/blank_project/images/website_images/tiktok_image.jpg",
-      original: "/plasmic/blank_project/images/website_images/tiktok_image.jpg",
-      embedUrl: "https://www.tiktok.com/embed/7121119118769622318",
+        "/plasmic/blank_project/images/website_images/gamebox_back_cover.JPG",
+      original:
+        "/plasmic/blank_project/images/website_images/gamebox_back_cover.JPG",
+      embedUrl:
+        "https://www.tiktok.com/@madisonopoly/video/7121119118769622318",
       description: "Madisonopoly Tiktok Video",
       renderItem: _renderVideo.bind(),
     },
@@ -171,8 +173,8 @@ function PlasmicPrdct__RenderFunc(props: {
   const iframe = {
     top: 0,
     left: 0,
-    width: "100%",
-    height: "100%",
+    width: "50px",
+    height: "500px",
     position: "relative",
     border: 0,
   };
@@ -180,32 +182,16 @@ function PlasmicPrdct__RenderFunc(props: {
   function _renderVideo(item) {
     return (
       <div>
-        <div className={classNames(projectcss.all, sty.row_container)}>
-          <div className={classNames(projectcss.all, sty.first_row)}>
-            <p>Madisonopoly on Tiktok</p>
+        <div class="row-container">
+          <div class="first-row">
+            <p>Some text</p>
+            <p>And some more text</p>
           </div>
-          <HStack>
-            <iframe
-              src="https://www.tiktok.com/embed/7120005683860311339"
-              className={classNames(projectcss.all, sty.second_row)}
-            ></iframe>
-            <iframe
-              src="https://www.tiktok.com/embed/7121085878209989930"
-              className={classNames(projectcss.all, sty.second_row)}
-            ></iframe>
-            <iframe
-              src="https://www.tiktok.com/embed/7121119118769622318"
-              className={classNames(projectcss.all, sty.second_row)}
-            ></iframe>
-            {/* <iframe
-              src="https://www.tiktok.com/embed7120346132080790830"
-              className={classNames(projectcss.all, sty.second_row)}
-            ></iframe> */}
-            <iframe
-              src="https://www.tiktok.com/embed/7122232365149130030"
-              className={classNames(projectcss.all, sty.second_row)}
-            ></iframe>
-          </HStack>
+          <iframe
+            src="https://www.tiktok.com/embed/7072819797184171310"
+            className={classNames(projectcss.all, sty.freeBox__mDtZy)}
+            class="second-row"
+          ></iframe>
         </div>
         {/* <div className="video-wrapper">
           <div className={iframe_container} bg="red">

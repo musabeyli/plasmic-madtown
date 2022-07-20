@@ -13,21 +13,22 @@
   max-width: 100%;
   position: relative;
 }
-.row_container {
-  display: flex;
-  width: auto;
-  height: auto;
-  flex-direction: column;
-  overflow: hidden;
-}
-.first_row {
-}
-.second_row {
+.row-container {
   display: flex;
   width: 100%;
-  height: auto;
+  height: 100%;
   flex-direction: column;
+  background-color: blue;
   overflow: hidden;
+}
+.first-row {
+  background-color: lime;
+}
+.second+row {
+  flex-grow: 1;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 .svg {
   position: relative;

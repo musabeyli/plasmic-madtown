@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app https://www.disqus.com https://www.youtu.be https://www.youtube.com https://www.google.com https://www.tiktok.com;
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.tiktok.com;
+  child-src www.tiktok.com *.tiktok-nocookie.com;
   style-src 'self' 'unsafe-inline';
   img-src * blob: data:;
   media-src 'none';
   connect-src *;
-  font-src 'self' data;
-  frame-src giscus.app https://www.disqus.com https://www.youtu.be https://www.youtube.com https://www.google.com https://www.tiktok.com
+  font-src 'self';
 `;
 const securityHeaders = [
   {
@@ -20,7 +20,7 @@ const securityHeaders = [
   },
   {
     key: "X-Frame-Options",
-    value: "SAMEORIGIN",
+    value: "DENY",
   },
   {
     key: "X-Content-Type-Options",
@@ -47,7 +47,7 @@ const nextConfig = {
   },
   async headers() {
     return [
-      { source: "/product", headers: securityHeaders },
+      { source: "/", headers: securityHeaders },
       { source: "/:path*", headers: securityHeaders },
     ];
   },

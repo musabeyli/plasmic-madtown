@@ -24,8 +24,8 @@
 }
 .second_row {
   display: flex;
-  width: 100%;
-  height: auto;
+  width: 25%;
+  height: 125%;
   flex-direction: column;
   overflow: hidden;
 }
