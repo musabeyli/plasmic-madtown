@@ -42,7 +42,7 @@ import FooterComponent from "../../FooterComponent"; // plasmic-import: Mfi3gMBJ
 import { GalleriesModel } from "./ecommerce_image_slider/models/Gallery";
 import { useScreenVariants as useScreenVariantsabUxTrbG0Cf5V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AbUXTrbG0Cf5V/globalVariant
 import GalleryDetail from "../../ecommerce_image_slider/components/GalleryDetail";
-import { Center, HStack } from "@chakra-ui/react";
+import { HStack } from "@chakra-ui/react";
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_blank_project.module.css"; // plasmic-import: wA73ZswqroE6r1m1xaxGJ1/projectcss
@@ -303,7 +303,7 @@ function PlasmicPrdct__RenderFunc(props: {
                   sty.h1__xuXzl
                 )}
               >
-                <Center>Madisonopoly</Center>
+                {"Madisonopoly"}
               </h1>
             ) : null}
 
@@ -727,125 +727,129 @@ function PlasmicPrdct__RenderFunc(props: {
                         {"** 30 Day Moneyback Guarantee **"}
                       </React.Fragment>
                       <React.Fragment>{""}</React.Fragment>
+                      <form onSubmit={handleSubmit} method="POST">
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__gvTr
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__lCR5
+                            )}
+                          >
+                            {"Quantity:"}
+                          </div>
+
+                          <Select
+                            data-plasmic-name={"select"}
+                            data-plasmic-override={overrides.select}
+                            className={classNames("__wab_instance", sty.select)}
+                            defaultValue={"value1" as const}
+                            onChange={handleChange}
+                          >
+                            <Select__Option
+                              className={classNames(
+                                "__wab_instance",
+                                sty.option__hoiXq
+                              )}
+                              value={"1" as const}
+                            >
+                              {"1"}
+                            </Select__Option>
+
+                            <Select__Option
+                              className={classNames(
+                                "__wab_instance",
+                                sty.option__iuXtT
+                              )}
+                              value={"2" as const}
+                            >
+                              {"2"}
+                            </Select__Option>
+
+                            <Select__Option
+                              className={classNames(
+                                "__wab_instance",
+                                sty.option__q6Qru
+                              )}
+                              value={"3" as const}
+                            >
+                              {"3"}
+                            </Select__Option>
+
+                            <Select__Option
+                              className={classNames(
+                                "__wab_instance",
+                                sty.option___0ZIi9
+                              )}
+                              value={"4" as const}
+                            >
+                              {"4"}
+                            </Select__Option>
+
+                            <Select__Option
+                              className={classNames(
+                                "__wab_instance",
+                                sty.option__ivQkk
+                              )}
+                              value={"5" as const}
+                            >
+                              {"5"}
+                            </Select__Option>
+                          </Select>
+                          <section>
+                            <button type="submit" role="link">
+                              Checkout
+                            </button>
+                          </section>
+                          <style jsx>
+                            {`
+                              section {
+                                background: #ffffff;
+                                display: flex;
+                                flex-direction: column;
+                                width: 400px;
+                                height: 112px;
+                                margin-top: 24px;
+                                border-radius: 6px;
+                                justify-content: space-between;
+                              }
+                              button {
+                                height: 36px;
+                                background: #556cd6;
+                                border-radius: 4px;
+                                color: white;
+                                border: 0;
+                                font-weight: 600;
+                                cursor: pointer;
+                                transition: all 0.2s ease;
+                                box-shadow: 0px 4px 5.5px 0px
+                                  rgba(0, 0, 0, 0.07);
+                              }
+                              button:hover {
+                                opacity: 0.8;
+                              }
+                            `}
+                          </style>
+                        </div>
+                      </form>
                     </React.Fragment>
                   </div>
                 </div>
-                <form onSubmit={handleSubmit} method="POST">
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__gvTr)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__lCR5
-                      )}
-                    >
-                      {"Quantity:"}
-                    </div>
-
-                    <Select
-                      data-plasmic-name={"select"}
-                      data-plasmic-override={overrides.select}
-                      className={classNames("__wab_instance", sty.select)}
-                      defaultValue={"value1" as const}
-                      onChange={handleChange}
-                    >
-                      <Select__Option
-                        className={classNames(
-                          "__wab_instance",
-                          sty.option__hoiXq
-                        )}
-                        value={"1" as const}
-                      >
-                        {"1"}
-                      </Select__Option>
-
-                      <Select__Option
-                        className={classNames(
-                          "__wab_instance",
-                          sty.option__iuXtT
-                        )}
-                        value={"2" as const}
-                      >
-                        {"2"}
-                      </Select__Option>
-
-                      <Select__Option
-                        className={classNames(
-                          "__wab_instance",
-                          sty.option__q6Qru
-                        )}
-                        value={"3" as const}
-                      >
-                        {"3"}
-                      </Select__Option>
-
-                      <Select__Option
-                        className={classNames(
-                          "__wab_instance",
-                          sty.option___0ZIi9
-                        )}
-                        value={"4" as const}
-                      >
-                        {"4"}
-                      </Select__Option>
-
-                      <Select__Option
-                        className={classNames(
-                          "__wab_instance",
-                          sty.option__ivQkk
-                        )}
-                        value={"5" as const}
-                      >
-                        {"5"}
-                      </Select__Option>
-                    </Select>
-                    <section>
-                      <button type="submit" role="link">
-                        Checkout
-                      </button>
-                    </section>
-                    <style jsx>
-                      {`
-                        section {
-                          background: #ffffff;
-                          display: flex;
-                          flex-direction: column;
-                          width: 400px;
-                          height: 112px;
-                          margin-top: 24px;
-                          border-radius: 6px;
-                          justify-content: space-between;
-                        }
-                        button {
-                          height: 36px;
-                          background: #556cd6;
-                          border-radius: 4px;
-                          color: white;
-                          border: 0;
-                          font-weight: 600;
-                          cursor: pointer;
-                          transition: all 0.2s ease;
-                          box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
-                        }
-                        button:hover {
-                          opacity: 0.8;
-                        }
-                      `}
-                    </style>
-                  </div>
-                </form>
               </div>
             </div>
           </div>
+          <FooterComponent
+            data-plasmic-name={"footerComponent"}
+            data-plasmic-override={overrides.footerComponent}
+            className={classNames("__wab_instance", sty.footerComponent)}
+          />
         </div>
       </div>
-      <FooterComponent
-        data-plasmic-name={"footerComponent"}
-        data-plasmic-override={overrides.footerComponent}
-        className={classNames("__wab_instance", sty.footerComponent)}
-      />
     </React.Fragment>
   ) as React.ReactElement | null;
 }

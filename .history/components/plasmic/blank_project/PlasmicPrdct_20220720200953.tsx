@@ -42,7 +42,7 @@ import FooterComponent from "../../FooterComponent"; // plasmic-import: Mfi3gMBJ
 import { GalleriesModel } from "./ecommerce_image_slider/models/Gallery";
 import { useScreenVariants as useScreenVariantsabUxTrbG0Cf5V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AbUXTrbG0Cf5V/globalVariant
 import GalleryDetail from "../../ecommerce_image_slider/components/GalleryDetail";
-import { Center, HStack } from "@chakra-ui/react";
+import { HStack } from "@chakra-ui/react";
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_blank_project.module.css"; // plasmic-import: wA73ZswqroE6r1m1xaxGJ1/projectcss
@@ -303,7 +303,7 @@ function PlasmicPrdct__RenderFunc(props: {
                   sty.h1__xuXzl
                 )}
               >
-                <Center>Madisonopoly</Center>
+                {"Madisonopoly"}
               </h1>
             ) : null}
 
@@ -841,11 +841,6 @@ function PlasmicPrdct__RenderFunc(props: {
           </div>
         </div>
       </div>
-      <FooterComponent
-        data-plasmic-name={"footerComponent"}
-        data-plasmic-override={overrides.footerComponent}
-        className={classNames("__wab_instance", sty.footerComponent)}
-      />
     </React.Fragment>
   ) as React.ReactElement | null;
 }

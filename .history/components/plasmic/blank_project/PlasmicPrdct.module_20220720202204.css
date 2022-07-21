@@ -61,12 +61,15 @@
   .h1__xuXzl {
     font-size: 48px;
     position: absolute;
-    width: 100%;
-    top: 71px;
+    /* left: 26px; */
+    /* top: 91px; */
+    padding-right: 43px;
     margin-right: 0px;
     align-self: flex-start;
     z-index: 1;
+    width: auto;
     height: auto;
+    background-color: red;
     text-align: center;
     font-family: Helvetica;
   }

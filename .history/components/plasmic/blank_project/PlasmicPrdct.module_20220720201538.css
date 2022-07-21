@@ -53,22 +53,22 @@
   height: auto;
   max-width: 652px;
   padding-right: 22px;
-  text-align: center;
-  font-family: Helvetica;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .h1__xuXzl {
     font-size: 48px;
     position: absolute;
-    width: 100%;
-    top: 71px;
+    left: 26px;
+    top: 91px;
+    padding-right: 43px;
     margin-right: 0px;
     align-self: flex-start;
     z-index: 1;
+    width: auto;
     height: auto;
+    padding-left: 30px;
     text-align: center;
-    font-family: Helvetica;
   }
 }
 .columns {

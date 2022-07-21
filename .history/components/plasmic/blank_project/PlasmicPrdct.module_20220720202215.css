@@ -52,7 +52,7 @@
   width: 100%;
   height: auto;
   max-width: 652px;
-  padding-right: 22px;
+  /* padding-right: 22px; */
   text-align: center;
   font-family: Helvetica;
   min-width: 0;
@@ -61,12 +61,15 @@
   .h1__xuXzl {
     font-size: 48px;
     position: absolute;
-    width: 100%;
-    top: 71px;
+    /* left: 26px; */
+    /* top: 91px; */
+    padding-right: 43px;
     margin-right: 0px;
     align-self: flex-start;
     z-index: 1;
+    width: auto;
     height: auto;
+    background-color: red;
     text-align: center;
     font-family: Helvetica;
   }

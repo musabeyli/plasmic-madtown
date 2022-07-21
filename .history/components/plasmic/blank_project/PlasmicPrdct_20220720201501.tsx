@@ -42,7 +42,7 @@ import FooterComponent from "../../FooterComponent"; // plasmic-import: Mfi3gMBJ
 import { GalleriesModel } from "./ecommerce_image_slider/models/Gallery";
 import { useScreenVariants as useScreenVariantsabUxTrbG0Cf5V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AbUXTrbG0Cf5V/globalVariant
 import GalleryDetail from "../../ecommerce_image_slider/components/GalleryDetail";
-import { Center, HStack } from "@chakra-ui/react";
+import { HStack } from "@chakra-ui/react";
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_blank_project.module.css"; // plasmic-import: wA73ZswqroE6r1m1xaxGJ1/projectcss
@@ -59,6 +59,7 @@ import { fetchPostJSON } from "../../../utils/api-helpers";
 import getStripe from "../../../utils/get-stripejs";
 import { fakeDataItems } from "../../ProductImages";
 import { TikTok } from "react-tiktok";
+import { Heading } from "@chakra-ui/react";
 
 loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || "");
 
@@ -296,14 +297,14 @@ function PlasmicPrdct__RenderFunc(props: {
               hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
             ) ? (
               <h1
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h1,
-                  projectcss.__wab_text,
-                  sty.h1__xuXzl
-                )}
+              // className={classNames(
+              //   projectcss.all,
+              //   projectcss.h1,
+              //   projectcss.__wab_text,
+              //   sty.h1__xuXzl
+              // )}
               >
-                <Center>Madisonopoly</Center>
+                {"Madisonopoly"}
               </h1>
             ) : null}
 
@@ -583,16 +584,16 @@ function PlasmicPrdct__RenderFunc(props: {
                       ? true
                       : true
                   ) ? (
-                    <h1
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h1,
-                        projectcss.__wab_text,
-                        sty.h1__hvLvu
-                      )}
+                    <Heading
+                    // className={classNames(
+                    //   projectcss.all,
+                    //   projectcss.h1,
+                    //   projectcss.__wab_text,
+                    //   sty.h1__hvLvu
+                    // )}
                     >
                       {"Madisonopoly"}
-                    </h1>
+                    </Heading>
                   ) : null}
 
                   <div

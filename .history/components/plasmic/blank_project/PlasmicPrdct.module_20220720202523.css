@@ -62,10 +62,11 @@
     font-size: 48px;
     position: absolute;
     width: 100%;
-    top: 71px;
+    top: 91px;
     margin-right: 0px;
     align-self: flex-start;
     z-index: 1;
+    background-color: red;
     height: auto;
     text-align: center;
     font-family: Helvetica;

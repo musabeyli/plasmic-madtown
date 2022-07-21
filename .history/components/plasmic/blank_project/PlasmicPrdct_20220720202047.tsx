@@ -303,7 +303,7 @@ function PlasmicPrdct__RenderFunc(props: {
                   sty.h1__xuXzl
                 )}
               >
-                <Center>Madisonopoly</Center>
+                <Center>{"Madisonopoly"}</Center>
               </h1>
             ) : null}
 
