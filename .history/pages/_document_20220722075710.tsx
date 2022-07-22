@@ -89,15 +89,9 @@ export default class MyDocument extends Document {
             async
             src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.js"
           />
-          {/* <!-- Start of HubSpot Embed Code --> */}
-          <script
-            type="text/javascript"
-            id="hs-script-loader"
-            async
-            defer
-            src="//js-na1.hs-scripts.com/22381508.js"
-          ></script>
-          {/* <!-- End of HubSpot Embed Code --> */}
+          <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/22381508.js"></script>
+<!-- End of HubSpot Embed Code -->
         </Head>
         <body>
           <Main />
