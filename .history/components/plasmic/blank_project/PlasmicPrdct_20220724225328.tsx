@@ -615,21 +615,12 @@ function PlasmicPrdct__RenderFunc(props: {
                     </Center>
 
                     <React.Fragment>
-                      <Center>
-                        <Text
-                          marginTop="10px"
-                          marginBottom="10px"
-                          fontWeight="bold"
-                        >
-                          {"Price : $49"}
-                        </Text>
-                      </Center>
-
                       <React.Fragment>
                         {
                           "The memorable experiences in Langdon Street, the sleepless nights we had in College Library during finals week, that 2 AM Mac N Cheese slice at Ian's Pizza on Franklin, and many more..\n\nHow about buying those properties and renting it to your friends in a Monopoly game? You can build houses and hotels on your favorite Madtown spots.\n\nA token of your time spent in Madison or the token of new adventures :)\n\nThe box comes with:\n"
                         }
                       </React.Fragment>
+
                       <ul
                         data-plasmic-name={"ul"}
                         data-plasmic-override={overrides.ul}

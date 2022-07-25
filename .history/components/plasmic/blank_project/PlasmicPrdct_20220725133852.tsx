@@ -615,15 +615,9 @@ function PlasmicPrdct__RenderFunc(props: {
                     </Center>
 
                     <React.Fragment>
-                      <Center>
-                        <Text
-                          marginTop="10px"
-                          marginBottom="10px"
-                          fontWeight="bold"
-                        >
-                          {"Price : $49"}
-                        </Text>
-                      </Center>
+                      <React.Fragment>
+                        {"Price : $49"}
+                      </React.Fragment>
 
                       <React.Fragment>
                         {

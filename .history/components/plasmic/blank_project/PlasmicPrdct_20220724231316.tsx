@@ -65,6 +65,7 @@ import {
   FaUniversity,
   FaShippingFast,
 } from "react-icons/fa";
+import InstagramEmbed from "react-instagram-embed";
 
 loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || "");
 
@@ -155,14 +156,14 @@ function PlasmicPrdct__RenderFunc(props: {
       thumbnail:
         "/plasmic/blank_project/images/website_images/gamebox_gameplay_side.jpg",
     },
-    // {
-    //   thumbnail:
-    //     "/plasmic/blank_project/images/website_images/tiktok_image.png",
-    //   original: "/plasmic/blank_project/images/website_images/tiktok_image.png",
-    //   embedUrl: "https://www.tiktok.com/embed/7121119118769622318",
-    //   description: "Madisonopoly Tiktok Video",
-    //   renderItem: _renderVideo.bind(),
-    // },
+    {
+      thumbnail:
+        "/plasmic/blank_project/images/website_images/tiktok_image.png",
+      original: "/plasmic/blank_project/images/website_images/tiktok_image.png",
+      embedUrl: "https://www.instagram.com/reel/CgR0t_IjUDl",
+      description: "Madisonopoly Instagram Video",
+      renderItem: _renderVideo.bind(),
+    },
   ];
 
   const [loading, setLoading] = useState(false);
@@ -182,51 +183,6 @@ function PlasmicPrdct__RenderFunc(props: {
     position: "relative",
     border: 0,
   };
-
-  function _renderVideo(item) {
-    return (
-      <div>
-        <div className={classNames(projectcss.all, sty.row_container)}>
-          <div className={classNames(projectcss.all, sty.first_row)}>
-            <p>Madisonopoly on Tiktok</p>
-          </div>
-          <HStack>
-            <iframe
-              src="https://www.tiktok.com/embed/7120005683860311339"
-              className={classNames(projectcss.all, sty.second_row)}
-            ></iframe>
-            <iframe
-              src="https://www.tiktok.com/embed/7121085878209989930"
-              className={classNames(projectcss.all, sty.second_row)}
-            ></iframe>
-            <iframe
-              src="https://www.tiktok.com/embed/7121119118769622318"
-              className={classNames(projectcss.all, sty.second_row)}
-            ></iframe>
-            {/* <iframe
-              src="https://www.tiktok.com/embed7120346132080790830"
-              className={classNames(projectcss.all, sty.second_row)}
-            ></iframe> */}
-            <iframe
-              src="https://www.tiktok.com/embed/7122232365149130030"
-              className={classNames(projectcss.all, sty.second_row)}
-            ></iframe>
-          </HStack>
-        </div>
-        {/* <div className="video-wrapper">
-          <div className={iframe_container} bg="red">
-            <iframe
-              src="https://www.tiktok.com/embed/7072819797184171310"
-              className={iframe}
-              allowfullscreen
-              scrolling="no"
-              allow="encrypted-media;"
-            ></iframe>
-          </div>
-        </div> */}
-      </div>
-    );
-  }
 
   function _toggleShowVideo(url) {
     state.showVideo[url] = !Boolean(state.showVideo[url]);
@@ -615,21 +571,12 @@ function PlasmicPrdct__RenderFunc(props: {
                     </Center>
 
                     <React.Fragment>
-                      <Center>
-                        <Text
-                          marginTop="10px"
-                          marginBottom="10px"
-                          fontWeight="bold"
-                        >
-                          {"Price : $49"}
-                        </Text>
-                      </Center>
-
                       <React.Fragment>
                         {
                           "The memorable experiences in Langdon Street, the sleepless nights we had in College Library during finals week, that 2 AM Mac N Cheese slice at Ian's Pizza on Franklin, and many more..\n\nHow about buying those properties and renting it to your friends in a Monopoly game? You can build houses and hotels on your favorite Madtown spots.\n\nA token of your time spent in Madison or the token of new adventures :)\n\nThe box comes with:\n"
                         }
                       </React.Fragment>
+
                       <ul
                         data-plasmic-name={"ul"}
                         data-plasmic-override={overrides.ul}

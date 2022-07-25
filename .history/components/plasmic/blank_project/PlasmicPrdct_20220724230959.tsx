@@ -65,6 +65,7 @@ import {
   FaUniversity,
   FaShippingFast,
 } from "react-icons/fa";
+import InstagramEmbed from "react-instagram-embed";
 
 loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || "");
 
@@ -213,17 +214,17 @@ function PlasmicPrdct__RenderFunc(props: {
             ></iframe>
           </HStack>
         </div>
-        {/* <div className="video-wrapper">
+        <div className="video-wrapper">
           <div className={iframe_container} bg="red">
             <iframe
-              src="https://www.tiktok.com/embed/7072819797184171310"
+              src="https://www.instagram.com/p/CgR0t_IjUDl/"
               className={iframe}
               allowfullscreen
               scrolling="no"
               allow="encrypted-media;"
             ></iframe>
           </div>
-        </div> */}
+        </div>
       </div>
     );
   }
@@ -615,21 +616,12 @@ function PlasmicPrdct__RenderFunc(props: {
                     </Center>
 
                     <React.Fragment>
-                      <Center>
-                        <Text
-                          marginTop="10px"
-                          marginBottom="10px"
-                          fontWeight="bold"
-                        >
-                          {"Price : $49"}
-                        </Text>
-                      </Center>
-
                       <React.Fragment>
                         {
                           "The memorable experiences in Langdon Street, the sleepless nights we had in College Library during finals week, that 2 AM Mac N Cheese slice at Ian's Pizza on Franklin, and many more..\n\nHow about buying those properties and renting it to your friends in a Monopoly game? You can build houses and hotels on your favorite Madtown spots.\n\nA token of your time spent in Madison or the token of new adventures :)\n\nThe box comes with:\n"
                         }
                       </React.Fragment>
+
                       <ul
                         data-plasmic-name={"ul"}
                         data-plasmic-override={overrides.ul}
