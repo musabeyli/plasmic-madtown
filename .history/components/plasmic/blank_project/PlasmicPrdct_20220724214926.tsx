@@ -42,7 +42,7 @@ import FooterComponent from "../../FooterComponent"; // plasmic-import: Mfi3gMBJ
 import { GalleriesModel } from "./ecommerce_image_slider/models/Gallery";
 import { useScreenVariants as useScreenVariantsabUxTrbG0Cf5V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AbUXTrbG0Cf5V/globalVariant
 import GalleryDetail from "../../ecommerce_image_slider/components/GalleryDetail";
-import { Center, Heading, HStack, Text, VStack } from "@chakra-ui/react";
+import { Center, HStack, VStack } from "@chakra-ui/react";
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_blank_project.module.css"; // plasmic-import: wA73ZswqroE6r1m1xaxGJ1/projectcss
@@ -298,18 +298,26 @@ function PlasmicPrdct__RenderFunc(props: {
           />
 
           <div className={classNames(projectcss.all, sty.freeBox__mDtZy)}>
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
+            ) ? (
+              <h1
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1__xuXzl
+                )}
+              >
+                <Center>Madisonopoly</Center>
+              </h1>
+            ) : null}
+
             <div
               data-plasmic-name={"columns"}
               data-plasmic-override={overrides.columns}
               className={classNames(projectcss.all, sty.columns)}
             >
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? true
-                  : false
-              ) ? (
-                <Heading textAlign="center">{"Madisonopoly"}</Heading>
-              ) : null}
               <div className={classNames(projectcss.all, sty.column__gRxnh)}>
                 <p.PlasmicImg
                   alt={""}
@@ -581,7 +589,16 @@ function PlasmicPrdct__RenderFunc(props: {
                       ? true
                       : true
                   ) ? (
-                    <Heading>{"Madisonopoly"}</Heading>
+                    <h1
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.__wab_text,
+                        sty.h1__hvLvu
+                      )}
+                    >
+                      {"Madisonopoly"}
+                    </h1>
                   ) : null}
 
                   <div
@@ -591,33 +608,37 @@ function PlasmicPrdct__RenderFunc(props: {
                       sty.text__tIusW
                     )}
                   >
-                    <Center>
-                      <HStack spacing="24px" marginBottom="40px">
+                    <HStack
+                      spacing="48px"
+                      shadow="md"
+                      border="10px"
+                      borderColor="gray.200"
+                      border-radius="10%"
+                      marginBottom="40px"
+                    >
+                      <Center>
                         <VStack>
                           <FaGrinTears size={28} />
-                          <Center>
-                            <Text textAlign="center">Quality Time</Text>
-                          </Center>
+                          <p>Fun times guaranteed</p>
                         </VStack>
-                        <VStack>
-                          <FaComments size={28} />
-                          <Center>
-                            <Text textAlign="center"> Convo Starter </Text>
-                          </Center>
-                        </VStack>
-                        <VStack>
-                          <FaUniversity size={28} />
-                          <Center>
-                            <Text textAlign="center"> Proud Alumni</Text>
-                          </Center>
-                        </VStack>
-                      </HStack>
-                    </Center>
-
+                      </Center>
+                      <VStack>
+                        <FaComments size={28} />
+                        <p>Conversation Starter</p>
+                      </VStack>
+                      <VStack>
+                        <FaUniversity size={28} />
+                        <p>Proud Alumni</p>
+                      </VStack>
+                      <VStack>
+                        <FaShippingFast size={28} />
+                        <p>Free Shipping across US</p>
+                      </VStack>
+                    </HStack>
                     <React.Fragment>
                       <React.Fragment>
                         {
-                          "The memorable experiences in Langdon Street, the sleepless nights we had in College Library during finals week, that 2 AM Mac N Cheese slice at Ian's Pizza on Franklin, and many more..\n\nHow about buying those properties and renting it to your friends in a Monopoly game? You can build houses and hotels on your favorite Madtown spots.\n\nA token of your time spent in Madison or the token of new adventures :)\n\nThe box comes with:\n"
+                          "The memorable experiences in Langdon Street, the sleepless nights we had in College Library during finals week, that 2 AM Mac N Cheese slice at Ian's Pizza on Franklin, and many more..\n\nHow about buying those properties and renting it to your friends in a Monopoly game? You can build houses and hotels on your favorite Madtown spots.\n\nA token of your time spent in Madison or the token of new adventures :)\nThe box comes with:\n"
                         }
                       </React.Fragment>
                       <ul
@@ -734,17 +755,11 @@ function PlasmicPrdct__RenderFunc(props: {
                         >
                           {"2 Dices"}
                         </li>
-                        <li
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.li,
-                            projectcss.__wab_text,
-                            sty.li__ogQjL
-                          )}
-                        >
-                          {"30 Day Moneyback Guarantee "}
-                        </li>
                       </ul>
+                      <React.Fragment>
+                        {"** 30 Day Moneyback Guarantee **"}
+                      </React.Fragment>
+                      <React.Fragment>{""}</React.Fragment>
                     </React.Fragment>
                   </div>
                 </div>

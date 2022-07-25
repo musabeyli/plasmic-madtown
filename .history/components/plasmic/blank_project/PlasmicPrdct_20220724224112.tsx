@@ -742,7 +742,7 @@ function PlasmicPrdct__RenderFunc(props: {
                             sty.li__ogQjL
                           )}
                         >
-                          {"30 Day Moneyback Guarantee "}
+                          {" 30 Day Moneyback Guarantee "}
                         </li>
                       </ul>
                     </React.Fragment>

@@ -42,7 +42,7 @@ import FooterComponent from "../../FooterComponent"; // plasmic-import: Mfi3gMBJ
 import { GalleriesModel } from "./ecommerce_image_slider/models/Gallery";
 import { useScreenVariants as useScreenVariantsabUxTrbG0Cf5V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AbUXTrbG0Cf5V/globalVariant
 import GalleryDetail from "../../ecommerce_image_slider/components/GalleryDetail";
-import { Center, Heading, HStack, Text, VStack } from "@chakra-ui/react";
+import { Center, HStack, VStack } from "@chakra-ui/react";
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_blank_project.module.css"; // plasmic-import: wA73ZswqroE6r1m1xaxGJ1/projectcss
@@ -59,12 +59,7 @@ import { fetchPostJSON } from "../../../utils/api-helpers";
 import getStripe from "../../../utils/get-stripejs";
 import { fakeDataItems } from "../../ProductImages";
 import { TikTok } from "react-tiktok";
-import {
-  FaGrinTears,
-  FaComments,
-  FaUniversity,
-  FaShippingFast,
-} from "react-icons/fa";
+import { FaGrinTears, FaComments, FaUniversity } from "react-icons/fa";
 
 loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || "");
 
@@ -298,18 +293,26 @@ function PlasmicPrdct__RenderFunc(props: {
           />
 
           <div className={classNames(projectcss.all, sty.freeBox__mDtZy)}>
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
+            ) ? (
+              <h1
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1__xuXzl
+                )}
+              >
+                <Center>Madisonopoly</Center>
+              </h1>
+            ) : null}
+
             <div
               data-plasmic-name={"columns"}
               data-plasmic-override={overrides.columns}
               className={classNames(projectcss.all, sty.columns)}
             >
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? true
-                  : false
-              ) ? (
-                <Heading textAlign="center">{"Madisonopoly"}</Heading>
-              ) : null}
               <div className={classNames(projectcss.all, sty.column__gRxnh)}>
                 <p.PlasmicImg
                   alt={""}
@@ -581,7 +584,16 @@ function PlasmicPrdct__RenderFunc(props: {
                       ? true
                       : true
                   ) ? (
-                    <Heading>{"Madisonopoly"}</Heading>
+                    <h1
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.__wab_text,
+                        sty.h1__hvLvu
+                      )}
+                    >
+                      {"Madisonopoly"}
+                    </h1>
                   ) : null}
 
                   <div
@@ -591,33 +603,18 @@ function PlasmicPrdct__RenderFunc(props: {
                       sty.text__tIusW
                     )}
                   >
-                    <Center>
-                      <HStack spacing="24px" marginBottom="40px">
-                        <VStack>
-                          <FaGrinTears size={28} />
-                          <Center>
-                            <Text textAlign="center">Quality Time</Text>
-                          </Center>
-                        </VStack>
-                        <VStack>
-                          <FaComments size={28} />
-                          <Center>
-                            <Text textAlign="center"> Convo Starter </Text>
-                          </Center>
-                        </VStack>
-                        <VStack>
-                          <FaUniversity size={28} />
-                          <Center>
-                            <Text textAlign="center"> Proud Alumni</Text>
-                          </Center>
-                        </VStack>
-                      </HStack>
-                    </Center>
-
+                    <HStack>
+                      <VStack>
+                        <FaGrinTears size={28} />
+                        <h2>This is a text</h2>
+                      </VStack>
+                      <FaComments size={28} />
+                      <FaUniversity size={28} />
+                    </HStack>
                     <React.Fragment>
                       <React.Fragment>
                         {
-                          "The memorable experiences in Langdon Street, the sleepless nights we had in College Library during finals week, that 2 AM Mac N Cheese slice at Ian's Pizza on Franklin, and many more..\n\nHow about buying those properties and renting it to your friends in a Monopoly game? You can build houses and hotels on your favorite Madtown spots.\n\nA token of your time spent in Madison or the token of new adventures :)\n\nThe box comes with:\n"
+                          "The memorable experiences in Langdon Street, the sleepless nights we had in College Library during finals week, that 2 AM Mac N Cheese slice at Ian's Pizza on Franklin, and many more..\n\nHow about buying those properties and renting it to your friends in a Monopoly game? You can build houses and hotels on your favorite Madtown spots.\n\nA token of your time spent in Madison or the token of new adventures :)\nThe box comes with:\n"
                         }
                       </React.Fragment>
                       <ul
@@ -734,17 +731,11 @@ function PlasmicPrdct__RenderFunc(props: {
                         >
                           {"2 Dices"}
                         </li>
-                        <li
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.li,
-                            projectcss.__wab_text,
-                            sty.li__ogQjL
-                          )}
-                        >
-                          {"30 Day Moneyback Guarantee "}
-                        </li>
                       </ul>
+                      <React.Fragment>
+                        {"** 30 Day Moneyback Guarantee **"}
+                      </React.Fragment>
+                      <React.Fragment>{""}</React.Fragment>
                     </React.Fragment>
                   </div>
                 </div>
@@ -821,7 +812,7 @@ function PlasmicPrdct__RenderFunc(props: {
                     </Select>
                     <section>
                       <button type="submit" role="link">
-                        Proceed to Secure Checkout
+                        Checkout
                       </button>
                     </section>
                     <style jsx>

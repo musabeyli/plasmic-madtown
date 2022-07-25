@@ -82,6 +82,7 @@
   flex-wrap: nowrap;
   min-width: 0;
   padding: 8px;
+  background-color: red;
 }
 .columns > :nth-child(2n + 1) {
   width: calc((100% - 2 * 0px) * 6 / 12);
@@ -116,7 +117,6 @@
   align-items: center;
   min-width: 0;
   padding: 8px;
-  margin-top: 20px;
 }
 .img__kh7Y {
   position: relative;
@@ -373,7 +373,6 @@
 .ul {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
 }
 .freeBox__gvTr {
   display: flex;
@@ -426,7 +425,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .footerComponent:global(.__wab_instance) {
-    margin-top: 600px;
+    margin-top: 500px;
     height: 556px;
     flex-shrink: 0;
   }

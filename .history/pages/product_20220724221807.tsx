@@ -29,6 +29,7 @@ function Prdct() {
   return (
     <ChakraProvider>
       <HeadBanner />
+
       <NextSeo
         title="Madisonopoly | Ultimate UW Madison Board Game"
         description="Only board game of UW Madison | Enjoy playing Madison Monopoly College Edition | UW Madison Gifts"

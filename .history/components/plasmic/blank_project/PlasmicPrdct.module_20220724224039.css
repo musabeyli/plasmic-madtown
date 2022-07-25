@@ -373,7 +373,7 @@
 .ul {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 10;
 }
 .freeBox__gvTr {
   display: flex;
@@ -426,7 +426,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .footerComponent:global(.__wab_instance) {
-    margin-top: 600px;
+    margin-top: 550px;
     height: 556px;
     flex-shrink: 0;
   }
