@@ -66,7 +66,6 @@ import {
   FaShippingFast,
   FaInstagram,
   FaTiktok,
-  FaTwitter,
 } from "react-icons/fa";
 
 loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || "");
@@ -868,30 +867,8 @@ function PlasmicPrdct__RenderFunc(props: {
                   </div>
                 </form>
                 <HStack>
-                  <Link
-                    href="https://www.instagram.com/madisonopoly.wi/"
-                    passHref
-                  >
-                    <a target="_blank" rel="noopener noreferrer">
-                      <FaInstagram size={24} />
-                    </a>
-                  </Link>
-                  <Link
-                    href="https://www.tiktok.com/@madisonopoly"
-                    passHref={true}
-                  >
-                    <a target="_blank" rel="noopener noreferrer">
-                      <FaTiktok size={24} />
-                    </a>
-                  </Link>
-                  <Link
-                    href="https://twitter.com/madisonopolyy"
-                    passHref={true}
-                  >
-                    <a target="_blank" rel="noopener noreferrer">
-                      <FaTwitter size={24} />
-                    </a>
-                  </Link>
+                  <FaInstagram size={24} />
+                  <FaTiktok />
                 </HStack>
               </div>
             </div>

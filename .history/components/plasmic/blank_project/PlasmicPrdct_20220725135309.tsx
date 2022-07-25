@@ -870,27 +870,18 @@ function PlasmicPrdct__RenderFunc(props: {
                 <HStack>
                   <Link
                     href="https://www.instagram.com/madisonopoly.wi/"
-                    passHref
-                  >
-                    <a target="_blank" rel="noopener noreferrer">
-                      <FaInstagram size={24} />
-                    </a>
-                  </Link>
-                  <Link
-                    href="https://www.tiktok.com/@madisonopoly"
                     passHref={true}
                   >
-                    <a target="_blank" rel="noopener noreferrer">
-                      <FaTiktok size={24} />
-                    </a>
+                    <FaInstagram size={24} />
                   </Link>
                   <Link
                     href="https://twitter.com/madisonopolyy"
                     passHref={true}
                   >
-                    <a target="_blank" rel="noopener noreferrer">
-                      <FaTwitter size={24} />
-                    </a>
+                    <FaTiktok size={24} />
+                  </Link>
+                  <Link href="https://twitter.com/" passHref={true}>
+                    <FaTwitter size={24} />
                   </Link>
                 </HStack>
               </div>

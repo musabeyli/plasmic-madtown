@@ -888,9 +888,9 @@ function PlasmicPrdct__RenderFunc(props: {
                     href="https://twitter.com/madisonopolyy"
                     passHref={true}
                   >
-                    <a target="_blank" rel="noopener noreferrer">
-                      <FaTwitter size={24} />
-                    </a>
+                                        <a target="_blank" rel="noopener noreferrer">
+
+                    <FaTwitter size={24} />
                   </Link>
                 </HStack>
               </div>
