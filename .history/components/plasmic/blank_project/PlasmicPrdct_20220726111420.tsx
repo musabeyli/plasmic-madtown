@@ -120,9 +120,7 @@ function PlasmicPrdct__RenderFunc(props: {
     });
   };
   const [selectedValue, setSelectedValue] = useState("1");
-  const [mainImgString, setMainImgString] = useState(
-    "/plasmic/blank_project/images/gameboxBoardDetailedpng.png"
-  );
+  const [mainImgString, setMainImgString] = useState("");
   const handleChange = (e) => {
     console.log("Fruit Selected!!", e);
     if (typeof window !== "undefined") {
@@ -435,19 +433,6 @@ function PlasmicPrdct__RenderFunc(props: {
                     aspectRatio: undefined,
                   }}
                 />
-                {/* <Box
-                  boxSize={"full"}
-                  as={"img"}
-                  // onClick={() => setMainImgString(item.srcurl)}
-                  controls
-                  src={mainImgString}
-                  poster={mainImgString}
-                  alt="Big Buck Bunny"
-                  objectFit="contain"
-                  sx={{
-                    aspectRatio: "16/9",
-                  }}
-                /> */}
                 <div style={ballStyle}></div>
 
                 {(
@@ -612,7 +597,6 @@ function PlasmicPrdct__RenderFunc(props: {
                     <Box
                       boxSize={"full"}
                       as={item.mediatype}
-                      onClick={() => setMainImgString(item.srcurl)}
                       controls
                       src={item.srcurl}
                       poster={item.thumbnail}

@@ -120,9 +120,6 @@ function PlasmicPrdct__RenderFunc(props: {
     });
   };
   const [selectedValue, setSelectedValue] = useState("1");
-  const [mainImgString, setMainImgString] = useState(
-    "/plasmic/blank_project/images/gameboxBoardDetailedpng.png"
-  );
   const handleChange = (e) => {
     console.log("Fruit Selected!!", e);
     if (typeof window !== "undefined") {
@@ -429,25 +426,12 @@ function PlasmicPrdct__RenderFunc(props: {
                   displayWidth={"auto" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: mainImgString,
+                    src: "/plasmic/blank_project/images/gameboxBoardDetailedpng.png",
                     fullWidth: 4000,
                     fullHeight: 3091,
                     aspectRatio: undefined,
                   }}
                 />
-                {/* <Box
-                  boxSize={"full"}
-                  as={"img"}
-                  // onClick={() => setMainImgString(item.srcurl)}
-                  controls
-                  src={mainImgString}
-                  poster={mainImgString}
-                  alt="Big Buck Bunny"
-                  objectFit="contain"
-                  sx={{
-                    aspectRatio: "16/9",
-                  }}
-                /> */}
                 <div style={ballStyle}></div>
 
                 {(
@@ -612,7 +596,6 @@ function PlasmicPrdct__RenderFunc(props: {
                     <Box
                       boxSize={"full"}
                       as={item.mediatype}
-                      onClick={() => setMainImgString(item.srcurl)}
                       controls
                       src={item.srcurl}
                       poster={item.thumbnail}
@@ -916,6 +899,7 @@ function PlasmicPrdct__RenderFunc(props: {
                     </style>
                   </div>
                 </form>
+
                 <HStack>
                   <Link
                     href="https://www.instagram.com/madisonopoly.wi/"

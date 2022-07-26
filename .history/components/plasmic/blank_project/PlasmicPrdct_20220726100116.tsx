@@ -120,9 +120,6 @@ function PlasmicPrdct__RenderFunc(props: {
     });
   };
   const [selectedValue, setSelectedValue] = useState("1");
-  const [mainImgString, setMainImgString] = useState(
-    "/plasmic/blank_project/images/gameboxBoardDetailedpng.png"
-  );
   const handleChange = (e) => {
     console.log("Fruit Selected!!", e);
     if (typeof window !== "undefined") {
@@ -140,99 +137,21 @@ function PlasmicPrdct__RenderFunc(props: {
 
   const items = [
     {
-      mediatype: "video",
       srcurl: "https://s-ukraini.s3.amazonaws.com/madisonopoly_insta_1.mp4",
-      altTitle: "item #1",
-    },
-    {
-      mediatype: "video",
-      srcurl: "https://s-ukraini.s3.amazonaws.com/madisonopoly_insta_2.mp4",
-      altTitle: "item #1",
-    },
-    {
-      mediatype: "video",
-      srcurl: "https://s-ukraini.s3.amazonaws.com/Madisonopoly_tiktok_1.mp4",
       thumbnail:
         "https://p16-sign.tiktokcdn-us.com/obj/tos-useast5-p-0068-tx/c2779fb4c6744d41952f1f20f2b6a31e_1658439569?x-expires=1658865600&x-signature=AVeGynYBSPhl%2FQusc6sZ%2FHntTSs%3D&s=AWEME_DETAIL&se=false&sh=&sc=dynamic_cover&l=20220726140005B4A485FA63801E13E00B",
       altTitle: "item #1",
     },
     {
-      mediatype: "video",
+      srcurl: "https://s-ukraini.s3.amazonaws.com/madisonopoly_insta_2.mp4",
+      altTitle: "item #1",
+    },
+    {
+      srcurl: "https://s-ukraini.s3.amazonaws.com/Madisonopoly_tiktok_1.mp4",
+      altTitle: "item #1",
+    },
+    {
       srcurl: "https://s-ukraini.s3.amazonaws.com/Madisonopoly_tiktok_2.mp4",
-      thumbnail:
-        "https://p19-sign.tiktokcdn-us.com/obj/tos-useast5-p-0068-tx/8128c94ad40848f58b3a1d40bb49177d_1658007055?x-expires=1658865600&x-signature=alCQf5eP8m35IROuvSVRStqFYoU%3D&s=AWEME_DETAIL&se=false&sh=&sc=dynamic_cover&l=20220726140048A0468A2E291F5D132A2C",
-      altTitle: "item #1",
-    },
-    {
-      mediatype: "img",
-      srcurl:
-        "/plasmic/blank_project/images/website_images/madisonopoly_front_blue.jpg",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/madisonopoly_front_blue.jpg",
-      altTitle: "item #1",
-    },
-    {
-      mediatype: "img",
-      srcurl:
-        "/plasmic/blank_project/images/website_images/madisonopoly_front_2_paper.jpg",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/madisonopoly_front_2_paper.jpg",
-      altTitle: "item #1",
-    },
-    {
-      mediatype: "img",
-      srcurl:
-        "/plasmic/blank_project/images/website_images/madisonopoly_front_3.jpg",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/madisonopoly_front_3.jpg",
-      altTitle: "item #1",
-    },
-    {
-      mediatype: "img",
-      srcurl:
-        "/plasmic/blank_project/images/website_images/madisonopoly_front_4.jpg",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/madisonopoly_front_4.jpg",
-      altTitle: "item #1",
-    },
-    {
-      mediatype: "img",
-      srcurl:
-        "/plasmic/blank_project/images/website_images/madisonopoly_front_5.jpg",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/madisonopoly_front_5.jpg",
-      altTitle: "item #1",
-    },
-    {
-      mediatype: "img",
-      srcurl:
-        "/plasmic/blank_project/images/website_images/madisonopoly_closeup_6.jpg",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/madisonopoly_closeup_6.jpg",
-      altTitle: "item #1",
-    },
-    {
-      mediatype: "img",
-      srcurl:
-        "/plasmic/blank_project/images/website_images/madisonopoly_closeup_7.jpg",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/madisonopoly_closeup_7.jpg",
-      altTitle: "item #1",
-    },
-    {
-      mediatype: "img",
-      srcurl:
-        "/plasmic/blank_project/images/website_images/madisonopoly_closeup_8.jpg",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/madisonopoly_closeup_8.jpg",
-      altTitle: "item #1",
-    },
-    {
-      mediatype: "img",
-      srcurl:
-        "/plasmic/blank_project/images/website_images/madisonopoly_closeup_9.jpg",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/madisonopoly_closeup_9.jpg",
       altTitle: "item #1",
     },
   ];
@@ -429,26 +348,14 @@ function PlasmicPrdct__RenderFunc(props: {
                   displayWidth={"auto" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: mainImgString,
+                    src: "/plasmic/blank_project/images/gameboxBoardDetailedpng.png",
                     fullWidth: 4000,
                     fullHeight: 3091,
                     aspectRatio: undefined,
                   }}
                 />
-                {/* <Box
-                  boxSize={"full"}
-                  as={"img"}
-                  // onClick={() => setMainImgString(item.srcurl)}
-                  controls
-                  src={mainImgString}
-                  poster={mainImgString}
-                  alt="Big Buck Bunny"
-                  objectFit="contain"
-                  sx={{
-                    aspectRatio: "16/9",
-                  }}
-                /> */}
                 <div style={ballStyle}></div>
+                <ImageGallery originalHeight={"100"} items={images} />
 
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
@@ -607,23 +514,90 @@ function PlasmicPrdct__RenderFunc(props: {
                     />
                   </div>
                 ) : null}
-                <Carousel>
-                  {items.map((item) => (
-                    <Box
-                      boxSize={"full"}
-                      as={item.mediatype}
-                      onClick={() => setMainImgString(item.srcurl)}
-                      controls
-                      src={item.srcurl}
-                      poster={item.thumbnail}
-                      alt="Big Buck Bunny"
-                      objectFit="contain"
-                      sx={{
-                        aspectRatio: "16/9",
+                {true ? (
+                  <Slider
+                    autoplay={true}
+                    className={classNames("__wab_instance", sty.slider__aulKa)}
+                    dots={true}
+                    fade={true}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__liSet)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      src={{
+                        src: "/plasmic/blank_project/images/dsc00619Jpg.jpeg",
+                        fullWidth: 4592,
+                        fullHeight: 3056,
+                        aspectRatio: undefined,
                       }}
                     />
-                  ))}
-                </Carousel>
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img___66V2)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      src={{
+                        src: "/plasmic/blank_project/images/dsc00625Jpg.jpeg",
+                        fullWidth: 4592,
+                        fullHeight: 3056,
+                        aspectRatio: undefined,
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__oPzN9)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      src={{
+                        src: "/plasmic/blank_project/images/img3820Jpg.jpeg",
+                        fullWidth: 4032,
+                        fullHeight: 2753,
+                        aspectRatio: undefined,
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__eDmBp)}
+                      displayHeight={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("247px" as const)
+                          : ("459px" as const)
+                      }
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("368px" as const)
+                          : ("auto" as const)
+                      }
+                      src={{
+                        src: "/plasmic/blank_project/images/img3822Resizedjpg.jpeg",
+                        fullWidth: 3175,
+                        fullHeight: 2934,
+                        aspectRatio: undefined,
+                      }}
+                    />
+                  </Slider>
+                ) : null}
               </div>
 
               <div className={classNames(projectcss.all, sty.column__ulj3T)}>
@@ -916,6 +890,33 @@ function PlasmicPrdct__RenderFunc(props: {
                     </style>
                   </div>
                 </form>
+                <Carousel>
+                  {items.map((item) => (
+                    <Box
+                      as="video"
+                      controls
+                      src={item.srcurl}
+                      poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+                      alt="Big Buck Bunny"
+                      objectFit="contain"
+                      sx={{
+                        aspectRatio: "16/9",
+                      }}
+                    />
+                    // <Box
+                    //   as="img"
+                    //   controls
+                    //   src="/plasmic/blank_project/images/website_images/gamebox_back_cover.JPG"
+                    //   poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+                    //   alt="Big Buck Bunny"
+                    //   objectFit="contain"
+                    //   sx={{
+                    //     aspectRatio: "16/9",
+                    //   }}
+                    // />
+                    // <div key={item.id}>{item.title}</div>
+                  ))}
+                </Carousel>
                 <HStack>
                   <Link
                     href="https://www.instagram.com/madisonopoly.wi/"

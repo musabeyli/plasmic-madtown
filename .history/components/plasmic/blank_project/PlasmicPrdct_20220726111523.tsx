@@ -435,19 +435,6 @@ function PlasmicPrdct__RenderFunc(props: {
                     aspectRatio: undefined,
                   }}
                 />
-                {/* <Box
-                  boxSize={"full"}
-                  as={"img"}
-                  // onClick={() => setMainImgString(item.srcurl)}
-                  controls
-                  src={mainImgString}
-                  poster={mainImgString}
-                  alt="Big Buck Bunny"
-                  objectFit="contain"
-                  sx={{
-                    aspectRatio: "16/9",
-                  }}
-                /> */}
                 <div style={ballStyle}></div>
 
                 {(

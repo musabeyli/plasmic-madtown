@@ -120,9 +120,6 @@ function PlasmicPrdct__RenderFunc(props: {
     });
   };
   const [selectedValue, setSelectedValue] = useState("1");
-  const [mainImgString, setMainImgString] = useState(
-    "/plasmic/blank_project/images/gameboxBoardDetailedpng.png"
-  );
   const handleChange = (e) => {
     console.log("Fruit Selected!!", e);
     if (typeof window !== "undefined") {
@@ -429,25 +426,12 @@ function PlasmicPrdct__RenderFunc(props: {
                   displayWidth={"auto" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: mainImgString,
+                    src: "/plasmic/blank_project/images/gameboxBoardDetailedpng.png",
                     fullWidth: 4000,
                     fullHeight: 3091,
                     aspectRatio: undefined,
                   }}
                 />
-                {/* <Box
-                  boxSize={"full"}
-                  as={"img"}
-                  // onClick={() => setMainImgString(item.srcurl)}
-                  controls
-                  src={mainImgString}
-                  poster={mainImgString}
-                  alt="Big Buck Bunny"
-                  objectFit="contain"
-                  sx={{
-                    aspectRatio: "16/9",
-                  }}
-                /> */}
                 <div style={ballStyle}></div>
 
                 {(
@@ -610,14 +594,14 @@ function PlasmicPrdct__RenderFunc(props: {
                 <Carousel>
                   {items.map((item) => (
                     <Box
-                      boxSize={"full"}
+                      w="100%"
+                      h="100%"
                       as={item.mediatype}
-                      onClick={() => setMainImgString(item.srcurl)}
                       controls
                       src={item.srcurl}
                       poster={item.thumbnail}
                       alt="Big Buck Bunny"
-                      objectFit="contain"
+                      objectFit="fill"
                       sx={{
                         aspectRatio: "16/9",
                       }}
@@ -916,6 +900,21 @@ function PlasmicPrdct__RenderFunc(props: {
                     </style>
                   </div>
                 </form>
+                <Carousel>
+                  {items.map((item) => (
+                    <Box
+                      as={item.mediatype}
+                      controls
+                      src={item.srcurl}
+                      poster={item.thumbnail}
+                      alt="Big Buck Bunny"
+                      objectFit="contain"
+                      sx={{
+                        aspectRatio: "16/9",
+                      }}
+                    />
+                  ))}
+                </Carousel>
                 <HStack>
                   <Link
                     href="https://www.instagram.com/madisonopoly.wi/"

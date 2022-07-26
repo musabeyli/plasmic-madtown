@@ -120,9 +120,6 @@ function PlasmicPrdct__RenderFunc(props: {
     });
   };
   const [selectedValue, setSelectedValue] = useState("1");
-  const [mainImgString, setMainImgString] = useState(
-    "/plasmic/blank_project/images/gameboxBoardDetailedpng.png"
-  );
   const handleChange = (e) => {
     console.log("Fruit Selected!!", e);
     if (typeof window !== "undefined") {
@@ -429,25 +426,12 @@ function PlasmicPrdct__RenderFunc(props: {
                   displayWidth={"auto" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: mainImgString,
+                    src: "/plasmic/blank_project/images/gameboxBoardDetailedpng.png",
                     fullWidth: 4000,
                     fullHeight: 3091,
                     aspectRatio: undefined,
                   }}
                 />
-                {/* <Box
-                  boxSize={"full"}
-                  as={"img"}
-                  // onClick={() => setMainImgString(item.srcurl)}
-                  controls
-                  src={mainImgString}
-                  poster={mainImgString}
-                  alt="Big Buck Bunny"
-                  objectFit="contain"
-                  sx={{
-                    aspectRatio: "16/9",
-                  }}
-                /> */}
                 <div style={ballStyle}></div>
 
                 {(
@@ -607,12 +591,94 @@ function PlasmicPrdct__RenderFunc(props: {
                     />
                   </div>
                 ) : null}
+                {/* {true ? (
+                  <Slider
+                    autoplay={true}
+                    className={classNames("__wab_instance", sty.slider__aulKa)}
+                    dots={true}
+                    fade={true}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__liSet)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      src={{
+                        src: "/plasmic/blank_project/images/dsc00619Jpg.jpeg",
+                        fullWidth: 4592,
+                        fullHeight: 3056,
+                        aspectRatio: undefined,
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img___66V2)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      src={{
+                        src: "/plasmic/blank_project/images/dsc00625Jpg.jpeg",
+                        fullWidth: 4592,
+                        fullHeight: 3056,
+                        aspectRatio: undefined,
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__oPzN9)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      src={{
+                        src: "/plasmic/blank_project/images/img3820Jpg.jpeg",
+                        fullWidth: 4032,
+                        fullHeight: 2753,
+                        aspectRatio: undefined,
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__eDmBp)}
+                      displayHeight={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("247px" as const)
+                          : ("459px" as const)
+                      }
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? ("368px" as const)
+                          : ("auto" as const)
+                      }
+                      src={{
+                        src: "/plasmic/blank_project/images/img3822Resizedjpg.jpeg",
+                        fullWidth: 3175,
+                        fullHeight: 2934,
+                        aspectRatio: undefined,
+                      }}
+                    />
+                  </Slider>
+                ) : null} */}
                 <Carousel>
                   {items.map((item) => (
                     <Box
-                      boxSize={"full"}
                       as={item.mediatype}
-                      onClick={() => setMainImgString(item.srcurl)}
                       controls
                       src={item.srcurl}
                       poster={item.thumbnail}
@@ -916,6 +982,21 @@ function PlasmicPrdct__RenderFunc(props: {
                     </style>
                   </div>
                 </form>
+                <Carousel>
+                  {items.map((item) => (
+                    <Box
+                      as={item.mediatype}
+                      controls
+                      src={item.srcurl}
+                      poster={item.thumbnail}
+                      alt="Big Buck Bunny"
+                      objectFit="contain"
+                      sx={{
+                        aspectRatio: "16/9",
+                      }}
+                    />
+                  ))}
+                </Carousel>
                 <HStack>
                   <Link
                     href="https://www.instagram.com/madisonopoly.wi/"

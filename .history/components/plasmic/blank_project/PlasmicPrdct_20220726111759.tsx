@@ -418,7 +418,7 @@ function PlasmicPrdct__RenderFunc(props: {
                 <Heading textAlign="center">{"Madisonopoly"}</Heading>
               ) : null}
               <div className={classNames(projectcss.all, sty.column__gRxnh)}>
-                <p.PlasmicImg
+                {/* <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__kh7Y)}
                   displayHeight={"auto" as const}
@@ -434,8 +434,8 @@ function PlasmicPrdct__RenderFunc(props: {
                     fullHeight: 3091,
                     aspectRatio: undefined,
                   }}
-                />
-                {/* <Box
+                /> */}
+                <Box
                   boxSize={"full"}
                   as={"img"}
                   // onClick={() => setMainImgString(item.srcurl)}
@@ -447,7 +447,7 @@ function PlasmicPrdct__RenderFunc(props: {
                   sx={{
                     aspectRatio: "16/9",
                   }}
-                /> */}
+                />
                 <div style={ballStyle}></div>
 
                 {(
