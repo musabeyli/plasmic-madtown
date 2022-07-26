@@ -140,12 +140,6 @@ function PlasmicPrdct__RenderFunc(props: {
 
   const items = [
     {
-      mediatype: "img",
-      srcurl: "/plasmic/blank_project/images/gameboxBoardDetailedpng.png",
-      thumbnail: "/plasmic/blank_project/images/gameboxBoardDetailedpng.png",
-      altTitle: "item #1",
-    },
-    {
       mediatype: "video",
       srcurl: "https://s-ukraini.s3.amazonaws.com/madisonopoly_insta_1.mp4",
       thumbnail:
