@@ -48,10 +48,8 @@ import {
   HStack,
   Text,
   VStack,
-  Wrap,
   Box,
   createIcon,
-  WrapItem,
 } from "@chakra-ui/react";
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -69,7 +67,7 @@ import { fetchPostJSON } from "../../../utils/api-helpers";
 import getStripe from "../../../utils/get-stripejs";
 import { fakeDataItems } from "../../ProductImages";
 import { TikTok } from "react-tiktok";
-import { ReactComponent as YourSvg } from "/plasmic/blank_project/images/website_images/undraw_playing_cards_cywn.svg";
+import { ReactComponent as YourSvg } from "/plasmic/blank_project/images/undraw_playing_cards_cywn.svg";
 import {
   FaGrinTears,
   FaComments,
@@ -472,6 +470,12 @@ function PlasmicPrdct__RenderFunc(props: {
                     />
                   ))}
                 </Carousel>
+                <svg></svg>
+                <Heading>HEYY</Heading>
+                <div style={ballStyle}>
+                  {/* <undraw_playing_cards_cywn /> */}
+                  <YourSvg />
+                </div>
 
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")

@@ -42,17 +42,7 @@ import FooterComponent from "../../FooterComponent"; // plasmic-import: Mfi3gMBJ
 import { GalleriesModel } from "./ecommerce_image_slider/models/Gallery";
 import { useScreenVariants as useScreenVariantsabUxTrbG0Cf5V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AbUXTrbG0Cf5V/globalVariant
 import GalleryDetail from "../../ecommerce_image_slider/components/GalleryDetail";
-import {
-  Center,
-  Heading,
-  HStack,
-  Text,
-  VStack,
-  Wrap,
-  Box,
-  createIcon,
-  WrapItem,
-} from "@chakra-ui/react";
+import { Center, Heading, HStack, Text, VStack, Box, createIcon } from "@chakra-ui/react";
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_blank_project.module.css"; // plasmic-import: wA73ZswqroE6r1m1xaxGJ1/projectcss
@@ -69,7 +59,6 @@ import { fetchPostJSON } from "../../../utils/api-helpers";
 import getStripe from "../../../utils/get-stripejs";
 import { fakeDataItems } from "../../ProductImages";
 import { TikTok } from "react-tiktok";
-import { ReactComponent as YourSvg } from "/plasmic/blank_project/images/website_images/undraw_playing_cards_cywn.svg";
 import {
   FaGrinTears,
   FaComments,
@@ -364,13 +353,9 @@ function PlasmicPrdct__RenderFunc(props: {
       </div>
     );
   }
-  // export const customSVG = createIcon({
-  //   displayName: 'CustomIcon',
-  //   viewBox: '0 0 200 200'
-  //   path: (
-
-  //   )
-  // })
+  export const customSVG = createIcon({
+    displayName: 'CustomIcon'
+  })
 
   function _toggleShowVideo(url) {
     state.showVideo[url] = !Boolean(state.showVideo[url]);
@@ -472,6 +457,9 @@ function PlasmicPrdct__RenderFunc(props: {
                     />
                   ))}
                 </Carousel>
+
+                <Heading>HEYY</Heading>
+                <div style={ballStyle}></div>
 
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")

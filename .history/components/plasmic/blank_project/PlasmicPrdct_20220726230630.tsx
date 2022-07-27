@@ -48,10 +48,8 @@ import {
   HStack,
   Text,
   VStack,
-  Wrap,
   Box,
   createIcon,
-  WrapItem,
 } from "@chakra-ui/react";
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -472,6 +470,12 @@ function PlasmicPrdct__RenderFunc(props: {
                     />
                   ))}
                 </Carousel>
+                <svg></svg>
+                <Heading>HEYY</Heading>
+                <div style={ballStyle}>
+                  {/* <undraw_playing_cards_cywn /> */}
+                  <YourSvg />
+                </div>
 
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")

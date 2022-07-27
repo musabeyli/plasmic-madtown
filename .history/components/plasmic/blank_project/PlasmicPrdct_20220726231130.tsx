@@ -48,10 +48,8 @@ import {
   HStack,
   Text,
   VStack,
-  Wrap,
   Box,
   createIcon,
-  WrapItem,
 } from "@chakra-ui/react";
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -81,6 +79,7 @@ import {
 } from "react-icons/fa";
 import Carousel from "react-elastic-carousel";
 import Image from "next/image";
+import {undraw_playing_cards_cywn.svg} from "/plasmic/blank_project/images/undraw_playing_cards_cywn.svg";
 
 loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || "");
 
@@ -472,6 +471,13 @@ function PlasmicPrdct__RenderFunc(props: {
                     />
                   ))}
                 </Carousel>
+                <svg></svg>
+                <Heading>HEYY</Heading>
+                <undraw_playing_cards_cywn.svg />
+                <div style={ballStyle}>
+                  {/* <undraw_playing_cards_cywn /> */}
+                  <YourSvg />
+                </div>
 
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
