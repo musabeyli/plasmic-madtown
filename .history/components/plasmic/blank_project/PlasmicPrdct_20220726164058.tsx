@@ -149,30 +149,14 @@ function PlasmicPrdct__RenderFunc(props: {
       mediatype: "video",
       srcurl: "https://s-ukraini.s3.amazonaws.com/madisonopoly_insta_1.mp4",
       thumbnail:
-        "/plasmic/blank_project/images/website_images/madisonopoly_insta_thumbnail_2.jpg",
-      altTitle: "item #1",
-    },
-    {
-      mediatype: "img",
-      srcurl:
-        "/plasmic/blank_project/images/website_images/madisonopoly_front_blue.jpg",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/madisonopoly_front_blue.jpg",
+        "/plasmic/blank_project/images/website_images/madisonopoly_insta_thumbnail_1.jpg",
       altTitle: "item #1",
     },
     {
       mediatype: "video",
       srcurl: "https://s-ukraini.s3.amazonaws.com/madisonopoly_insta_2.mp4",
       thumbnail:
-        "/plasmic/blank_project/images/website_images/madisonopoly_insta_thumbnail_1.jpg",
-      altTitle: "item #1",
-    },
-    {
-      mediatype: "img",
-      srcurl:
-        "/plasmic/blank_project/images/website_images/madisonopoly_front_2_paper.jpg",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/madisonopoly_front_2_paper.jpg",
+        "/plasmic/blank_project/images/website_images/madisonopoly_insta_thumbnail_2.jpg",
       altTitle: "item #1",
     },
     {
@@ -183,21 +167,28 @@ function PlasmicPrdct__RenderFunc(props: {
       altTitle: "item #1",
     },
     {
-      mediatype: "img",
-      srcurl:
-        "/plasmic/blank_project/images/website_images/madisonopoly_front_3.jpg",
-      thumbnail:
-        "/plasmic/blank_project/images/website_images/madisonopoly_front_3.jpg",
-      altTitle: "item #1",
-    },
-    {
       mediatype: "video",
       srcurl: "https://s-ukraini.s3.amazonaws.com/Madisonopoly_tiktok_2.mp4",
       thumbnail:
         "https://p19-sign.tiktokcdn-us.com/obj/tos-useast5-p-0068-tx/8128c94ad40848f58b3a1d40bb49177d_1658007055?x-expires=1658865600&x-signature=alCQf5eP8m35IROuvSVRStqFYoU%3D&s=AWEME_DETAIL&se=false&sh=&sc=dynamic_cover&l=20220726140048A0468A2E291F5D132A2C",
       altTitle: "item #1",
     },
-
+    {
+      mediatype: "img",
+      srcurl:
+        "/plasmic/blank_project/images/website_images/madisonopoly_front_blue.jpg",
+      thumbnail:
+        "/plasmic/blank_project/images/website_images/madisonopoly_front_blue.jpg",
+      altTitle: "item #1",
+    },
+    {
+      mediatype: "img",
+      srcurl:
+        "/plasmic/blank_project/images/website_images/madisonopoly_front_2_paper.jpg",
+      thumbnail:
+        "/plasmic/blank_project/images/website_images/madisonopoly_front_2_paper.jpg",
+      altTitle: "item #1",
+    },
     {
       mediatype: "img",
       srcurl:

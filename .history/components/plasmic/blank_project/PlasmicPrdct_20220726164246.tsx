@@ -149,7 +149,7 @@ function PlasmicPrdct__RenderFunc(props: {
       mediatype: "video",
       srcurl: "https://s-ukraini.s3.amazonaws.com/madisonopoly_insta_1.mp4",
       thumbnail:
-        "/plasmic/blank_project/images/website_images/madisonopoly_insta_thumbnail_2.jpg",
+        "/plasmic/blank_project/images/website_images/madisonopoly_insta_thumbnail_1.jpg",
       altTitle: "item #1",
     },
     {
@@ -164,7 +164,7 @@ function PlasmicPrdct__RenderFunc(props: {
       mediatype: "video",
       srcurl: "https://s-ukraini.s3.amazonaws.com/madisonopoly_insta_2.mp4",
       thumbnail:
-        "/plasmic/blank_project/images/website_images/madisonopoly_insta_thumbnail_1.jpg",
+        "/plasmic/blank_project/images/website_images/madisonopoly_insta_thumbnail_2.jpg",
       altTitle: "item #1",
     },
     {
