@@ -68,6 +68,9 @@ function NewPage() {
       <GlobalContextsProvider>
         <PlasmicNewPage />
       </GlobalContextsProvider>
+      <ChakraProvider>
+        <PopupModal></PopupModal>
+      </ChakraProvider>
     </div>
   );
 }
