@@ -15,6 +15,7 @@ import { CheckIcon } from "@chakra-ui/icons";
 
 export default function UnsubscribeForm() {
   const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
   const [state, setState] = useState<"initial" | "submitting" | "success">(
     "initial"
   );
