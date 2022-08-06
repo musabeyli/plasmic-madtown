@@ -81,6 +81,7 @@ import {
 } from "react-icons/fa";
 import Carousel from "react-elastic-carousel";
 import Image from "next/image";
+import ProductReviews from "../../ProductReviews";
 
 loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || "");
 
@@ -472,7 +473,6 @@ function PlasmicPrdct__RenderFunc(props: {
                     />
                   ))}
                 </Carousel>
-
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? true
@@ -965,6 +965,7 @@ function PlasmicPrdct__RenderFunc(props: {
                     </a>
                   </Link>
                 </HStack>
+                <ProductReviews />
               </div>
             </div>
           </div>

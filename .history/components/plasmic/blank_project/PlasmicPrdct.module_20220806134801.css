@@ -434,7 +434,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .footerComponent:global(.__wab_instance) {
-    margin-top: 2400px;
+    margin-top: 2300px;
     height: 556px;
     flex-shrink: 0;
   }
