@@ -8,7 +8,6 @@ import {
   HStack,
   Icon,
   SimpleGrid,
-  StylesProvider,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FaStar } from "react-icons/fa";

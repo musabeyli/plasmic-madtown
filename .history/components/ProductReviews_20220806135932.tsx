@@ -147,15 +147,16 @@ function TestimonialCard(props: TestimonialCardProps) {
 
 export default function ProductReviews() {
   return (
-    <Flex
-      textAlign={"center"}
-      pt={10}
-      justifyContent={"center"}
-      direction={"column"}
-      width={"full"}
-    >
-      <Box width={{ base: "full", sm: "lg", lg: "xl" }} margin={"auto"}>
-        {/* <chakra.h3
+    <StylesProvider>
+      <Flex
+        textAlign={"center"}
+        pt={10}
+        justifyContent={"center"}
+        direction={"column"}
+        width={"full"}
+      >
+        <Box width={{ base: "full", sm: "lg", lg: "xl" }} margin={"auto"}>
+          {/* <chakra.h3
           fontFamily={"Work Sans"}
           fontWeight={"bold"}
           fontSize={20}
@@ -164,37 +165,37 @@ export default function ProductReviews() {
         >
           Madisonopoly Reviews
         </chakra.h3> */}
-        <chakra.h1
-          py={5}
-          fontSize={48}
-          fontFamily={"Work Sans"}
-          fontWeight={"bold"}
-          color={"#c5050c"}
+          <chakra.h1
+            py={5}
+            fontSize={48}
+            fontFamily={"Work Sans"}
+            fontWeight={"bold"}
+            color={"#c5050c"}
+          >
+            {"Madisonopoly Reviews "}
+          </chakra.h1>
+          <chakra.h2
+            margin={"auto"}
+            width={"70%"}
+            fontFamily={"Inter"}
+            fontWeight={"medium"}
+            color={useColorModeValue("gray.500", "gray.400")}
+          >
+            See why people love Madisonopoly!
+          </chakra.h2>
+        </Box>
+        <SimpleGrid
+          columns={{ base: 1, xl: 2 }}
+          spacing={"20"}
+          mt={16}
+          mx={"auto"}
         >
-          {"Madisonopoly Reviews "}
-        </chakra.h1>
-        <chakra.h2
-          margin={"auto"}
-          width={"70%"}
-          fontFamily={"Inter"}
-          fontWeight={"medium"}
-          color={useColorModeValue("gray.500", "gray.400")}
-        >
-          See why people love Madisonopoly!
-        </chakra.h2>
-      </Box>
-      <SimpleGrid
-        columns={{ base: 1, xl: 2 }}
-        spacing={"20"}
-        mt={16}
-        mx={"auto"}
-      >
-        {testimonials.map((cardInfo, index) => (
-          // eslint-disable-next-line react/jsx-key
-          <TestimonialCard avatar="" {...cardInfo} index={index} />
-        ))}
-      </SimpleGrid>
-      {/* <Box>
+          {testimonials.map((cardInfo, index) => (
+            // eslint-disable-next-line react/jsx-key
+            <TestimonialCard avatar="" {...cardInfo} index={index} />
+          ))}
+        </SimpleGrid>
+        {/* <Box>
         <Icon viewBox="0 0 40 35" mt={14} boxSize={10} color={"purple.400"}>
           <path
             fill={"currentColor"}
@@ -202,6 +203,7 @@ export default function ProductReviews() {
           />
         </Icon>
       </Box> */}
-    </Flex>
+      </Flex>
+    </StylesProvider>
   );
 }

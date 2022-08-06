@@ -8,7 +8,6 @@ import {
   HStack,
   Icon,
   SimpleGrid,
-  StylesProvider,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FaStar } from "react-icons/fa";
@@ -191,7 +190,7 @@ export default function ProductReviews() {
       >
         {testimonials.map((cardInfo, index) => (
           // eslint-disable-next-line react/jsx-key
-          <TestimonialCard avatar="" {...cardInfo} index={index} />
+          <TestimonialCard {...cardInfo} index={index} />
         ))}
       </SimpleGrid>
       {/* <Box>
