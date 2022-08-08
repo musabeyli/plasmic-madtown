@@ -698,7 +698,7 @@ function PlasmicPrdct__RenderFunc(props: {
                           marginBottom="10px"
                           fontWeight="bold"
                         >
-                          {"Price : $49.99"}
+                          {"Price : $49"}
                         </Text>
                       </Center>
 
@@ -839,7 +839,7 @@ function PlasmicPrdct__RenderFunc(props: {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__gvTr)}
                   >
-                    {/* <div
+                    <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
@@ -905,7 +905,7 @@ function PlasmicPrdct__RenderFunc(props: {
                       >
                         {"5"}
                       </Select__Option>
-                    </Select> */}
+                    </Select>
                     <VStack marginBottom={"20px"}>
                       <section>
                         <button type="submit" role="link">
@@ -941,13 +941,7 @@ function PlasmicPrdct__RenderFunc(props: {
                         `}
                       </style>
                       <Text size="md"> Save 15% With PayPal Only!</Text>
-                      <Text
-                        marginTop="10px"
-                        marginBottom="10px"
-                        fontWeight="bold"
-                      >
-                        {"43.69 with Paypal valid thru 08/22."}
-                      </Text>
+                      <Text size="md"
                       <PayPalButtons
                         createOrder={(data, actions) => {
                           console.log(data);

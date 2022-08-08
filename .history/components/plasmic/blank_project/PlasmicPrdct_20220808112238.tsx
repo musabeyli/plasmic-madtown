@@ -839,7 +839,7 @@ function PlasmicPrdct__RenderFunc(props: {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__gvTr)}
                   >
-                    {/* <div
+                    <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
@@ -905,7 +905,7 @@ function PlasmicPrdct__RenderFunc(props: {
                       >
                         {"5"}
                       </Select__Option>
-                    </Select> */}
+                    </Select>
                     <VStack marginBottom={"20px"}>
                       <section>
                         <button type="submit" role="link">

@@ -9,6 +9,15 @@ import { SocialProfileJsonLd } from "next-seo";
 import { HeadBanner } from "../components/headbanner";
 import { ChakraProvider } from "@chakra-ui/react";
 
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+const { NEXT_PAYPAL_CLIENT_ID } = process.env;
+const initialOptions = {
+  "client-id":
+    "ATNlJjOOs4VarXwJ5LdyJxI9umc3j1ZDjdyT-XLQ0uqL1v8ZaGLB-AEqa7Zly0-7Ezq0_2w0_Yxt9KkP",
+  currency: "USD",
+  intent: "capture",
+};
+
 function Prdct() {
   // Use PlasmicPrdct to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
@@ -63,7 +72,9 @@ function Prdct() {
         ]}
       />
       <GlobalContextsProvider>
-        <PlasmicPrdct />
+        <PayPalScriptProvider options={initialOptions}>
+          <PlasmicPrdct />
+        </PayPalScriptProvider>
       </GlobalContextsProvider>
     </ChakraProvider>
   );

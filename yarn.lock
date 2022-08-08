@@ -1246,6 +1246,28 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@paypal/paypal-js@^2.1.6":
+  version "2.1.9"
+  resolved "https://registry.yarnpkg.com/@paypal/paypal-js/-/paypal-js-2.1.9.tgz#4e46dcd0e079b5d3ca6fa4a5d76eeb8a8efe7dfd"
+  integrity sha512-Zh7OCN6SVjsfV87UsrpYRi5e5JM7BhxJTfyDb2yWMT4KiujZP/ASDi+phVfDpULKnpuK54uv0xJHgLEYcC2NGQ==
+  dependencies:
+    promise-polyfill "^8.2.0"
+
+"@paypal/react-paypal-js@4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@paypal/react-paypal-js/-/react-paypal-js-4.1.0.tgz#37bfa67007288071ecc805548468b08b966c8a18"
+  integrity sha512-WtbRY8hK6G5smOQTPoNol5Tq7CrRKmZARzHRsJYsS/6w3Q4JC5x4mUWIbApM4Wh0LoGuzh/JVAtdEcb/r7Jhgw==
+  dependencies:
+    "@paypal/paypal-js" "^2.1.6"
+    "@paypal/sdk-constants" "^1.0.86"
+
+"@paypal/sdk-constants@^1.0.86":
+  version "1.0.122"
+  resolved "https://registry.yarnpkg.com/@paypal/sdk-constants/-/sdk-constants-1.0.122.tgz#f3cd4fc67407ba5291b0f1d70693230da80feea9"
+  integrity sha512-bxML2CX9acBGuigb5aCz1E8wcxtRpuXuY2hvfQKAG9fB0zG9d8nEcRiSYavbx4n2UM5TqwEcFo/roPD3aqykOg==
+  dependencies:
+    hi-base32 "^0.5.0"
+
 "@plasmicapp/cli@^0.1.184":
   version "0.1.184"
   resolved "https://registry.npmjs.org/@plasmicapp/cli/-/cli-0.1.184.tgz"
@@ -3912,6 +3934,11 @@ hey-listen@^1.0.8:
   resolved "https://registry.npmjs.org/hey-listen/-/hey-listen-1.0.8.tgz"
   integrity sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==
 
+hi-base32@^0.5.0:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/hi-base32/-/hi-base32-0.5.1.tgz#1279f2ddae2673219ea5870c2121d2a33132857e"
+  integrity sha512-EmBBpvdYh/4XxsnUybsPag6VikPYnN30td+vQk+GI3qpahVEG9+gTkG0aXVxTjBqQ5T6ijbWIu77O+C5WFWsnA==
+
 hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.1:
   version "3.3.2"
   resolved "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz"
@@ -5450,6 +5477,11 @@ progress@2.0.3:
   version "2.0.3"
   resolved "https://registry.npmjs.org/progress/-/progress-2.0.3.tgz"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
+
+promise-polyfill@^8.2.0:
+  version "8.2.3"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-8.2.3.tgz#2edc7e4b81aff781c88a0d577e5fe9da822107c6"
+  integrity sha512-Og0+jCRQetV84U8wVjMNccfGCnMQ9mGs9Hv78QFe+pSDD3gWTpz0y+1QCuxy5d/vBFuZ3iwP2eycAkvqIMPmWg==
 
 prop-types@^15.0.0, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
