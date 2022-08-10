@@ -659,7 +659,7 @@ function PlasmicPrdct__RenderFunc(props: {
                   ) ? (
                     <Heading>{"Madisonopoly"}</Heading>
                   ) : null}
-                  <Text marginTop="10px" fontWeight="thin" textColor={"green"}>
+                  <Text marginTop="10px" fontWeight="thin">
                     Free Shipping
                   </Text>
 

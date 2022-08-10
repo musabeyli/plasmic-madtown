@@ -659,9 +659,6 @@ function PlasmicPrdct__RenderFunc(props: {
                   ) ? (
                     <Heading>{"Madisonopoly"}</Heading>
                   ) : null}
-                  <Text marginTop="10px" fontWeight="thin" textColor={"green"}>
-                    Free Shipping
-                  </Text>
 
                   <div
                     className={classNames(
