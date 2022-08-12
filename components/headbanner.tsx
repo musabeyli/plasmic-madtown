@@ -36,7 +36,7 @@ export const HeadBanner = () => {
                 pe={{ base: "4", sm: "0", md: "0" }}
               >
                 <Text textAlign="center" color="#c5050cd9" fontWeight="bold">
-                  Only 496 units are available
+                  Only 495 units are available
                 </Text>
                 <Text fontWeight="medium">Free shipping across the US!</Text>
               </Stack>
