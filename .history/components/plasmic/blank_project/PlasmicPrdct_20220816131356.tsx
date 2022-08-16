@@ -411,8 +411,6 @@ function PlasmicPrdct__RenderFunc(props: {
     setLoading(false);
   };
 
-  const router = useRouter();
-
   return (
     <React.Fragment>
       {}
@@ -916,11 +914,9 @@ function PlasmicPrdct__RenderFunc(props: {
                   <VStack marginBottom={"20px"}>
                     <section>
                       <button
-                        onClick={() =>
-                          router.push(
-                            "https://buy.stripe.com/28odREgTFaLZ0P67su"
-                          )
-                        }
+                        onClick={router.push(
+                          "https://buy.stripe.com/28odREgTFaLZ0P67su"
+                        )}
                         role="link"
                       >
                         Secure Checkout With Stripe

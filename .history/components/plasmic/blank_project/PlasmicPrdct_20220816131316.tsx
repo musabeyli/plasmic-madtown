@@ -60,7 +60,6 @@ import projectcss from "./plasmic_blank_project.module.css"; // plasmic-import: 
 import sty from "./PlasmicPrdct.module.css"; // plasmic-import: ctEGS_j_Qt/css
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-import { Router, useRouter } from "next/router";
 
 import ShoppingCartIcon from "./icons/PlasmicIcon__ShoppingCart"; // plasmic-import: T3tWtDwVAV/icon
 import CheckoutButton from "../../../pages/checkout";
@@ -410,8 +409,6 @@ function PlasmicPrdct__RenderFunc(props: {
     console.warn(error.message);
     setLoading(false);
   };
-
-  const router = useRouter();
 
   return (
     <React.Fragment>
@@ -916,11 +913,9 @@ function PlasmicPrdct__RenderFunc(props: {
                   <VStack marginBottom={"20px"}>
                     <section>
                       <button
-                        onClick={() =>
-                          router.push(
-                            "https://buy.stripe.com/28odREgTFaLZ0P67su"
-                          )
-                        }
+                        onClick={router.push(
+                          "https://buy.stripe.com/28odREgTFaLZ0P67su"
+                        )}
                         role="link"
                       >
                         Secure Checkout With Stripe

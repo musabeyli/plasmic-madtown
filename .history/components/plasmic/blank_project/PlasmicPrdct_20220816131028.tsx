@@ -60,7 +60,6 @@ import projectcss from "./plasmic_blank_project.module.css"; // plasmic-import: 
 import sty from "./PlasmicPrdct.module.css"; // plasmic-import: ctEGS_j_Qt/css
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-import { Router, useRouter } from "next/router";
 
 import ShoppingCartIcon from "./icons/PlasmicIcon__ShoppingCart"; // plasmic-import: T3tWtDwVAV/icon
 import CheckoutButton from "../../../pages/checkout";
@@ -410,8 +409,6 @@ function PlasmicPrdct__RenderFunc(props: {
     console.warn(error.message);
     setLoading(false);
   };
-
-  const router = useRouter();
 
   return (
     <React.Fragment>
@@ -840,13 +837,11 @@ function PlasmicPrdct__RenderFunc(props: {
                     </React.Fragment>
                   </div>
                 </div>
-                {/* <form
-                  onSubmit={() =>
-                    router.push("https://buy.stripe.com/28odREgTFaLZ0P67su")
-                  }
-                > */}
-                <div className={classNames(projectcss.all, sty.freeBox__gvTr)}>
-                  {/* <div
+                <form onSubmit={() => router.push("/faq")} method="POST">
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__gvTr)}
+                  >
+                    {/* <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
@@ -913,48 +908,41 @@ function PlasmicPrdct__RenderFunc(props: {
                         {"5"}
                       </Select__Option>
                     </Select> */}
-                  <VStack marginBottom={"20px"}>
-                    <section>
-                      <button
-                        onClick={() =>
-                          router.push(
-                            "https://buy.stripe.com/28odREgTFaLZ0P67su"
-                          )
-                        }
-                        role="link"
-                      >
-                        Secure Checkout With Stripe
-                      </button>
-                    </section>
-                    <style jsx>
-                      {`
-                        section {
-                          background: #ffffff;
-                          display: flex;
-                          flex-direction: column;
-                          width: 400px;
-                          height: 50px;
-                          margin-top: 24px;
-                          border-radius: 6px;
-                          justify-content: space-between;
-                        }
-                        button {
-                          height: 36px;
-                          background: #556cd6;
-                          border-radius: 4px;
-                          color: white;
-                          border: 0;
-                          font-weight: 600;
-                          cursor: pointer;
-                          transition: all 0.2s ease;
-                          box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
-                        }
-                        button:hover {
-                          opacity: 0.8;
-                        }
-                      `}
-                    </style>
-                    {/* <Text size="md"> Save 15% With PayPal Only!</Text>
+                    <VStack marginBottom={"20px"}>
+                      <section>
+                        <button type="submit" role="link">
+                          Secure Checkout With Stripe
+                        </button>
+                      </section>
+                      <style jsx>
+                        {`
+                          section {
+                            background: #ffffff;
+                            display: flex;
+                            flex-direction: column;
+                            width: 400px;
+                            height: 50px;
+                            margin-top: 24px;
+                            border-radius: 6px;
+                            justify-content: space-between;
+                          }
+                          button {
+                            height: 36px;
+                            background: #556cd6;
+                            border-radius: 4px;
+                            color: white;
+                            border: 0;
+                            font-weight: 600;
+                            cursor: pointer;
+                            transition: all 0.2s ease;
+                            box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+                          }
+                          button:hover {
+                            opacity: 0.8;
+                          }
+                        `}
+                      </style>
+                      {/* <Text size="md"> Save 15% With PayPal Only!</Text>
                       <Text
                         marginTop="10px"
                         marginBottom="10px"
@@ -985,9 +973,9 @@ function PlasmicPrdct__RenderFunc(props: {
                           });
                         }}
                       /> */}
-                  </VStack>
-                </div>
-                {/* </form> */}
+                    </VStack>
+                  </div>
+                </form>
 
                 <HStack>
                   <Link
