@@ -913,11 +913,7 @@ function PlasmicPrdct__RenderFunc(props: {
                         <button
                           type="submit"
                           role="link"
-                          onClick={() =>
-                            router.push(
-                              "https://buy.stripe.com/28odREgTFaLZ0P67su"
-                            )
-                          }
+                          onClick={() => router.push("/product")}
                         >
                           Secure Checkout With Stripe
                         </button>
