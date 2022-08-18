@@ -12,7 +12,7 @@ export default async function handler(
       stripe.checkout
           const session = await stripe.checkout.sessions.create({
           payment_method_types: ['card'],
-          allow_promotion_codes: true,
+          // allow_promotion_codes: true,
           shipping_address_collection: {
 			      allowed_countries: ['US']
 		      },
@@ -48,6 +48,9 @@ export default async function handler(
           },
         ],
       mode: 'payment',
+      discounts: [{
+        coupon: 'UWALUMNI',
+      }],
       success_url: `${req.headers.origin}/?success=true`,
       cancel_url: `${req.headers.origin}/?canceled=true`,
       });
