@@ -30,11 +30,11 @@ export default async function handler(
           delivery_estimate: {
             minimum: {
               unit: 'business_day',
-              value: 5,
+              value: 1,
             },
             maximum: {
               unit: 'business_day',
-              value: 7,
+              value: 3,
             },
           }
         }
@@ -49,7 +49,7 @@ export default async function handler(
         ],
       mode: 'payment',
       discounts: [{
-        coupon: 'UWALUMNI',
+        coupon: '15OFF',
       }],
       success_url: `${req.headers.origin}/?success=true`,
       cancel_url: `${req.headers.origin}/?canceled=true`,
