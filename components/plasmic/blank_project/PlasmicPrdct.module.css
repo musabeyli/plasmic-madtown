@@ -45,6 +45,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__mDtZy {
     padding-top: 0px;
+    margin-bottom:300px;
   }
 }
 .h1__xuXzl {
@@ -434,7 +435,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .footerComponent:global(.__wab_instance) {
-    margin-top: 2400px;
+    margin-top: 50px;
     height: 556px;
     flex-shrink: 0;
   }

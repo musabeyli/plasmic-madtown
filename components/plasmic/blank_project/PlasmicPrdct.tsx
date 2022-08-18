@@ -50,6 +50,8 @@ import {
   VStack,
   Wrap,
   Box,
+  Alert,
+  AlertIcon,
   createIcon,
   WrapItem,
   Input,
@@ -694,15 +696,24 @@ function PlasmicPrdct__RenderFunc(props: {
                     </Center>
 
                     <React.Fragment>
-                      <Center>
-                        <Text
-                          marginTop="10px"
-                          marginBottom="10px"
-                          fontWeight="bold"
-                        >
-                          {"Price : $49.99"}
+                      <VStack marginBottom="24px">
+                        <Center>
+                          <Text marginTop="10px" as="s">
+                            {"List Price : $49.99"}
+                          </Text>
+                        </Center>
+                        {/* <Center> */}
+                        <Text textColor="red.500" fontWeight="bold" as="em">
+                          {"Price : $42.49 "}
                         </Text>
-                      </Center>
+                        <Text as="i">{"&Free Shipping"}</Text>
+
+                        {/* </Center> */}
+                        <Center>
+                          <Text as="i">{"You save : "}</Text>
+                          <Text as="em">{"$7.50 (15%)"}</Text>
+                        </Center>
+                      </VStack>
 
                       <React.Fragment>
                         {
@@ -998,13 +1009,13 @@ function PlasmicPrdct__RenderFunc(props: {
                     </a>
                   </Link>
                 </HStack>
-
-                <ProductReviews />
               </div>
             </div>
           </div>
+          <ProductReviews />
         </div>
       </div>
+
       <FooterComponent
         data-plasmic-name={"footerComponent"}
         data-plasmic-override={overrides.footerComponent}
