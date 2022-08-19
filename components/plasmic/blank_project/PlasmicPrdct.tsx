@@ -706,8 +706,6 @@ function PlasmicPrdct__RenderFunc(props: {
                         <Text textColor="red.500" fontWeight="bold" as="em">
                           {"Price : $42.49 "}
                         </Text>
-                        <Text as="i">{"&Free Shipping"}</Text>
-
                         {/* </Center> */}
                         <Center>
                           <Text as="i">{"You save : "}</Text>
