@@ -55,6 +55,7 @@ import {
   createIcon,
   WrapItem,
   Input,
+  Button,
 } from "@chakra-ui/react";
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -81,6 +82,7 @@ import {
   FaInstagram,
   FaTiktok,
   FaTwitter,
+  FaEtsy,
 } from "react-icons/fa";
 import Carousel from "react-elastic-carousel";
 import Image from "next/image";
@@ -946,6 +948,14 @@ function PlasmicPrdct__RenderFunc(props: {
                           }
                         `}
                       </style>
+                      <a
+                        href="https://www.etsy.com/listing/1261873848/uw-madison-board-game-uw-madison-gifts"
+                        target="_blank"
+                      >
+                        <Button colorScheme="orange" leftIcon={<FaEtsy />}>
+                          Check out on Etsy
+                        </Button>
+                      </a>
                       {/* <Text size="md"> Save 15% With PayPal Only!</Text>
                       <Text
                         marginTop="10px"
