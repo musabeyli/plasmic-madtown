@@ -83,6 +83,7 @@ import {
   FaTiktok,
   FaTwitter,
   FaEtsy,
+  FaAmazon,
 } from "react-icons/fa";
 import Carousel from "react-elastic-carousel";
 import Image from "next/image";
@@ -949,6 +950,15 @@ function PlasmicPrdct__RenderFunc(props: {
                         `}
                       </style>
                       <a
+                        href="https://www.amazon.com/dp/B0BDSSGVQX"
+                        target="_blank"
+                      >
+                        <Button colorScheme="yellow" leftIcon={<FaAmazon />}>
+                          Check out on Amazon
+                        </Button>
+                      </a>
+
+                      <a
                         href="https://www.etsy.com/listing/1261873848/uw-madison-board-game-uw-madison-gifts"
                         target="_blank"
                       >
@@ -956,6 +966,15 @@ function PlasmicPrdct__RenderFunc(props: {
                           Check out on Etsy
                         </Button>
                       </a>
+                      {/* <a
+                        href="https://www.amazon.com/dp/B0BDSSGVQX"
+                        target="_blank"
+                      >
+                        <Button colorScheme="Blue" leftIcon={<FaEtsy />}>
+                          Check out on Etsy
+                        </Button>
+                      </a> */}
+
                       {/* <Text size="md"> Save 15% With PayPal Only!</Text>
                       <Text
                         marginTop="10px"

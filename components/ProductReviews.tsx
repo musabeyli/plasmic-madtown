@@ -149,7 +149,7 @@ export default function ProductReviews() {
   return (
     <Flex
       textAlign={"center"}
-      pt={10}
+      pt={140}
       justifyContent={"center"}
       direction={"column"}
       width={"full"}
