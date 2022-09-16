@@ -5,6 +5,18 @@ import GlobalContextsProvider from "../components/plasmic/blank_project/PlasmicG
 import { ScreenVariantProvider } from "../components/plasmic/blank_project/PlasmicGlobalVariant__Screen";
 import { PlasmicPrdct } from "../components/plasmic/blank_project/PlasmicPrdct";
 import { NextSeo } from "next-seo";
+import { SocialProfileJsonLd } from "next-seo";
+import { HeadBanner } from "../components/headbanner";
+import { ChakraProvider } from "@chakra-ui/react";
+
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+const { NEXT_PAYPAL_CLIENT_ID } = process.env;
+const initialOptions = {
+  "client-id":
+    "ATNlJjOOs4VarXwJ5LdyJxI9umc3j1ZDjdyT-XLQ0uqL1v8ZaGLB-AEqa7Zly0-7Ezq0_2w0_Yxt9KkP",
+  currency: "USD",
+  intent: "capture",
+};
 
 function Prdct() {
   // Use PlasmicPrdct to render this component as it was
@@ -24,7 +36,8 @@ function Prdct() {
   // Next.js Custom App component
   // (https://nextjs.org/docs/advanced-features/custom-app).
   return (
-    <div>
+    <ChakraProvider>
+      <HeadBanner />
       <NextSeo
         title="Madisonopoly | Ultimate UW Madison Board Game"
         description="Only board game of UW Madison | Enjoy playing Madison Monopoly College Edition | UW Madison Gifts"
@@ -48,10 +61,22 @@ function Prdct() {
           },
         ]}
       />
+      <SocialProfileJsonLd
+        type="Organization"
+        name="Madisonopoly"
+        url="http://www.madisonopoly.com"
+        sameAs={[
+          "http://instagram.com/madisonopoly.wi",
+          "https://twitter.com/madisonopolyy/",
+          "https://www.tiktok.com/@madisonopoly",
+        ]}
+      />
       <GlobalContextsProvider>
-        <PlasmicPrdct />
+        <PayPalScriptProvider options={initialOptions}>
+          <PlasmicPrdct />
+        </PayPalScriptProvider>
       </GlobalContextsProvider>
-    </div>
+    </ChakraProvider>
   );
 }
 

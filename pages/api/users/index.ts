@@ -20,6 +20,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     // RESPONSE POST REQUESTS
     POST: async (req: NextApiRequest, res: NextApiResponse) => {
       const { User } = await connect() // connect to database
+      console.log(User)
       res.json(await User.create(req.body).catch(catcher))
     },
   }

@@ -32,7 +32,7 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
 } from "@plasmicapp/react-web";
 
 import { useScreenVariants as useScreenVariantsabUxTrbG0Cf5V } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AbUXTrbG0Cf5V/globalVariant
@@ -95,7 +95,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
   const $props = args;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsabUxTrbG0Cf5V()
+    screen: useScreenVariantsabUxTrbG0Cf5V(),
   });
 
   return (
@@ -155,13 +155,13 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
                     src: "/plasmic/blank_project/images/madisonopolyLogopng.png",
                     fullWidth: 914,
                     fullHeight: 335,
-                    aspectRatio: undefined
+                    aspectRatio: undefined,
                   }
                 : {
                     src: "/plasmic/blank_project/images/madisonopolyLogopng.png",
                     fullWidth: 914,
                     fullHeight: 335,
-                    aspectRatio: undefined
+                    aspectRatio: undefined,
                   }
             }
             title={
@@ -222,7 +222,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, projectcss.a, sty.gameRules)}
             component={Link}
-            href={"/game-rules" as const}
+            href={"/blog" as const}
             platform={"nextjs"}
           >
             {false ? (
@@ -239,7 +239,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
                 sty.text__y1Lb
               )}
             >
-              {"Game rules"}
+              {"Blog"}
             </div>
 
             {false ? (
@@ -380,7 +380,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, projectcss.a, sty.gameRules2)}
             component={Link}
-            href={"/game-rules" as const}
+            href={"/blog" as const}
             platform={"nextjs"}
           >
             {false ? (
@@ -397,7 +397,7 @@ function PlasmicMadisonopolyHeaderFinal__RenderFunc(props: {
                 sty.text__joXsO
               )}
             >
-              {"Game rules"}
+              {"Blog"}
             </div>
 
             {false ? (
@@ -485,7 +485,7 @@ const PlasmicDescendants = {
     "faq",
     "aboutUs2",
     "gameRules2",
-    "faq2"
+    "faq2",
   ],
   img: ["img"],
   aboutUs: ["aboutUs"],
@@ -493,7 +493,7 @@ const PlasmicDescendants = {
   faq: ["faq"],
   aboutUs2: ["aboutUs2"],
   gameRules2: ["gameRules2"],
-  faq2: ["faq2"]
+  faq2: ["faq2"],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -545,7 +545,8 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicMadisonopolyHeaderFinal__ArgProps,
-          internalVariantPropNames: PlasmicMadisonopolyHeaderFinal__VariantProps
+          internalVariantPropNames:
+            PlasmicMadisonopolyHeaderFinal__VariantProps,
         }),
       [props, nodeName]
     );
@@ -554,7 +555,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
   if (nodeName === "root") {
@@ -580,7 +581,7 @@ export const PlasmicMadisonopolyHeaderFinal = Object.assign(
 
     // Metadata about props expected for PlasmicMadisonopolyHeaderFinal
     internalVariantProps: PlasmicMadisonopolyHeaderFinal__VariantProps,
-    internalArgProps: PlasmicMadisonopolyHeaderFinal__ArgProps
+    internalArgProps: PlasmicMadisonopolyHeaderFinal__ArgProps,
   }
 );
 

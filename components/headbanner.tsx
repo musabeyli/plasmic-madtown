@@ -1,7 +1,6 @@
 import {
   Box,
   Button,
-  CloseButton,
   Container,
   Icon,
   Square,
@@ -24,12 +23,6 @@ export const HeadBanner = () => {
         width="100%"
       >
         <Center py={{ base: "4", md: "2" }} position="relative" width="100%">
-          <CloseButton
-            display={{ sm: "none" }}
-            position="absolute"
-            right="1"
-            top="1"
-          />
           <Center
             width="100%"
             // direction={{ base: "column", sm: "row" }}
@@ -43,7 +36,7 @@ export const HeadBanner = () => {
                 pe={{ base: "4", sm: "0", md: "0" }}
               >
                 <Text textAlign="center" color="#c5050cd9" fontWeight="bold">
-                  Only 500 units are available
+                  Limited quantity available
                 </Text>
                 <Text fontWeight="medium">Free shipping across the US!</Text>
               </Stack>
