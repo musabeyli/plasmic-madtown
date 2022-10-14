@@ -6,8 +6,9 @@ import { ScreenVariantProvider } from "../components/plasmic/blank_project/Plasm
 import { PlasmicNewPage } from "../components/plasmic/blank_project/PlasmicNewPage";
 import { NextSeo } from "next-seo";
 import { ChakraProvider } from "@chakra-ui/react";
-import PopupModal from "../components/PopupModal";
 import { HeadBanner } from "../components/headbanner";
+import SEO from "../components/global/SEO.js";
+import { SocialProfileJsonLd } from "next-seo";
 
 function NewPage() {
   // Use PlasmicNewPage to render this component as it was
@@ -51,15 +52,22 @@ function NewPage() {
           },
         ]}
       />
+      <SocialProfileJsonLd
+        type="Organization"
+        name="Madisonopoly"
+        url="http://www.madisonopoly.com"
+        sameAs={[
+          "http://instagram.com/madisonopoly.wi",
+          "https://twitter.com/madisonopolyy/",
+          "https://www.tiktok.com/@madisonopoly",
+        ]}
+      />
       <ChakraProvider>
         <HeadBanner></HeadBanner>
       </ChakraProvider>
       <GlobalContextsProvider>
         <PlasmicNewPage />
       </GlobalContextsProvider>
-      <ChakraProvider>
-        <PopupModal></PopupModal>
-      </ChakraProvider>
     </div>
   );
 }

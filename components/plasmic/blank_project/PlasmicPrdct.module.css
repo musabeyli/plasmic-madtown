@@ -44,7 +44,8 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__mDtZy {
-    padding-top: 230px;
+    padding-top: 0px;
+    margin-bottom:300px;
   }
 }
 .h1__xuXzl {
@@ -53,22 +54,22 @@
   height: auto;
   max-width: 652px;
   padding-right: 22px;
+  text-align: center;
+  font-family: Helvetica;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .h1__xuXzl {
     font-size: 48px;
     position: absolute;
-    left: 26px;
-    top: 91px;
-    padding-right: 43px;
+    width: 100%;
+    top: 71px;
     margin-right: 0px;
     align-self: flex-start;
     z-index: 1;
-    width: auto;
     height: auto;
-    padding-left: 30px;
-    text-align: left;
+    text-align: center;
+    font-family: Helvetica;
   }
 }
 .columns {
@@ -116,11 +117,20 @@
   align-items: center;
   min-width: 0;
   padding: 8px;
+  margin-top: 20px;
 }
 .img__kh7Y {
   position: relative;
   object-fit: cover;
   max-width: 100%;
+}
+.circular_svg {
+      width: 300px;
+      height: 300px;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
+    
 }
 .img__kh7Y > picture > img {
   object-fit: cover;
@@ -372,6 +382,7 @@
 .ul {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 .freeBox__gvTr {
   display: flex;
@@ -424,7 +435,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .footerComponent:global(.__wab_instance) {
-    margin-top: 151px;
+    margin-top: 50px;
     height: 556px;
     flex-shrink: 0;
   }

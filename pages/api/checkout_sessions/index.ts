@@ -12,6 +12,7 @@ export default async function handler(
       stripe.checkout
           const session = await stripe.checkout.sessions.create({
           payment_method_types: ['card'],
+          // allow_promotion_codes: true,
           shipping_address_collection: {
 			      allowed_countries: ['US']
 		      },
@@ -21,6 +22,7 @@ export default async function handler(
           type: 'fixed_amount',
           fixed_amount: {
             amount: 0,
+            
             currency: 'usd',
           },
           display_name: 'Free shipping',
@@ -28,11 +30,11 @@ export default async function handler(
           delivery_estimate: {
             minimum: {
               unit: 'business_day',
-              value: 5,
+              value: 1,
             },
             maximum: {
               unit: 'business_day',
-              value: 7,
+              value: 3,
             },
           }
         }
@@ -46,6 +48,9 @@ export default async function handler(
           },
         ],
       mode: 'payment',
+      discounts: [{
+        coupon: '15OFF',
+      }],
       success_url: `${req.headers.origin}/?success=true`,
       cancel_url: `${req.headers.origin}/?canceled=true`,
       });
