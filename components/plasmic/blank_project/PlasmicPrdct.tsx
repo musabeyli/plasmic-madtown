@@ -701,27 +701,27 @@ function PlasmicPrdct__RenderFunc(props: {
                     <React.Fragment>
                       <VStack marginBottom="24px">
                         <Center>
-                          <Text marginTop="10px" as="s">
+                          <Text marginTop="10px" as="b" color="green.500">
                             {"List Price : $49.99"}
                           </Text>
                         </Center>
                         {/* <Center> */}
-                        <Text textColor="red.500" fontWeight="bold" as="em">
+                        {/* <Text textColor="red.500" fontWeight="bold" as="em">
                           {"Price : $42.49 "}
-                        </Text>
+                        </Text> */}
                         {/* </Center> */}
-                        <Center>
+                        {/* <Center>
                           <Text as="i">{"You save : "}</Text>
                           <Text as="em">{"$7.50 (15%)"}</Text>
-                        </Center>
+                        </Center> */}
                       </VStack>
 
                       <React.Fragment>
                         {
-                          "The memorable experiences in Langdon Street, the sleepless nights we had in College Library during finals week, that 2 AM Mac N Cheese slice at Ian's Pizza on Franklin, and many more..\n\nHow about buying those properties and renting it to your friends in a Monopoly game? You can build houses and hotels on your favorite Madtown spots.\n\nA token of your time spent in Madison or the token of new adventures :)\n\nThe box comes with:\n"
+                          "I don't know if this is a game you should be buying to be honest.. And I know it's expensive.\n\nI designed this game for me and my friends because we loved playing Monopoly and as an immigrant, I call Madison my home. \n\nI think a lot of people bought this game to tell a story when people in other states or in other countries asked what game this was.\n\nI liked the feeling of being part of #1 party school and the flex that comes with it.\n\nSo if what I described above makes sense to you, well, welcome on board."
                         }
                       </React.Fragment>
-                      <ul
+                      {/* <ul
                         data-plasmic-name={"ul"}
                         data-plasmic-override={overrides.ul}
                         className={classNames(
@@ -845,7 +845,7 @@ function PlasmicPrdct__RenderFunc(props: {
                         >
                           {"30 Day Moneyback Guarantee "}
                         </li>
-                      </ul>
+                      </ul> */}
                     </React.Fragment>
                   </div>
                 </div>
