@@ -9,6 +9,9 @@ export default async function handler(
   if (req.method === 'POST') {
     try {
       // Create Checkout Sessions from body params.
+      // discounts: [{
+      //   coupon: '15OFF',
+      // }],
       stripe.checkout
           const session = await stripe.checkout.sessions.create({
           payment_method_types: ['card'],
@@ -48,9 +51,6 @@ export default async function handler(
           },
         ],
       mode: 'payment',
-      discounts: [{
-        coupon: '15OFF',
-      }],
       success_url: `${req.headers.origin}/?success=true`,
       cancel_url: `${req.headers.origin}/?canceled=true`,
       });
